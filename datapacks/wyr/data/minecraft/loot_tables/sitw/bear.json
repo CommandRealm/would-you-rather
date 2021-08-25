@@ -1,0 +1,5 @@
+{ "type":"minecraft:generic", "pools" : [ { "rolls":1, "entries":[ { "type": "minecraft:item", "functions":
+[ { "function": "minecraft:set_name", "entity": "this", "name": 
+[{"text":"Bear Meat","color":"red","italic":false}] 
+},{ "function": "minecraft:set_count", "entity": "this", "count":{"min":2,"max":4}} ], "name": "minecraft:mutton" } ] }
+,{ "rolls":1, "entries":[ { "type": "minecraft:item", "functions":[ { "function": "minecraft:set_name", "entity": "this", "name": [{"text":"Bear Hide","color":"red","italic":false}]},{ "function": "minecraft:set_nbt","tag":"{HideFlags:63,Damage:0,display:{color:4267021}}"} ], "name": "minecraft:leather_chestplate" } ] } ] }

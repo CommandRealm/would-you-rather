@@ -1,0 +1,4 @@
+{ "type":"minecraft:generic", "pools" : [ { "rolls":1, "entries":[ { "type": "minecraft:item", "functions":
+[ { "function": "minecraft:set_name", "entity": "this", "name": 
+[{"text":"Honey Bottle","color":"yellow","italic":false}] 
+} ], "name": "minecraft:honey_bottle" } ] } ] }

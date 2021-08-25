@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "minecraft:beef"
+  },
+  "result": "minecraft:air"
+}

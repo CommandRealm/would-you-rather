@@ -1,0 +1,27 @@
+{
+  "minecraft:invisible/inventory_change": {
+    "criteria": {
+      "criteria": "2020-11-16 07:09:04 +0000"
+    },
+    "done": true
+  },
+  "as:enable": {
+    "criteria": {
+      "tick": "2020-11-16 07:03:43 +0000"
+    },
+    "done": true
+  },
+  "main:main/as": {
+    "criteria": {
+      "tick": "2020-11-16 07:03:43 +0000"
+    },
+    "done": true
+  },
+  "main:main/root": {
+    "criteria": {
+      "tick": "2020-11-16 07:03:43 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 2584
+}

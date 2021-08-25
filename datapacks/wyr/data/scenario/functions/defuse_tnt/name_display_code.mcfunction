@@ -1,0 +1,9 @@
+execute if block ~ ~ ~ red_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"#ff000c"}]'}
+execute if block ~ ~ ~ orange_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"#ff7800"}]'}
+execute if block ~ ~ ~ yellow_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"yellow"}]'}
+execute if block ~ ~ ~ blue_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"#004eff"}]'}
+execute if block ~ ~ ~ light_blue_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"aqua"}]'}
+execute if block ~ ~ ~ lime_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"green"}]'}
+execute if block ~ ~ ~ pink_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"light_purple"}]'}
+execute if block ~ ~ ~ purple_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"dark_purple"}]'}
+execute if block ~ ~ ~ brown_concrete run data merge entity @s {CustomName:'[{"text":"⬛","color":"#7f4e2d"}]'}

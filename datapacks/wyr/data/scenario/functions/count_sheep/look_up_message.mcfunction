@@ -1,0 +1,2 @@
+title @a[tag=playing,gamemode=adventure,team=cs] title [{"text":" "}]
+title @a[tag=playing,gamemode=adventure,team=cs] subtitle [{"text":"⚠ ","color":"gray"},{"text":"Look up!","color":"white"},{"text":" ⚠","color":"gray"}]

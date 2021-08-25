@@ -1,0 +1,3 @@
+title @a[tag=playing,team=ptp,gamemode=adventure,scores={ptp_timer=0..40}] title [{"text":" "}]
+title @a[tag=playing,team=ptp,gamemode=adventure,scores={ptp_timer=0..40}] subtitle [{"text":"♫ ","color":"aqua"},{"text":"Look at the piano","color":"gray"},{"text":" ♫","color":"aqua"}]
+execute as @a[tag=playing,team=ptp,gamemode=adventure,scores={ptp_timer=1}] run playsound minecraft:block.note_block.flute master @s ~ ~ ~ 1000 0.7

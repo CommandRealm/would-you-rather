@@ -1,0 +1,1 @@
+team join collision @e[tag=rab_guard,type=zombie]

@@ -1,0 +1,2 @@
+title @a[team=cms,tag=playing,nbt={Inventory:[{tag:{cms_is_item:1}}]},gamemode=adventure,x=39000,y=65,z=-3,distance=..7] title [{"text":""}]
+title @a[team=cms,tag=playing,nbt={Inventory:[{tag:{cms_is_item:1}}]},gamemode=adventure,x=39000,y=65,z=-3,distance=..7] subtitle [{"text":"Drop ingredients near the cauldron!","color":"gold"}]

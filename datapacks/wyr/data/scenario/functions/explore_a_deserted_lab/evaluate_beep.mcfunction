@@ -1,0 +1,14 @@
+execute if entity @s[distance=..3] run scoreboard players set @s eadl_set_beep 3
+execute if entity @s[distance=4..5] run scoreboard players set @s eadl_set_beep 8
+execute if entity @s[distance=6..7] run scoreboard players set @s eadl_set_beep 13
+execute if entity @s[distance=8..10] run scoreboard players set @s eadl_set_beep 18
+execute if entity @s[distance=11..12] run scoreboard players set @s eadl_set_beep 23
+execute if entity @s[distance=13..15] run scoreboard players set @s eadl_set_beep 28
+execute if entity @s[distance=16..17] run scoreboard players set @s eadl_set_beep 33
+execute if entity @s[distance=18..20] run scoreboard players set @s eadl_set_beep 38
+execute if entity @s[distance=21..23] run scoreboard players set @s eadl_set_beep 43
+execute if entity @s[distance=24..25] run scoreboard players set @s eadl_set_beep 48
+execute if entity @s[distance=26..28] run scoreboard players set @s eadl_set_beep 53
+execute if entity @s[distance=29..30] run scoreboard players set @s eadl_set_beep 58
+execute if entity @s[distance=31..33] run scoreboard players set @s eadl_set_beep 63
+execute if entity @s[distance=35..] run scoreboard players set @s eadl_set_beep 68

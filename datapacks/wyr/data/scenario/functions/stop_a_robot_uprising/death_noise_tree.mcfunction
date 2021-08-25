@@ -1,0 +1,2 @@
+execute if entity @s[tag=!saru_commander_death_noise] run function scenario:stop_a_robot_uprising/death_noise
+execute if entity @s[tag=saru_commander_death_noise] run function scenario:stop_a_robot_uprising/commander_death_noise

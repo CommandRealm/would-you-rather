@@ -1,0 +1,10 @@
+scoreboard players reset @s awd_d_run
+scoreboard players reset @s awd_d_jump 
+scoreboard players reset @s awd_d_drop 
+scoreboard players reset @s awd_d_sneak 
+scoreboard players reset @s awd_d_taken 
+scoreboard players reset @s awd_d_dealt 
+scoreboard players reset @s awd_d_mob_kills 
+scoreboard players reset @s awd_d_walk 
+scoreboard players reset @s awd_d_s_dist 
+scoreboard players reset @s awd_d_companions

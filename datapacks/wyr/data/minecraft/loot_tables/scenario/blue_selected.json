@@ -1,0 +1,4 @@
+{ "type":"minecraft:generic", "pools" : [ { "rolls":1, "entries":[ { "type": "minecraft:item", "functions":
+[{"function":"minecraft:set_nbt", "tag":"{HideFlags:63,blue_select:1,Enchantments:[{id:\"x\",lvl:1}]}"}, { "function": "minecraft:set_name", "entity": "this", "name": 
+[{"text":"Drop to select: \"","color":"blue","italic":false},{"selector":"@e[tag=blue_select]"},{"text":"\"","color":"blue","italic":false}] 
+} ], "name": "minecraft:paper" } ] } ] }

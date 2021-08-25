@@ -1,0 +1,1 @@
+execute positioned 5092 84.5 2 facing entity @s feet unless entity @s[distance=..4] run function scenario:rescue_royalty/tracker

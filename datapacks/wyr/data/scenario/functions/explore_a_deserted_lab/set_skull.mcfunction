@@ -1,0 +1,18 @@
+scoreboard players set $mod random 16
+function random:random
+execute if score $rand random matches 0 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=0]
+execute if score $rand random matches 1 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=1]
+execute if score $rand random matches 2 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=2]
+execute if score $rand random matches 3 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=3]
+execute if score $rand random matches 4 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=4]
+execute if score $rand random matches 5 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=5]
+execute if score $rand random matches 6 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=6]
+execute if score $rand random matches 7 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=7]
+execute if score $rand random matches 8 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=8]
+execute if score $rand random matches 9 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=9]
+execute if score $rand random matches 10 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=10]
+execute if score $rand random matches 11 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=11]
+execute if score $rand random matches 12 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=12]
+execute if score $rand random matches 13 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=13]
+execute if score $rand random matches 14 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=14]
+execute if score $rand random matches 15 run setblock ~ ~ ~ minecraft:wither_skeleton_skull[rotation=15]

@@ -1,0 +1,2 @@
+execute as @a[tag=playing,gamemode=adventure,team=ptasv] at @s run function scenario:parkour_through_a_sky_village/fail
+tellraw @a[tag=playing,team=ptasv] [{"text":"There is no time left on the clock. The scenario is over.","color":"gray"}]

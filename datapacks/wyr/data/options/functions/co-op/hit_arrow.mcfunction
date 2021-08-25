@@ -1,0 +1,3 @@
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=remove,tag=check_co-op] run scoreboard players remove $number skip_coop 2
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_co-op] run function options:co-op/add_co-op
+tellraw @s [{"text":"If this option is on, it means that in situations where everyone chooses the same scenario, and the group can only succeed or fail together will be skipped.","color":"red"}]

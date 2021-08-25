@@ -1,0 +1,2 @@
+tellraw @a[team=cms,tag=playing] [{"selector":"@e[type=area_effect_cloud,tag=cms_soup_title]","color":"#756538"}]
+execute as @a[team=cms,tag=playing] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 10000 1

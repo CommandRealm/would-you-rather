@@ -1,0 +1,4 @@
+{ "type":"minecraft:generic", "pools" : [ { "rolls":1, "entries":[ { "type": "minecraft:item", "functions":
+[ {"function":"minecraft:set_nbt","tag":"{HideFlags:63,Enchantments:[{id:\"s\",lvl:1}]}"},{ "function": "minecraft:set_name", "entity": "this", "name": 
+[{"text":"Tower Key","color":"yellow","italic":false}] 
+} ], "name": "minecraft:tripwire_hook" } ] } ] }

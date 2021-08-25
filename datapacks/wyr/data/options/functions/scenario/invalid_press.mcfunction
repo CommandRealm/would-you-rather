@@ -1,0 +1,2 @@
+playsound minecraft:block.note_block.didgeridoo master @a -928 62 -132 1 0
+execute positioned -928 62 -132 run tellraw @a[distance=..5] [{"text":"You can't change the scenarios during the game!","color":"red"}]

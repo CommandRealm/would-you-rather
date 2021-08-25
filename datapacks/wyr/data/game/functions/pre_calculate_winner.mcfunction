@@ -1,0 +1,1 @@
+execute if score $game state matches 1 run function game:calculate_winner

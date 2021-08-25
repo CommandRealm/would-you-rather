@@ -1,0 +1,9 @@
+ {
+     
+     "criteria": {
+         "criteria": {
+             "trigger": "minecraft:inventory_changed"
+             
+         }
+     }
+ }

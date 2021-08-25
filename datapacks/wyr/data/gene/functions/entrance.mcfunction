@@ -1,0 +1,1 @@
+execute as @r at @s run function gene:gene_random

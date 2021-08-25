@@ -1,0 +1,2 @@
+tellraw @a {"text":"I am way too lazy to add a tiebreaker this early in development. I'm even too lazy to add color to this tellraw. ","extra":[{"selector":"@a[tag=maybe_winner]","extra":[{"text":" are your winners."}]}]}
+function end:players

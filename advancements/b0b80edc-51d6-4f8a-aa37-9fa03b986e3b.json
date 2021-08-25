@@ -1,0 +1,75 @@
+{
+  "minecraft:invisible/play_the_piano/a": {
+    "criteria": {
+      "requirement": "2020-11-17 01:38:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:invisible/inventory_change": {
+    "criteria": {
+      "criteria": "2020-11-20 00:08:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:invisible/play_the_piano/high_c": {
+    "criteria": {
+      "requirement": "2020-11-17 01:38:26 +0000"
+    },
+    "done": true
+  },
+  "as:enable": {
+    "criteria": {
+      "tick": "2020-02-27 02:27:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:invisible/play_the_piano/g": {
+    "criteria": {
+      "requirement": "2020-11-17 01:38:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:invisible/play_the_piano/f": {
+    "criteria": {
+      "requirement": "2020-11-17 01:38:26 +0000"
+    },
+    "done": true
+  },
+  "main:main/as": {
+    "criteria": {
+      "tick": "2020-02-27 02:27:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:invisible/play_the_piano/c": {
+    "criteria": {
+      "requirement": "2020-11-17 01:38:26 +0000"
+    },
+    "done": true
+  },
+  "main:main/root": {
+    "criteria": {
+      "tick": "2020-02-27 02:27:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:invisible/play_the_piano/b": {
+    "criteria": {
+      "requirement": "2020-11-17 01:38:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:invisible/play_the_piano/e": {
+    "criteria": {
+      "requirement": "2020-11-17 01:38:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:invisible/play_the_piano/d": {
+    "criteria": {
+      "requirement": "2020-11-17 01:38:26 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 2584
+}

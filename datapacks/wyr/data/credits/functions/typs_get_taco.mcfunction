@@ -1,0 +1,2 @@
+data merge entity @e[type=armor_stand,tag=typs,limit=1] {HandItems:[{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;536295313,-655277217,-1305265115,1495838596],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWFkN2MwYTA0ZjE0ODVjN2EzZWYyNjFhNDhlZTgzYjJmMWFhNzAxYWIxMWYzZmM5MTFlMDM2NmE5Yjk3ZSJ9fX0="}]}}}}]}
+scoreboard players set $direction typs_direction 1

@@ -1,0 +1,16 @@
+scoreboard players set $time dab_timer 3600
+scoreboard players set $dab active_scenario 1
+function scenario:defuse_tnt/active
+
+execute if entity @e[tag=chosen,type=area_effect_cloud,name="Defuse TNT",tag=blue_select] run scoreboard objectives setdisplay sidebar.team.blue dab_seconds
+execute if entity @e[tag=chosen,type=area_effect_cloud,name="Defuse TNT",tag=yellow_select] run scoreboard objectives setdisplay sidebar.team.yellow dab_seconds
+
+##remember to add back in text spawn
+
+
+kill @e[tag=dab_text]
+summon area_effect_cloud 25991 78.165 10 {Duration:3600000,Invulnerable:1b,Tags:["die","dab_text"],CustomNameVisible:1b,CustomName:'{"text":"Color is not in the code.","color":"red"}'}
+summon area_effect_cloud 25990 79.165 10 {Duration:36000000,Invulnerable:1b,Tags:["die","dab_text"],CustomNameVisible:1b,CustomName:'{"text":"Color is in code, but not in that position.","color":"blue"}'}
+summon area_effect_cloud 25991.15 80.165 10 {Duration:3600000,Invulnerable:1b,Tags:["die","dab_text"],CustomNameVisible:1b,CustomName:'{"text":"Color is in the perfect position.","color":"green"}'}
+summon area_effect_cloud 25990.75 77.165 10 {Duration:3600000,Invulnerable:1b,Tags:["die","dab_text"],CustomNameVisible:1b,CustomName:'{"text":"Color is in the perfect position,","color":"#1fe7d2"}'}
+summon area_effect_cloud 25990.75 76.915 10 {Duration:3600000,Invulnerable:1b,Tags:["die","dab_text"],CustomNameVisible:1b,CustomName:'{"text":"but is also used elsewhere in the code.","color":"#1fe7d2"}'}

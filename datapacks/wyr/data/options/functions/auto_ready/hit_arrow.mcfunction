@@ -1,0 +1,2 @@
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=remove,tag=check_auto_ready] run scoreboard players remove $number auto_ready 2
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_auto_ready] run function options:auto_ready/add_auto_ready

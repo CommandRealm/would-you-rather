@@ -1,0 +1,9 @@
+summon firework_rocket -912 65 1 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}
+summon firework_rocket -917 65 -4 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}
+summon firework_rocket -922 65 -6 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}
+summon firework_rocket -927 65 -7 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}
+summon firework_rocket -935 65 -8 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}
+summon firework_rocket -943 65 -7 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}
+summon firework_rocket -948 65 -6 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}
+summon firework_rocket -953 65 -4 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}
+summon firework_rocket -957 65 0 {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}

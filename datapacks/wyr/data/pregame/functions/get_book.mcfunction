@@ -1,0 +1,4 @@
+clear @s knowledge_book
+kill @e[type=item,nbt={Item:{id:"minecraft:knowledge_book"}},distance=..10]
+replaceitem entity @a[gamemode=adventure,scores={ready=0}] hotbar.4 knowledge_book{ready_book:-1,clickable:0,Recipes:[{id:"minecraft:book"}],display:{Name:"[{\"keybind\":\"key.use\",\"underlined\":true,\"italic\":false,\"color\":\"dark_aqua\",\"bold\":true},{\"text\":\" to play!\",\"color\":\"dark_aqua\",\"bold\":true,\"italic\":false,\"underlined\":true}]"},die:1}
+replaceitem entity @a[gamemode=adventure,scores={ready=1}] hotbar.4 knowledge_book{ready_book:-1,clickable:0,Recipes:[{id:"minecraft:book"}],display:{Name:"[{\"keybind\":\"key.use\",\"underlined\":true,\"italic\":false,\"color\":\"gray\",\"bold\":true},{\"text\":\" to spectate.\",\"color\":\"gray\",\"bold\":true,\"italic\":false,\"underlined\":true}]"},Enchantments:[{id:"minecraft:this_is_an_easter_egg",lvl:1}],die:1}

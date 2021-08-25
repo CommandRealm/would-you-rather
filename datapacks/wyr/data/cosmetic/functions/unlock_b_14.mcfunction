@@ -1,0 +1,2 @@
+tag @s add unlock_b_14
+tellraw @s [{"text":"- - - - - - - - - - - - - - - - - - - - - - - - - - -","color":"gray","bold":true},{"text":"\nYou have unlocked a LEGENDARY cosmetic!","color":"gold","bold":false},{"text":"\nBanner ","color":"dark_aqua","bold":true},{"text":"- ","color":"gray","bold":true},{"text":"Panda","color":"#ffff40","bold":true},{"text":"\nYou can select it inside the ender chest!","color":"gray","bold":false}]

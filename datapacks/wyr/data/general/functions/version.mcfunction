@@ -1,0 +1,1 @@
+tellraw @a {"text":"This is Would You Rather *Alpha* 1.3","color":"light_purple"}
