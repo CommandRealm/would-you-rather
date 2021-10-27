@@ -10,3 +10,5 @@ tag @a remove bafe_head_hit
 title @a[team=bafe,tag=playing] title [{"text":" "}]
 title @a[team=bafe,tag=playing] subtitle {"text":" "}
 scoreboard players set @a[team=bafe,tag=playing] bafe_blindness 0
+
+advancement grant @a[team=bafe,tag=playing,gamemode=adventure] only advancements:scenario_fan

@@ -8,6 +8,13 @@ execute if entity @s[tag=fail] run tellraw @a[tag=playing] [{"selector":"@s"},{"
 execute if entity @s[tag=success] run scoreboard players add @s stats_successes 1
 execute if entity @s[tag=fail] run scoreboard players add @s stats_fails 1
 
+# advancements
+advancement grant @a[scores={stats_successes=1..}] only advancements:wins_one
+advancement grant @a[scores={stats_successes=5..}] only advancements:wins_five
+advancement grant @a[scores={stats_successes=10..}] only advancements:wins_ten
+
+advancement grant @a[tag=fail] only advancements:game_fail
+
 execute if entity @s[tag=fail] run playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 1000000 0.5
 execute if entity @s[tag=fail] run playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 1000000 0.55
 execute if entity @s[tag=fail] run playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 1000000 0.6

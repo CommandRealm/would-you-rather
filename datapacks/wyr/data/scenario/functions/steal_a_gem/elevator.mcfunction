@@ -27,7 +27,7 @@ execute if score $time rab_elevator matches 210 as @e[tag=rab_elevator,tag=rab_u
 
 scoreboard players remove $time rab_elevator 1
 
-execute if score $time rab_elevator matches 299 as @a[tag=playing,team=rab] at @s if entity @e[tag=rab_elevator,distance=..10,tag=rab_up] run effect give @a[team=rab,tag=rab_on_ele] levitation 1000 150 true
+
 execute if score $time rab_elevator matches 299 run playsound minecraft:block.piston.extend master @a[tag=!rab_on_ele] 15926 67 0 1
 execute if score $time rab_elevator matches 299 run playsound minecraft:block.piston.extend master @a[tag=rab_on_ele] 15926 67 0 1000
 execute if score $time rab_elevator matches 201..298 as @a[tag=playing,team=rab,tag=rab_on_ele] at @s run playsound minecraft:ambient.underwater.loop master @s ~ ~ ~ 0.75 0
@@ -41,7 +41,7 @@ execute if score $time rab_elevator matches 299 run tag @e[x=15921,y=62,z=-4,dy=
 
 execute if score $time rab_elevator matches 298 as @e[x=15922,y=70,z=-2,dx=5,dz=4,dy=5,type=!area_effect_cloud,tag=rab_on_ele] at @s run tp @s ~-15 ~-3 ~
 execute if score $time rab_elevator matches 298 as @e[x=15922,y=62,z=-2,dx=5,dz=4,dy=5,type=!area_effect_cloud,tag=rab_on_ele] at @s run tp @s ~-15 ~5 ~
-execute if score $time rab_elevator matches 298 if entity @e[tag=rab_elevator,tag=rab_down] run effect give @e[tag=rab_on_ele] slow_falling 1000 255 true
+
 
 
 ##purpose is to add tag if they get on before the door opens.

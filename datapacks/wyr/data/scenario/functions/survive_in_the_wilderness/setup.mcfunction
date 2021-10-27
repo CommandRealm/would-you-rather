@@ -31,7 +31,7 @@ summon item 1002 66 -13 {Item:{id:"minecraft:carrot",Count:3b,tag:{display:{Name
 summon item 1033 68 -13 {Item:{id:"minecraft:iron_sword",Count:1b,tag:{HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_speed",Amount:1024,UUID:[I; 1, 1, 1, 1]},{AttributeName:"generic.attack_damage",Amount:6,UUID:[I; 2, 2, 2, 2]}],display:{Name:"{\"text\":\"Iron Sword\",\"color\":\"gray\",\"italic\":false}"}}},PickupDelay:100000,Age:-1000000,Tags:["sitw_die","pickup_on_start"]}
 summon item 961 68 -3 {Item:{id:"minecraft:leather_chestplate",Count:1b,tag:{HideFlags:63,Damage:70,display:{Name:"{\"text\":\"Tattered Shirt\",\"color\":\"gray\",\"italic\":false}"}}},PickupDelay:100000,Age:-1000000,Tags:["sitw_die","pickup_on_start"]}
 
-setblock 1005 65 -13 minecraft:cauldron[level=1]
+setblock 1005 65 -13 minecraft:water_cauldron[level=1]
 execute as @a[tag=playing,team=sitw,gamemode=adventure] store result score @s check_players if entity @a[tag=playing,team=sitw,gamemode=adventure]
 summon bee 981 71 -30 {DeathLootTable:"minecraft:sitw/bee",Tags:["sitw_die","sitw_ai_on_start"],NoAI:1,PersistenceRequired:1b,Anger:1b}
 execute if entity @a[tag=playing,team=sitw,scores={check_players=5..}] run summon bee 981 71 -30 {DeathLootTable:"minecraft:sitw/bee",Tags:["sitw_die","sitw_ai_on_start"],NoAI:1,PersistenceRequired:1b,Anger:1b}

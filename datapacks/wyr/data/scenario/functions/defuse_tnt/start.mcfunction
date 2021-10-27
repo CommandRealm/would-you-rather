@@ -14,3 +14,6 @@ summon area_effect_cloud 25990 79.165 10 {Duration:36000000,Invulnerable:1b,Tags
 summon area_effect_cloud 25991.15 80.165 10 {Duration:3600000,Invulnerable:1b,Tags:["die","dab_text"],CustomNameVisible:1b,CustomName:'{"text":"Color is in the perfect position.","color":"green"}'}
 summon area_effect_cloud 25990.75 77.165 10 {Duration:3600000,Invulnerable:1b,Tags:["die","dab_text"],CustomNameVisible:1b,CustomName:'{"text":"Color is in the perfect position,","color":"#1fe7d2"}'}
 summon area_effect_cloud 25990.75 76.915 10 {Duration:3600000,Invulnerable:1b,Tags:["die","dab_text"],CustomNameVisible:1b,CustomName:'{"text":"but is also used elsewhere in the code.","color":"#1fe7d2"}'}
+
+
+advancement grant @a[team=dab,tag=playing,gamemode=adventure] only advancements:scenario_tnt

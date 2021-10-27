@@ -15,9 +15,10 @@ execute if score $time showstart matches 2 run tellraw @a[tag=playing] [{"text":
 execute if score $time showstart matches 2 as @a[tag=playing] at @s run playsound minecraft:entity.villager.yes master @s ~ ~ ~ 1 1.2
 execute if score $time showstart matches 10 run function show:setup_podium
 execute if score $time showstart matches 10 run function show:reset_tv
-execute if score $time showstart matches 100 run function show:podium
+execute if score $time showstart matches 100..109 run function show:podium
 execute if score $time showstart matches 100 run clone -949 55 16 -921 65 17 -949 86 12
 execute if score $time showstart matches 110 if score $number fast_mode matches 1 run scoreboard players set $time showstart 730
+execute if score $time showstart matches 100 run effect give @a[tag=playing] slowness 1 4 true
 
 execute if score $time showstart matches 140 run tellraw @a [{"text":"<","color":"dark_gray"},{"text":"Announcer","color":"gray"},{"text":">","color":"dark_gray"},{"text":" Ladies and gentlemen, give it up for your host . . . Gene!","color":"aqua"}]
 execute if score $time showstart matches 140 as @a[tag=playing] at @s run playsound minecraft:entity.villager.yes master @s ~ ~ ~ 1 0.7
@@ -57,7 +58,7 @@ execute if score $time showstart matches 741 run scoreboard players set $number 
 execute if score $time showstart matches 750 run function show:reset_tv
 execute if score $time showstart matches 750 if score $criteria round matches 1.. run tellraw @a [{"text":"<","color":"blue"},{"text":"Gene","color":"aqua"},{"text":"> ","color":"blue"},{"text":"Would you rather,","color":"aqua"}]
 execute if score $time showstart matches 750 if score $criteria round matches 1.. as @a[tag=playing] at @s run playsound minecraft:entity.villager.yes master @s ~ ~ ~ 1 0.9
-execute if score $time showstart matches 750 unless entity @e[type=area_effect_cloud,tag=!wyrselected,tag=scenario] run tag @e[tag=wyrselected,type=area_effect_cloud] remove wyrselected	
+execute if score $time showstart matches 750 unless entity @e[type=area_effect_cloud,tag=!wyrselected,tag=scenario] run tag @e[tag=wyrselected,type=area_effect_cloud] remove wyrselected
 execute if score $time showstart matches 750 run tag @e[tag=wyrselect,type=area_effect_cloud] remove wyrselect
 execute if score $time showstart matches 750 run tag @e[tag=scenario,type=area_effect_cloud] remove wyr_choice
 execute if score $time showstart matches 750 run tag @a remove pick_blue
@@ -197,3 +198,9 @@ execute if score $time showstart matches 8080 if entity @e[type=area_effect_clou
 
 effect give @a[x=-1000,y=67,z=0,distance=..1000,tag=playing] fire_resistance 2 255 true
 effect give @a[x=-1000,y=67,z=0,distance=..1000,tag=playing] instant_health 2 9 true
+
+
+# advancements
+advancement grant @a[advancements={advancements:wins_all=false,advancements:wins_award=true,advancements:wins_five=true,advancements:wins_game=true,advancements:wins_one=true,advancements:wins_ten=true}] only advancements:wins_all
+advancement grant @a[advancements={advancements:game_all=false,advancements:game_fail=true,advancements:game_jump=true,advancements:game_only=true,advancements:game_play=true,advancements:game_sneak=true}] only advancements:game_all
+advancement grant @a[advancements={advancements:scenario_all=false,advancements:scenario_anvil=true,advancements:scenario_button=true,advancements:scenario_dodgeball=true,advancements:scenario_fan=true,advancements:scenario_ghast=true,advancements:scenario_math=true,advancements:scenario_miner=true,advancements:scenario_potion=true,advancements:scenario_rescue=true,advancements:scenario_says=true,advancements:scenario_sky=true,advancements:scenario_skydive=true,advancements:scenario_storm=true,advancements:scenario_theives=true,advancements:scenario_tnt=true,advancements:scenario_wilderness=true}] only advancements:scenario_all

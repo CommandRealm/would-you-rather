@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:pink_stained_glass"
+        },
+        "title": {
+            "text": "Delicious!",
+            "color": "gray",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": "false",
+        "description": {
+            "text": "Obtain a gumball in the lobby.",
+            "color": "#78a19a",
+            "bold": false
+        }
+    },
+    "parent": "advancements:lobby_tutorial",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

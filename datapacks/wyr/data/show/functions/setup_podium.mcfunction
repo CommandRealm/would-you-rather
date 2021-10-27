@@ -3,31 +3,10 @@
 
 kill @e[tag=podium_clone]
 
-scoreboard players reset @a id
-tag @a remove generateid
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @r[tag=playing,tag=!generateid] add generateid
-scoreboard players add @a[tag=generateid] id 1
-tag @a remove generateid
+scoreboard objectives remove id
+scoreboard objectives add id dummy
+execute as @a[tag=playing] at @s run function show:generate_id
+
 
 summon area_effect_cloud -963 65 -5 {Duration:10000000,Invulnerable:1,Tags:["podium_clone"]}
 
@@ -74,8 +53,8 @@ execute as @a[scores={id=6}] at @s run scoreboard players operation @e[tag=podiu
 execute as @a[scores={id=5}] at @s run scoreboard players operation @e[tag=podium_clone,scores={podium_id=5},sort=random,limit=1] podium_clone = @s podium
 execute as @a[scores={id=4}] at @s run scoreboard players operation @e[tag=podium_clone,scores={podium_id=4},sort=random,limit=1] podium_clone = @s podium
 execute as @a[scores={id=3}] at @s run scoreboard players operation @e[tag=podium_clone,scores={podium_id=3},sort=random,limit=1] podium_clone = @s podium
-execute as @a[scores={id=2}] at @s run scoreboard players operation @e[tag=podium_clone,scores={podium_id=-2},sort=random,limit=1] podium_clone = @s podium
-execute as @a[scores={id=1}] at @s run scoreboard players operation @e[tag=podium_clone,scores={podium_id=-1},sort=random,limit=1] podium_clone = @s podium
+execute as @a[scores={id=2}] at @s run scoreboard players operation @e[tag=podium_clone,scores={podium_id=2},sort=random,limit=1] podium_clone = @s podium
+execute as @a[scores={id=1}] at @s run scoreboard players operation @e[tag=podium_clone,scores={podium_id=1},sort=random,limit=1] podium_clone = @s podium
 
 scoreboard players set @e[tag=podium_clone,scores={podium_id=-1}] podium_clone -1
 
@@ -113,29 +92,68 @@ execute as @e[tag=podium_clone,scores={podium_clone=12}] at @s run clone -119 21
 execute as @e[tag=podium_clone,scores={podium_clone=13}] at @s run clone -125 21 -5 -121 38 -1 ~ ~ ~
 execute as @e[tag=podium_clone,scores={podium_clone=14}] at @s run clone -131 21 -5 -127 38 -1 ~ ~ ~
 
+# new commons
+execute as @e[tag=podium_clone,scores={podium_clone=15}] at @s run clone -53 21 2 -49 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=16}] at @s run clone -47 21 2 -43 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=17}] at @s run clone -41 21 2 -37 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=18}] at @s run clone -35 21 2 -31 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=19}] at @s run clone -29 21 2 -25 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=20}] at @s run clone -23 21 2 -19 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=21}] at @s run clone -17 21 2 -13 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=22}] at @s run clone -11 21 2 -7 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=23}] at @s run clone -5 21 2 -1 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=24}] at @s run clone 1 21 2 5 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=25}] at @s run clone 7 21 2 11 38 6 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=26}] at @s run clone 13 21 2 17 38 6 ~ ~ ~
+
+
+
+
 
 
 #epic:
-execute as @e[tag=podium_clone,scores={podium_clone=15}] at @s run clone -55 21 -5 -59 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=27}] at @s run clone -55 21 -5 -59 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=16}] at @s run clone -61 21 -5 -65 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=28}] at @s run clone -61 21 -5 -65 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=17}] at @s run clone -67 21 -5 -71 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=29}] at @s run clone -67 21 -5 -71 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=18}] at @s run clone -73 21 -5 -77 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=30}] at @s run clone -73 21 -5 -77 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=19}] at @s run clone -79 21 -5 -83 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=31}] at @s run clone -79 21 -5 -83 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=20}] at @s run clone -137 21 -5 -133 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=32}] at @s run clone -137 21 -5 -133 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=21}] at @s run clone -143 21 -5 -139 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=33}] at @s run clone -143 21 -5 -139 38 -1 ~ ~ ~
+
+# new epics
+execute as @e[tag=podium_clone,scores={podium_clone=34}] at @s run clone -53 21 8 -49 38 12 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=35}] at @s run clone -47 21 8 -43 38 12 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=36}] at @s run clone -41 21 8 -37 38 12 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=37}] at @s run clone -35 21 8 -31 38 12 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=38}] at @s run clone -29 21 8 -25 38 12 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=39}] at @s run clone -23 21 8 -19 38 12 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=40}] at @s run clone -17 21 8 -13 38 12 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=41}] at @s run clone -11 21 8 -7 38 12 ~ ~ ~
+
+
 
 #legendary
 
-execute as @e[tag=podium_clone,scores={podium_clone=22}] at @s run clone -85 21 -5 -89 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=42}] at @s run clone -85 21 -5 -89 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=23}] at @s run clone -91 21 -5 -95 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=43}] at @s run clone -91 21 -5 -95 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=24}] at @s run clone -149 21 -5 -145 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=44}] at @s run clone -149 21 -5 -145 38 -1 ~ ~ ~
 
-execute as @e[tag=podium_clone,scores={podium_clone=25}] at @s run clone -96 21 -5 -101 38 -1 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=45}] at @s run clone -96 21 -5 -101 38 -1 ~ ~ ~
+
+# new legendaries
+execute as @e[tag=podium_clone,scores={podium_clone=46}] at @s run clone -53 21 14 -49 38 18 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=47}] at @s run clone -47 21 14 -43 38 18 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=48}] at @s run clone -41 21 14 -37 38 18 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=49}] at @s run clone -35 21 14 -31 38 18 ~ ~ ~
+execute as @e[tag=podium_clone,scores={podium_clone=50}] at @s run clone -29 21 14 -25 38 18 ~ ~ ~
+
+# advancement unlock
+execute as @e[tag=podium_clone,scores={podium_clone=51}] at @s run clone -23 21 14 -19 38 18 ~ ~ ~

@@ -23,3 +23,11 @@ scoreboard players set $ft active_scenario 0
 scoreboard players set $ol active_scenario 0
 scoreboard players set $eadl active_scenario 0
 scoreboard players set $wat active_scenario 0
+
+
+# 1.17.1 Update
+scoreboard players set $labyrinth active_scenario 0
+scoreboard players set $npab active_scenario 0
+scoreboard players set $skydive active_scenario 0
+scoreboard players set $rani active_scenario 0
+scoreboard players set $giant active_scenario 0

@@ -1,0 +1,15 @@
+{
+  "minecraft:invisible/inventory_change": {
+    "criteria": {
+      "criteria": "2021-09-01 21:37:19 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/honey_block": {
+    "criteria": {
+      "has_honey_bottle": "2021-09-02 00:23:23 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 2730
+}

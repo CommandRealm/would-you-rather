@@ -26,6 +26,10 @@ scoreboard players reset @s awd_d_walk
 scoreboard players reset @s awd_d_s_dist
 scoreboard players reset @s awd_d_companions
 
+scoreboard players reset @s awd_d_open_chest
+scoreboard players reset @s awd_d_open_barr
+scoreboard players reset @s awd_d_open_shulk
+
 
 execute if score $number tutorial matches 1 run tag @s add tutorial
 

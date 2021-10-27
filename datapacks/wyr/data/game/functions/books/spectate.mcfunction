@@ -4,6 +4,8 @@ team join spectator
 effect clear @s
 clear @s
 
+scoreboard players reset @s scenario_sel
+
 scoreboard players reset @s rc
 
 

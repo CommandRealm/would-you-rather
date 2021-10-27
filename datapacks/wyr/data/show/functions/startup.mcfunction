@@ -44,6 +44,8 @@ scoreboard objectives setdisplay sidebar.team.blue
 scoreboard objectives setdisplay sidebar.team.yellow
 scoreboard players reset @a[tag=playing] adjust_points
 
+clone -937 81 -93 -933 82 -93 -937 85 -93
+
 function fans:start_generation
 
 function show:open_gates
@@ -66,3 +68,5 @@ tag @a remove mute_own_fan
 
 execute store result score $scenario number if entity @e[tag=scenario,type=area_effect_cloud]
 execute if score $scenario number matches ..1 run function show:turn_on_scenarios
+
+data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 0b

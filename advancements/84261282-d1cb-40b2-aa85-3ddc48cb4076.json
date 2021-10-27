@@ -1,9 +1,15 @@
 {
   "minecraft:invisible/inventory_change": {
     "criteria": {
-      "criteria": "2020-12-11 16:28:46 -0800"
+      "criteria": "2021-10-25 20:23:20 -0700"
     },
     "done": true
   },
-  "DataVersion": 2584
+  "advancements:root": {
+    "criteria": {
+      "requirement": "2021-10-25 20:23:20 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 2730
 }

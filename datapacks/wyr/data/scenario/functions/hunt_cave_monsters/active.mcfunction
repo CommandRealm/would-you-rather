@@ -19,7 +19,7 @@ execute as @a[team=hcm,tag=playing,gamemode=adventure,scores={hcm_kill_bat=1..}]
 
 scoreboard players remove @a[tag=playing,team=hcm,gamemode=adventure,scores={hcm_shoot=1..}] hcm_arrow 1
 execute as @a[tag=playing,team=hcm,gamemode=adventure,scores={hcm_arrow=0}] if entity @s[nbt={Inventory:[{id:"minecraft:arrow"}]}] run give @s arrow{display:{Name:'[{"text":"Arrow","color":"gray","italic":false}]'}} 1
-execute as @a[tag=playing,team=hcm,gamemode=adventure,scores={hcm_arrow=0}] unless entity @s[nbt={Inventory:[{id:"minecraft:arrow"}]}] run replaceitem entity @s hotbar.8 arrow{display:{Name:'[{"text":"Arrow","color":"gray","italic":false}]'}} 1
+execute as @a[tag=playing,team=hcm,gamemode=adventure,scores={hcm_arrow=0}] unless entity @s[nbt={Inventory:[{id:"minecraft:arrow"}]}] run item replace entity @s hotbar.8 with arrow{display:{Name:'[{"text":"Arrow","color":"gray","italic":false}]'}} 1
 execute as @a[tag=playing,team=hcm,gamemode=adventure,scores={hcm_arrow=0}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 2 1
 scoreboard players reset @a[tag=playing,team=hcm,gamemode=adventure,scores={hcm_arrow=0}] hcm_shoot
 scoreboard players set @a[tag=playing,team=hcm,gamemode=adventure,scores={hcm_arrow=0}] hcm_arrow 50

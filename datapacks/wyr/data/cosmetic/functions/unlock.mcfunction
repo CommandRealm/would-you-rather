@@ -1,5 +1,5 @@
 scoreboard players set $mod random 9
 function random:random
-execute unless entity @s[tag=unlock_p_25,tag=unlock_p_24,tag=unlock_p_23,tag=unlock_p_22,tag=unlock_b_15,tag=unlock_b_14,tag=unlock_f_15,tag=unlock_f_14] if score $rand random matches 0..1 run function cosmetic:unlock_legendary
-execute unless entity @s[tag=unlocked_legendary] unless entity @s[tag=unlock_p_15,tag=unlock_p_16,tag=unlock_p_17,tag=unlock_p_18,tag=unlock_p_19,tag=unlock_p_20,tag=unlock_p_21,tag=unlock_b_10,tag=unlock_b_11,tag=unlock_b_12,tag=unlock_b_13,tag=unlock_f_10,tag=unlock_f_11,tag=unlock_f_12,tag=unlock_f_13] if score $rand random matches 2.. run function cosmetic:unlock_epic
+execute unless entity @s[tag=unlock_p_42,tag=unlock_p_43,tag=unlock_p_44,tag=unlock_p_45,tag=unlock_p_46,tag=unlock_p_47,tag=unlock_p_48,tag=unlock_p_49,tag=unlock_p_50,tag=unlock_b_15,tag=unlock_b_14,tag=unlock_f_15,tag=unlock_f_14] if score $rand random matches 0..1 run function cosmetic:unlock_legendary
+execute unless entity @s[tag=unlocked_legendary] unless entity @s[tag=unlock_p_27,tag=unlock_p_28,tag=unlock_p_29,tag=unlock_p_30,tag=unlock_p_31,tag=unlock_p_32,tag=unlock_p_33,tag=unlock_p_34,tag=unlock_p_35,tag=unlock_p_36,tag=unlock_p_37,tag=unlock_p_38,tag=unlock_p_39,tag=unlock_p_40,tag=unlock_p_41,tag=unlock_b_10,tag=unlock_b_11,tag=unlock_b_12,tag=unlock_b_13,tag=unlock_f_10,tag=unlock_f_11,tag=unlock_f_12,tag=unlock_f_13] if score $rand random matches 2.. run function cosmetic:unlock_epic
 tag @s remove unlocked_legendary

@@ -10,4 +10,4 @@ loot replace entity @s enderchest.15 loot minecraft:stats/fails
 loot replace entity @s enderchest.22 loot minecraft:stats/awards
 
 
-replaceitem entity @s enderchest.18 barrier{HideFlags:63,clickable:1,display:{Name:'[{"text":"Back","color":"#ff0000","italic":false,"bold":true}]'}}
+item replace entity @s enderchest.18 with barrier{HideFlags:63,clickable:1,display:{Name:'[{"text":"Back","color":"#ff0000","italic":false,"bold":true}]'}}

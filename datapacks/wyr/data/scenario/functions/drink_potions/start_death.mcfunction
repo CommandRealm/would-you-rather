@@ -16,7 +16,7 @@ execute if score $rand random matches 5 run summon minecraft:vindicator 29990 67
 execute if score $rand random matches 5 run summon minecraft:vindicator 29987 67 -3 {IsJohnny:1b,HandItems:[{id:"minecraft:netherite_axe",Count:1b}],Tags:["ddp_die"]}
 execute if score $rand random matches 5 run summon minecraft:vindicator 29987 67 3 {IsJohnny:1b,HandItems:[{id:"minecraft:netherite_axe",Count:1b}],Tags:["ddp_die"]}
 execute if score $rand random matches 6 run particle minecraft:falling_dust black_concrete ~ ~1 ~ 1 1 1 0.25 1000
-execute if score $rand random matches 7 run replaceitem entity @s armor.head skeleton_skull{display:{Name:'[{"text":"Skull","color":"gray"}]'},Enchantments:[{id:"minecraft:binding_curse",lvl:1}]}
+execute if score $rand random matches 7 run item replace entity @s armor.head with skeleton_skull{display:{Name:'[{"text":"Skull","color":"gray"}]'},Enchantments:[{id:"minecraft:binding_curse",lvl:1}]}
 
 
 

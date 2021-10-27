@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:polished_blackstone_button"
+        },
+        "title": {
+            "text": "Don't do it!",
+            "color": "aqua",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": "false",
+        "description": {
+            "text": "Play \"Not push a button.\"",
+            "color": "#78a19a",
+            "bold": false
+        }
+    },
+    "parent": "advancements:scenario_theives",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

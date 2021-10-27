@@ -38,3 +38,6 @@ execute store result bossbar become_a_miner:diamonds value run scoreboard player
 effect give @a[team=bam] minecraft:levitation 10000 255 true
 effect give @a[team=bam] minecraft:invisibility 25 255 true
 bossbar set become_a_miner:diamonds visible true
+
+
+advancement grant @a[team=bam,tag=playing,gamemode=adventure] only advancements:scenario_miner

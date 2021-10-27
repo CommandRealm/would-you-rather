@@ -7,6 +7,6 @@ scoreboard objectives add pld2 dummy
 scoreboard players set $direction pld 1
 data merge entity @e[tag=pl,limit=1] {Pose:{RightArm:[-120.0f,40.0f,55.0f],LeftArm:[-70.0f,-50.0f,0.0f]}}
 ##R -120, 40, x L x, -50, 0
-replaceitem entity @e[tag=pl] armor.feet leather_boots{display:{color:7561801}}
-replaceitem entity @e[tag=pl] armor.chest leather_chestplate{display:{color:65527}}
-replaceitem entity @e[tag=pl] armor.legs netherite_leggings
+item replace entity @e[tag=pl] armor.feet with leather_boots{display:{color:7561801}}
+item replace entity @e[tag=pl] armor.chest with leather_chestplate{display:{color:65527}}
+item replace entity @e[tag=pl] armor.legs with netherite_leggings

@@ -16,7 +16,7 @@ effect give @a[team=ol,gamemode=adventure] blindness 10000 255 true
 effect give @a[team=ol,gamemode=adventure] slowness 10000 255 true
 effect give @a[team=ol,gamemode=adventure] jump_boost 10000 200 true
 effect give @a[team=ol,gamemode=adventure] levitation 1 255 true
-effect give
+
 
 
 ##

@@ -10,6 +10,6 @@ scoreboard players set @e[scores={HArmD=0},tag=hippeh] HArmD 1
 scoreboard players set @e[scores={HArmD2=0},tag=hippeh] HArmD2 1
 scoreboard players set @e[tag=hippeh] showdetails -100
 data merge entity @e[tag=hippeh,limit=1] {Pose:{RightArm:[-30.0f,-150.0f,55.0f],LeftArm:[-20.0f,-120.0f,-40.0f]}}
-replaceitem entity @e[tag=hippeh] armor.feet leather_boots{display:{color:7894380}}
-replaceitem entity @e[tag=hippeh] armor.chest leather_chestplate{display:{color:12522273}}
-replaceitem entity @e[tag=hippeh] armor.legs diamond_leggings
+item replace entity @e[tag=hippeh] armor.feet with leather_boots{display:{color:7894380}}
+item replace entity @e[tag=hippeh] armor.chest with leather_chestplate{display:{color:12522273}}
+item replace entity @e[tag=hippeh] armor.legs with diamond_leggings

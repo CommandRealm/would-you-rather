@@ -24,6 +24,13 @@ function options:scenario/toggle_ft
 function options:scenario/toggle_ol
 function options:scenario/toggle_eadl
 function options:scenario/toggle_wat
+# 1.17.1 Update
+function options:scenario/toggle_labyrinth
+function options:scenario/toggle_npab
+function options:scenario/toggle_skydive
+function options:scenario/toggle_rani
+function options:scenario/toggle_giant
+
 tag @s remove no_toggle_scenario
 function options:scenario/display_status
 playsound minecraft:block.note_block.bit master @a -930 62 -132 1 0

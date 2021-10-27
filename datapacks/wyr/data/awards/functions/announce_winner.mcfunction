@@ -7,4 +7,5 @@ execute as @a[tag=playing] at @s run playsound minecraft:entity.villager.yes mas
 scoreboard players set $clap clap 50
 tag @e[tag=choose_award,type=area_effect_cloud] add chosen_award
 tag @e[tag=choose_award,type=area_effect_cloud] remove choose_award
+advancement grant @a[scores={fake_awards=0},tag=playing,tag=award_winner] only advancements:wins_award
 execute at @a[scores={fake_awards=0},tag=playing,tag=award_winner] run summon firework_rocket ~ ~3 ~ {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:0,Trail:1,Colors:[I;2651799],FadeColors:[I;3887386,14602026]}]}}}}

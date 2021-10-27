@@ -16,7 +16,6 @@ summon bat 15005 71 0 {Tags:["arb_die","arb_bat"],Invulnerable:1b,Silent:1b}
 summon bat 14995 71 0 {Tags:["arb_die","arb_bat"],Invulnerable:1b,Silent:1b}
 
 ##second of same spawns
-summon bat 15000 71 0 {Tags:["arb_die","arb_bat"],Invulnerable:1b,Silent:1b}
 
 summon bat 14991 71 9 {Tags:["arb_die","arb_bat"],Invulnerable:1b,Silent:1b}
 summon bat 14991 71 -9 {Tags:["arb_die","arb_bat"],Invulnerable:1b,Silent:1b}
@@ -24,6 +23,7 @@ summon bat 14991 71 -9 {Tags:["arb_die","arb_bat"],Invulnerable:1b,Silent:1b}
 summon bat 15009 71 -9 {Tags:["arb_die","arb_bat"],Invulnerable:1b,Silent:1b}
 summon bat 15009 71 9 {Tags:["arb_die","arb_bat"],Invulnerable:1b,Silent:1b}
 
-##
+# late tp
+tp @a[tag=playing,team=arb] 15000 61 7
 
 effect give @a[tag=playing,team=arb,gamemode=adventure] invisibility 10000 255 true

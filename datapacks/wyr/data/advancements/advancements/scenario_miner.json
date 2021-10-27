@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_pickaxe"
+        },
+        "title": {
+            "text": "This scenario is mine!",
+            "color": "aqua",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": "false",
+        "description": {
+            "text": "Play \"Become a miner.\"",
+            "color": "#78a19a",
+            "bold": false
+        }
+    },
+    "parent": "advancements:scenario_fan",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

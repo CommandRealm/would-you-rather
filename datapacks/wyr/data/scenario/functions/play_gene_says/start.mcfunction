@@ -7,3 +7,5 @@ tag @a remove pgs_failed
 tag @a remove pgs_succeeded
 scoreboard players set $round pgs_timer 0
 scoreboard players set $sound pgs_timer 0
+
+advancement grant @a[team=pgs,tag=playing,gamemode=adventure] only advancements:scenario_says

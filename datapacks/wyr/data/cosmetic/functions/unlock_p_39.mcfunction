@@ -1,0 +1,2 @@
+tag @s add unlock_p_39
+tellraw @s [{"text":"- - - - - - - - - - - - - - - - - - - - - - - - - - -","color":"gray","bold":true},{"text":"\nYou have unlocked an EPIC cosmetic!","color":"dark_purple","bold":false},{"text":"\nPodium ","color":"dark_aqua","bold":true},{"text":"- ","color":"gray","bold":true},{"text":"Disco","color":"#0eedcf","bold":true},{"text":"\nYou can select it inside the ender chest!","color":"gray","bold":false}]

@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:anvil"
+        },
+        "title": {
+            "text": "Safety violation!",
+            "color": "aqua",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": "false",
+        "description": {
+            "text": "Play \"Work in an anvil factory.\"",
+            "color": "#78a19a",
+            "bold": false
+        }
+    },
+    "parent": "advancements:scenario_ghast",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

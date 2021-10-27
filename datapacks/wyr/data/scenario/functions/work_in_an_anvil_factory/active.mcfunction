@@ -22,15 +22,19 @@ fill 18008 65 -8 17992 65 8 air
 execute as @e[type=falling_block] at @s if block ~ ~-0.5 ~ polished_andesite_slab run fill ~ ~-0.5 ~ ~ ~-0.5 ~ andesite_slab replace polished_andesite_slab
 execute as @e[type=falling_block] at @s if block ~ ~-0.5 ~ stone_slab run fill ~ ~-0.5 ~ ~ ~-0.5 ~ cobblestone_slab replace stone_slab
 
-execute as @a[team=wiaaf,x=18000,y=66,z=0,distance=..100] at @s at @e[type=item,distance=..10,nbt={Item:{id:"minecraft:anvil"}}] run playsound minecraft:block.stone.break master @a ~ ~ ~ 1 0.55
-execute as @a[team=wiaaf,x=18000,y=66,z=0,distance=..100] at @s at @e[type=item,distance=..10,nbt={Item:{id:"minecraft:chipped_anvil"}}] run playsound minecraft:block.stone.break master @a ~ ~ ~ 1 0.45
-execute as @a[team=wiaaf,x=18000,y=66,z=0,distance=..100] at @s at @e[type=item,distance=..10,nbt={Item:{id:"minecraft:damaged_anvil"}}] run playsound minecraft:block.stone.break master @a ~ ~ ~ 1 0.25
 
-execute as @a[team=wiaaf,x=18000,y=66,z=0,distance=..100] at @s run kill @e[type=item,distance=..10,nbt={Item:{id:"minecraft:anvil"}}]
-execute as @a[team=wiaaf,x=18000,y=66,z=0,distance=..100] at @s run kill @e[type=item,distance=..10,nbt={Item:{id:"minecraft:chipped_anvil"}}]
-execute as @a[team=wiaaf,x=18000,y=66,z=0,distance=..100] at @s run kill @e[type=item,distance=..10,nbt={Item:{id:"minecraft:damaged_anvil"}}]
+
+execute as @e[type=falling_block,x=18000,y=66,z=0,distance=..100] at @s if block ~ ~0.0 ~ polished_andesite_slab run function scenario:work_in_an_anvil_factory/destroy_anvil
+execute as @e[type=falling_block,x=18000,y=66,z=0,distance=..100] at @s if block ~ ~0.0 ~ andesite_slab run function scenario:work_in_an_anvil_factory/destroy_anvil
+execute as @e[type=falling_block,x=18000,y=66,z=0,distance=..100] at @s if block ~ ~0.0 ~ stone_slab run function scenario:work_in_an_anvil_factory/destroy_anvil
+execute as @e[type=falling_block,x=18000,y=66,z=0,distance=..100] at @s if block ~ ~0.0 ~ cobblestone_slab run function scenario:work_in_an_anvil_factory/destroy_anvil
+
+
+execute as @e[type=falling_block,x=18000,y=66,z=0,distance=..100] at @s positioned ~ ~-0.75 ~ run kill @a[tag=playing,team=wiaaf,gamemode=adventure,distance=0..0.5]
 clear @a[team=wiaaf] #minecraft:anvil
 stopsound @a[team=wiaaf] * minecraft:block.anvil.land
+stopsound @a[team=wiaaf] * minecraft:block.anvil.fall
+stopsound @a[team=wiaaf] * minecraft:block.anvil.destroy
 
 
 

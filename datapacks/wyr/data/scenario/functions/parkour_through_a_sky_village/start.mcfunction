@@ -8,3 +8,5 @@ execute if entity @e[tag=chosen,type=area_effect_cloud,name="Parkour through a s
 scoreboard players add @a[tag=playing,team=ptasv,gamemode=adventure] ptasv_duration 0
 
 effect give @a[tag=playing,team=ptasv,gamemode=adventure] invisibility 100000 255 true
+
+advancement grant @a[team=ptasv,tag=playing,gamemode=adventure] only advancements:scenario_sky

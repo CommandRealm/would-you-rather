@@ -7,7 +7,7 @@ execute if score $time poster_time matches ..0 run function lobby:posters/change
 
 kill @e[type=item,nbt={Item:{tag:{lobby_die:1}}}]
 kill @e[type=item,nbt={Age:0s,Item:{tag:{lobby_die:0}}}]
-replaceitem entity @a[tag=!playing,x=-1000,y=66,z=0,distance=..400,nbt={Inventory:[{Slot:103b,tag:{lobby_die:0}}]}] armor.head air
+item replace entity @a[tag=!playing,x=-1000,y=66,z=0,distance=..400,nbt={Inventory:[{Slot:103b,tag:{lobby_die:0}}]}] armor.head with air
 
 execute as @a[tag=!playing,nbt={Inventory:[{tag:{vending_machine:1}}]}] at @s unless entity @s[scores={hunger=0}] run scoreboard players operation @s hunger = @s d_hunger
 scoreboard players add @a hunger 0
@@ -63,3 +63,19 @@ execute if entity @a[tag=!playing,x=-928,y=62,z=-132,distance=..8] run function 
 
 
 function credits:main
+
+execute as @a[x=-1000,y=66,z=0,distance=..1000,scores={drop_ready_book=1..}] at @s run function lobby:drop_ready_book
+
+
+# advancements
+advancement grant @a[x=-1000,y=66,z=0,distance=..1000,nbt={Inventory:[{tag:{Gumball:1b}}]}] only advancements:lobby_gumball
+advancement grant @a[x=-1000,y=66,z=0,distance=..1000,nbt={Inventory:[{tag:{Plushie:1b}}]}] only advancements:lobby_plushie
+advancement grant @a[x=-941,y=74,z=-82,dx=11,dy=4,dz=11] only advancements:lobby_tutorial
+advancement grant @a[x=-941,y=95,z=-152,dx=12,dy=5,dz=1.5] only advancements:lobby_cr
+
+
+advancement grant @a[advancements={advancements:lobby_all=false,advancements:lobby_tutorial=true,advancements:lobby_gumball=true,advancements:lobby_plushie=true,advancements:lobby_cosmetic=true,advancements:lobby_socials=true,advancements:lobby_cr=true,}] only advancements:lobby_all
+
+advancement grant @a[advancements={advancements:lobby_all=true,advancements:game_all=true,advancements:wins_all=true,advancements:scenario_all=true,minecraft:completionist/completionist=false}] only minecraft:completionist/completionist
+
+execute if entity @a[advancements={minecraft:completionist/completionist=true},tag=!playing] run function completionist:completionist_helix

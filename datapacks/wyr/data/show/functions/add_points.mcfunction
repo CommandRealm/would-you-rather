@@ -11,7 +11,7 @@ execute if score $time showstart matches 3000 as @a[tag=playing] at @s run funct
 
 
 execute if score $time showstart matches 3010 run function show:setup_podium
-execute if score $time showstart matches 3020 run function show:podium
+execute if score $time showstart matches 3020..3029 run function show:podium
 execute if score $time showstart matches 3020 if entity @a[tag=playing,scores={adjust_points=1..}] run scoreboard players set $clap clap 60
 execute if score $time showstart matches 3030 as @r[tag=playing,scores={fans=1..},tag=!mute_own_fan] at @s run function fans:speak
 execute if score $time showstart matches 3040 unless score $criteria round matches 0 unless entity @a[tag=success,tag=playing] unless entity @a[tag=playing,scores={adjust_points=1..}] run scoreboard players set $time showstart 740

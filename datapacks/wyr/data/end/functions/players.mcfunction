@@ -3,10 +3,9 @@ tag @a remove just_played
 tag @a[tag=playing] add just_played
 execute as @a[tag=potential_cosmetic,tag=playing] at @s run function cosmetic:potential_unlock
 tag @a remove potential_cosmetic
-scoreboard players set @a ready 0
+scoreboard players set @a ready 1
 tag @a[tag=playing_soon] add playing
 tag @a[tag=playing_soon] remove playing_soon
-execute if score $number auto_ready matches 1 run scoreboard players set @a[tag=playing] ready 1
 tag @a[tag=spectating] add playing
 tag @a remove spectating
 effect clear @a[tag=playing]
@@ -61,3 +60,9 @@ function show:reset_tv
 function show:reset_podiums
 
 kill @e[tag=gene,type=armor_stand]
+
+fill -937 85 -93 -933 86 -93 air
+
+data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomName set value '[{"text":"- ","color":"gray"},{"text":"⸮","color":"blue","bold":true},{"text":" Start ","color":"aqua"},{"text":"?","color":"yellow","bold":true},{"text":" -","color":"gray"}]'
+scoreboard players set $button pregame 2
+data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 1b

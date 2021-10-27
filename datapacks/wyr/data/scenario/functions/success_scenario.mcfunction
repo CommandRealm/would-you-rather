@@ -1,3 +1,6 @@
+# advancement if we were alone
+advancement grant @s[scores={awd_d_companions=1}] only advancements:game_only
+
 execute as @a[gamemode=spectator,distance=..1] at @s run function game:unspectate_player
 effect clear @s
 gamemode spectator @s

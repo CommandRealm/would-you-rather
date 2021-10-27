@@ -86,7 +86,7 @@ bossbar set steal_a_gem:suspicion visible true
 execute as @e[tag=rab_ai_on_start] at @s run data merge entity @s {NoAI:0}
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal a gem",tag=blue_select] run scoreboard objectives setdisplay sidebar.team.blue rab_seconds
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal a gem",tag=yellow_select] run scoreboard objectives setdisplay sidebar.team.yellow rab_seconds
-replaceitem entity @a[team=rab] hotbar.1 wooden_sword{HideFlags:63,rab_melee:1,display:{Name:'{"text":"Sharp Stick","color":"gold","italic":false}'},Unbreakable:1}
+item replace entity @a[team=rab] hotbar.1 with wooden_sword{HideFlags:63,rab_melee:1,display:{Name:'{"text":"Sharp Stick","color":"gold","italic":false}'},Unbreakable:1}
 title @a[team=rab] times 0 20 5
 forceload remove 15950 9 15901 -26
 scoreboard players set $door rab_timer 0 

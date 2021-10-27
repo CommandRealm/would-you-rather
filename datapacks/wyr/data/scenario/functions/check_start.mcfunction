@@ -24,6 +24,14 @@ execute if score $ol active_scenario matches 0 if entity @a[tag=playing,scores={
 execute if score $eadl active_scenario matches 0 if entity @a[tag=playing,scores={game_countdown=0},team=eadl] if entity @e[tag=chosen,type=area_effect_cloud,name="Explore a deserted lab"] run function scenario:explore_a_deserted_lab/start
 execute if score $wat active_scenario matches 0 if entity @a[tag=playing,scores={game_countdown=0},team=wat] if entity @e[tag=chosen,type=area_effect_cloud,name="Walk a tightrope"] run function scenario:walk_a_tightrope/start
 
+# 1.17.1 Update
+execute if score $labyrinth active_scenario matches 0 if entity @a[tag=playing,scores={game_countdown=0},team=labyrinth] if entity @e[tag=chosen,type=area_effect_cloud,name="Loot a labyrinth"] run function scenario:loot_a_labyrinth/start
+execute if score $wat active_scenario matches 0 if entity @a[tag=playing,scores={game_countdown=0},team=npab] if entity @e[tag=chosen,type=area_effect_cloud,name="Not push a button"] run function scenario:not_push_a_button/start
+execute if score $skydive active_scenario matches 0 if entity @a[tag=playing,scores={game_countdown=0},team=skydive] if entity @e[tag=chosen,type=area_effect_cloud,name="Go skydiving"] run function scenario:skydive/start
+execute if score $rani active_scenario matches 0 if entity @a[tag=playing,scores={game_countdown=0},team=rani] if entity @e[tag=chosen,type=area_effect_cloud,name="Repel a nether invasion"] run function scenario:repel_a_nether_invasion/start
+execute if score $giant active_scenario matches 0 if entity @a[tag=playing,scores={game_countdown=0},team=giant] if entity @e[tag=chosen,type=area_effect_cloud,name="Feed a giant"] run function scenario:feed_a_giant/start
+
+
 ##Disabled because of tutorials are most likely messing with the timing of this and killing items in scenarios.
 ##kill @e[type=item,nbt={Item:{tag:{Die:1}}}]
 

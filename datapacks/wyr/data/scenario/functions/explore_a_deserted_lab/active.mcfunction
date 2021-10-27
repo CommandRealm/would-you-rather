@@ -27,9 +27,25 @@ execute as @a[tag=playing,team=eadl,gamemode=adventure,scores={eadl_1=1..}] at @
 execute as @a[tag=playing,team=eadl,gamemode=adventure,scores={eadl_2=1..}] at @s unless entity @s[nbt={Inventory:[{Slot:1b,tag:{eadl:2}}]}] run function scenario:explore_a_deserted_lab/get_slot_2
 execute as @a[tag=playing,team=eadl,gamemode=adventure,scores={eadl_3=1..}] at @s unless entity @s[nbt={Inventory:[{Slot:2b,tag:{eadl:3}}]}] run function scenario:explore_a_deserted_lab/get_slot_3
 
-execute as @a[x=7998,y=55,z=-10,dx=25,dy=20,dz=18,tag=playing,team=eadl,gamemode=adventure,nbt={OnGround:1b},scores={eadl_1=1..,eadl_2=1..,eadl_3=1..}] at @s unless block ~ ~-1 ~ packed_ice unless block ~ ~-1 ~ blue_ice unless block ~ ~-1 ~ air run function scenario:explore_a_deserted_lab/success
+execute as @a[x=7998,y=55,z=-10,dx=25,dy=20,dz=18,tag=playing,team=eadl,gamemode=adventure,nbt={OnGround:1b}] at @s unless block 8010 56 1 air unless block 8011 56 -1 air unless block 8010 56 -3 air unless block ~ ~-1 ~ packed_ice unless block ~ ~-1 ~ blue_ice unless block ~ ~-1 ~ air run function scenario:explore_a_deserted_lab/success
 execute as @a[tag=playing,team=eadl,gamemode=adventure,scores={death=1..}] at @s run function scenario:explore_a_deserted_lab/fail
 execute as @a[tag=playing,team=eadl,gamemode=adventure] at @s if block ~ ~ ~ water run function scenario:explore_a_deserted_lab/in_water
 
 execute if score $eadl active_scenario matches 1 if score $time eadl_timer matches 1.. run schedule function scenario:explore_a_deserted_lab/active 1t
 execute if score $eadl active_scenario matches 1 unless entity @a[team=eadl] run function scenario:explore_a_deserted_lab/end
+
+# clearing items if they're placed
+
+execute if block 8010 56 1 redstone_torch run clear @a[team=eadl] redstone_torch
+execute if block 8010 56 1 redstone_wire run clear @a[team=eadl] redstone
+execute if block 8010 56 1 repeater run clear @a[team=eadl] repeater
+
+execute if block 8011 56 -1 redstone_torch run clear @a[team=eadl] redstone_torch
+execute if block 8011 56 -1 redstone_wire run clear @a[team=eadl] redstone
+execute if block 8011 56 -1 repeater run clear @a[team=eadl] repeater
+
+execute if block 8010 56 -3 redstone_torch run clear @a[team=eadl] redstone_torch
+execute if block 8010 56 -3 redstone_wire run clear @a[team=eadl] redstone
+execute if block 8010 56 -3 repeater run clear @a[team=eadl] repeater
+
+

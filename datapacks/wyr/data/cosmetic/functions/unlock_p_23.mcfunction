@@ -1,2 +1,0 @@
-tag @s add unlock_p_23
-tellraw @s [{"text":"- - - - - - - - - - - - - - - - - - - - - - - - - - -","color":"gray","bold":true},{"text":"\nYou have unlocked a LEGENDARY cosmetic!","color":"gold","bold":false},{"text":"\nPodium ","color":"dark_aqua","bold":true},{"text":"- ","color":"gray","bold":true},{"text":"Futuristic","color":"#0eedcf","bold":true},{"text":"\nYou can select it inside the ender chest!","color":"gray","bold":false}]

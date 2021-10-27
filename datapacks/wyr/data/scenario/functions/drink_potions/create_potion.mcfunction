@@ -1,5 +1,5 @@
 tag @e[type=armor_stand,tag=ddp_spawn,tag=!ddp_spawned,sort=random,limit=1] add ddp_spawning
-replaceitem entity @e[type=armor_stand,tag=ddp_spawning] weapon.mainhand potion{HideFlags:63,ddp_poison:0}
+item replace entity @e[type=armor_stand,tag=ddp_spawning] weapon.mainhand with potion{HideFlags:63,ddp_poison:0}
 scoreboard players set $mod random 16777215
 function random:random
 scoreboard players operation $color ddp_bottles = $rand random

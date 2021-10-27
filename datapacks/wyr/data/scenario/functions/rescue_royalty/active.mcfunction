@@ -18,7 +18,7 @@ execute as @e[type=armor_stand,tag=rap_royalty] at @s run tp @s ~ ~ ~ facing ent
 
 kill @e[type=experience_orb,x=5000,y=66,z=0,distance=..500]
 
-execute as @a[tag=playing,gamemode=adventure,team=rap,scores={rap_kill=1..}] at @s run function scenario:rescue_royalty/kill_mob
+# execute as @a[tag=playing,gamemode=adventure,team=rap,scores={rap_kill=1..}] at @s run function scenario:rescue_royalty/kill_mob
 
 
 execute as @e[type=ghast,x=5000,y=66,z=0,distance=100..,tag=rap_enemy] at @s run function scenario:rescue_royalty/kill_ghast

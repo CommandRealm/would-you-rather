@@ -27,6 +27,8 @@ summon minecraft:armor_stand 29982 66.075 -3 {ShowArms:1,Pose:{Head:[180.0f,0.0f
 function scenario:drink_potions/create_potion
 function scenario:drink_potions/poison_potion
 
+
+advancement grant @a[team=ddp,tag=playing,gamemode=adventure] only advancements:scenario_potion
 gamemode spectator @a[tag=playing,team=ddp]
 scoreboard players set $time ddp_timer 100
 scoreboard players set $ddp active_scenario 1
@@ -48,4 +50,6 @@ scoreboard players reset @a ddp_cool
 function scenario:drink_potions/active
 
 
-setblock 29982 68 0 minecraft:cauldron[level=2]
+setblock 29982 68 0 minecraft:water_cauldron[level=2]
+
+

@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chain"
+        },
+        "title": {
+            "text": "So cute!",
+            "color": "gray",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": "false",
+        "description": {
+            "text": "Get a plushie from the claw machine in the lobby.",
+            "color": "#78a19a",
+            "bold": false
+        }
+    },
+    "parent": "advancements:lobby_gumball",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

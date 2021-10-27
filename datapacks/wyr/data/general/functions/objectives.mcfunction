@@ -150,6 +150,11 @@ team modify lead prefix [{"text":"{","color":"dark_purple","bold":true},{"text":
 scoreboard objectives add points_for_win dummy
 scoreboard objectives add store_players dummy
 
+
+team add unlock
+team modify unlock color aqua
+team modify unlock prefix ["",{"text":"Gene","color":"dark_aqua","bold":true},{"text":"'","color":"gray"},{"text":"s ","color":"dark_aqua","bold":true},{"text":"#","color":"gold","underlined":true},{"text":"1","color":"yellow","underlined":true},{"text":" Fan","color":"blue"},{"text":": ","color":"gray"}]
+
 team add pc_role
 team modify pc_role color aqua
 team modify pc_role prefix [{"text":"(","color":"dark_gray"},{"text":"pc","color":"green","bold":true},{"text":") ","color":"dark_gray"}]
@@ -171,7 +176,7 @@ scoreboard players add $number awards 0
 scoreboard objectives add tutorial dummy
 scoreboard players add $number tutorial 0
 
-
+function completionist:setup
 
 
 kill @e[tag=tutorial_asset]
@@ -211,7 +216,8 @@ scoreboard objectives add parrot_timer dummy
 
 
 kill @e[type=area_effect_cloud,tag=lobby_popup]
-summon area_effect_cloud -935 80 -142 {Tags:["lobby_popup"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Menu","color":"#11f7c9","underlined":true}]'}
+summon area_effect_cloud -941 80 -141 {Tags:["lobby_popup"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Menu","color":"#11f7c9","underlined":true}]'}
+summon area_effect_cloud -929 80 -141 {Tags:["lobby_popup"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Menu","color":"#11f7c9","underlined":true}]'}
 summon area_effect_cloud -932 81 -142 {Tags:["lobby_popup"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Tutorial","color":"blue","underlined":true}]'}
 summon area_effect_cloud -938 81 -142 {Tags:["lobby_popup"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Scenario Options","color":"yellow","underlined":true}]'}
 
@@ -342,3 +348,35 @@ bossbar set lobby color blue
 bossbar set lobby players @a[tag=!playing,tag=!playing_soon]
 bossbar set lobby max 1
 bossbar set lobby value 1
+
+scoreboard objectives add pregame dummy
+
+kill @e[type=area_effect_cloud,tag=start_button_text]
+summon minecraft:area_effect_cloud -935 83 -141 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["start_button_text"],CustomNameVisible:1b,CustomName:'[{"text":"- ","color":"gray"},{"text":"⸮","color":"blue","bold":true},{"text":" Start ","color":"aqua"},{"text":"?","color":"yellow","bold":true},{"text":" -","color":"gray"}]'}
+
+scoreboard objectives add prefix dummy
+
+team add cr
+team modify cr color aqua
+team modify cr prefix [{"text":"{","color":"white","bold":true},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"} ","color":"white","bold":true}]
+
+
+team add manager
+team modify manager color aqua
+team modify manager prefix {"text":"{Manager} ","color":"yellow"}
+
+team add art
+team modify art color aqua
+team modify art prefix {"text":"{Artist} ","color":"green"}
+
+# advancement tracking
+scoreboard objectives add advance_jump dummy
+scoreboard objectives add advance_sneak dummy
+
+scoreboard objectives add drop_ready_book minecraft.dropped:minecraft.knowledge_book
+
+scoreboard objectives add settings dummy
+scoreboard players add $punch settings 0
+
+gamerule doWeatherCycle false
+weather clear 100000

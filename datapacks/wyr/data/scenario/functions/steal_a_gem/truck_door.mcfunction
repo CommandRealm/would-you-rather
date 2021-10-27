@@ -9,8 +9,10 @@ scoreboard players add $door rab_timer 1
 
 #falling blocks
 kill @e[type=falling_block,tag=rab_die]
-execute as @e[tag=rab_truck_door,type=area_effect_cloud] at @s run summon minecraft:falling_block ~ ~ ~ {Tags:["rab_die"],Time:0,BlockState:{Name:"minecraft:iron_trapdoor",Properties:{facing:"south",open:"true"}},NoGravity:1b}
-execute as @e[tag=rab_truck_door,type=area_effect_cloud] at @s run summon minecraft:falling_block ~ ~1 ~ {Tags:["rab_die"],Time:0,BlockState:{Name:"minecraft:iron_trapdoor",Properties:{facing:"south",open:"true"}},NoGravity:1b}
+execute as @e[tag=rab_truck_door,type=area_effect_cloud] at @s run summon minecraft:falling_block ~ ~ ~ {Tags:["rab_die"],Time:1,DropItem:0,BlockState:{Name:"minecraft:iron_trapdoor",Properties:{facing:"south",open:"true"}},NoGravity:1b}
+execute as @e[tag=rab_truck_door,type=area_effect_cloud] at @s run summon minecraft:falling_block ~ ~1 ~ {Tags:["rab_die"],Time:1,DropItem:0,BlockState:{Name:"minecraft:iron_trapdoor",Properties:{facing:"south",open:"true"}},NoGravity:1b}
+execute as @e[tag=rab_truck_door,type=area_effect_cloud] at @s run summon minecraft:falling_block ~ ~ ~ {Tags:["rab_die"],Time:1,DropItem:0,BlockState:{Name:"minecraft:iron_trapdoor",Properties:{facing:"south",open:"true"}},NoGravity:1b}
+execute as @e[tag=rab_truck_door,type=area_effect_cloud] at @s run summon minecraft:falling_block ~ ~1 ~ {Tags:["rab_die"],Time:1,DropItem:0,BlockState:{Name:"minecraft:iron_trapdoor",Properties:{facing:"south",open:"true"}},NoGravity:1b}
 
 
 #teleports:

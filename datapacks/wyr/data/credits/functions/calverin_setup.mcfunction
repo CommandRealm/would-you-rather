@@ -5,6 +5,6 @@ data merge entity @e[tag=calverin,limit=1] {Pose:{RightArm:[0.0f,0.0f,0.0f],Left
 
 
 
-replaceitem entity @e[tag=calverin] armor.feet leather_boots{display:{color:15591960}}
-replaceitem entity @e[tag=calverin] armor.chest leather_chestplate{display:{color:9079434}}
-replaceitem entity @e[tag=calverin] armor.legs leather_leggings{display:{color:0}}
+item replace entity @e[tag=calverin] armor.feet with leather_boots{display:{color:15591960}}
+item replace entity @e[tag=calverin] armor.chest with leather_chestplate{display:{color:9079434}}
+item replace entity @e[tag=calverin] armor.legs with leather_leggings{display:{color:0}}

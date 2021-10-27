@@ -1,7 +1,7 @@
 tag @a[tag=playing_soon] add playing
 tag @a[tag=playing_soon] remove playing_soon
 scoreboard players set $time showstart 2999
-execute as @a[tag=playing]
+#execute as @a[tag=playing]
 function scenario:reset_player
 execute store result score $players adjust_points if entity @a[tag=playing]
 execute as @a[tag=playing,tag=success] at @s run scoreboard players operation @s adjust_points = @s points_for_win

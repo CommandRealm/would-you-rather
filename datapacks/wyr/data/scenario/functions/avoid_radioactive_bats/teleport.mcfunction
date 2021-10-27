@@ -17,7 +17,7 @@ effect give @a[team=arb,gamemode=adventure] slowness 10000 255 true
 effect give @a[team=arb,gamemode=adventure] jump_boost 10000 200 true
 effect give @a[team=arb,gamemode=adventure] levitation 1 255 true
 
-tp @a[team=arb,gamemode=adventure] 15000 61 7 180 0
-spawnpoint @a[team=arb,gamemode=adventure] 15000 61 7
+tp @a[team=arb,gamemode=adventure] 15000 71 7 180 0
+spawnpoint @a[team=arb,gamemode=adventure] 15000 71 7
 
 tellraw @a[team=arb,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Stay alive on the platform until time runs out.","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]

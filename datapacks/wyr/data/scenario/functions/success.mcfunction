@@ -1,3 +1,6 @@
+
+
+
 scoreboard players set $time showstart 2995
 function show:timer
 scoreboard players add @a[team=select] points 4

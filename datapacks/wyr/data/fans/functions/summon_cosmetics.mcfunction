@@ -171,6 +171,8 @@ execute if entity @a[tag=playing,scores={fans=15}] as @e[tag=custom_fan_generati
 execute as @e[tag=custom_fan_generation,type=area_effect_cloud] at @s if entity @e[tag=fan,distance=..1] run kill @s
 
 
+execute if entity @a[tag=playing,scores={fans=18}] as @e[tag=custom_fan_generation,type=area_effect_cloud,sort=random,limit=1] at @s positioned ~ ~-0.5 ~ positioned ^ ^ ^0.5 run summon skeleton ~ ~ ~ {DeathLootTable:"minecraft:scenario/empty",PersistenceRequired:1b,Invulnerable:1b,NoGravity:1b,Silent:1b,Tags:["fan","actual_fan","fan_mia"],NoAI:1b,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:8750469}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:2713823}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16711922}}},{id:"player_head",Count:1b,tag:{SkullOwner:{Id:[I;1786756439,604848204,-1740810490,-1635391706],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTA2NGZjOTViMWJlOWI1NTdmM2QzZDZjZjNjZGJiYjQ4MTI1NWUyMmQxOWM0ODhkY2E4YTViZjk5ZGUwMTUzYSJ9fX0="}]}}}}]}
+execute as @e[tag=custom_fan_generation,type=area_effect_cloud] at @s if entity @e[tag=fan,distance=..1] run kill @s
 
 ##16 and 17 are snow fox and jeb sheep
 execute if entity @a[tag=playing,scores={fans=16}] as @e[tag=custom_fan_generation,type=area_effect_cloud,sort=random,limit=1] at @s positioned ~ ~-0.5 ~ positioned ^ ^ ^0.5 run summon sheep ~ ~ ~ {CustomName:'[{"text":"jeb_"}]',DeathLootTable:"minecraft:scenario/empty",PersistenceRequired:1b,Invulnerable:1b,NoGravity:1b,Silent:1b,Tags:["fan","actual_fan","fan_jeb_sheep"],NoAI:1b}

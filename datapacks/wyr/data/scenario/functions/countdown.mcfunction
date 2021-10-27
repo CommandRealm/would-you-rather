@@ -27,6 +27,7 @@ execute as @a[tag=playing,scores={game_countdown=0}] run effect clear @s
 execute if entity @a[tag=playing,scores={game_countdown=0}] run function scenario:check_start
 execute as @a[tag=playing,scores={game_countdown=0}] at @s run function awards:reset_non_dummy
 execute as @a[tag=playing,scores={game_countdown=0}] at @s run scoreboard players add @s stats_scenarios 1
+execute as @a[tag=playing,scores={game_countdown=0,stats_scenarios=15..}] at @s run advancement grant @s only advancements:game_play
 execute as @a[tag=playing,scores={game_countdown=0}] at @s run scoreboard players reset @a[scores={game_countdown=0}] game_countdown
 
 scoreboard players set $countdown active_scenario 0

@@ -20,3 +20,6 @@ tp @a[team=gamt,gamemode=adventure] 1976.3 66 2.0 -90 10
 spawnpoint @a[team=gamt,gamemode=adventure] 1976 66 2
 
 tellraw @a[team=gamt,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Answer ten math questions with \"True\" or \"False\" correctly.","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]
+
+
+advancement grant @a[team=gamt,tag=playing,gamemode=adventure] only advancements:scenario_math

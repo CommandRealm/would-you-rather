@@ -26,6 +26,11 @@ execute at @s if entity @a[gamemode=adventure,distance=..2,team=ft] run team joi
 execute at @s if entity @a[gamemode=adventure,distance=..2,team=ol] run team join ol
 execute at @s if entity @a[gamemode=adventure,distance=..2,team=eadl] run team join eadl
 execute at @s if entity @a[gamemode=adventure,distance=..2,team=wat] run team join wat
+execute at @s if entity @a[gamemode=adventure,distance=..2,team=npab] run team join npab
+execute at @s if entity @a[gamemode=adventure,distance=..2,team=labyrinth] run team join labyrinth
+execute at @s if entity @a[gamemode=adventure,distance=..2,team=skydive] run team join skydive
+execute at @s if entity @a[gamemode=adventure,distance=..2,team=rani] run team join rani
+execute at @s if entity @a[gamemode=adventure,distance=..2,team=giant] run team join giant
 
 
 function game:copy_inventory

@@ -223,3 +223,5 @@ fill 32017 71 -9 32010 71 -8 minecraft:spruce_trapdoor[facing=east,open=false] r
 fill 32004 72 -8 31997 72 -9 minecraft:spruce_trapdoor[facing=east,open=false] replace minecraft:spruce_trapdoor
 fill 31989 71 -16 31983 71 -14 minecraft:spruce_trapdoor[facing=east,open=false] replace minecraft:spruce_trapdoor
 fill 31973 74 -30 31967 74 -32 minecraft:spruce_trapdoor[facing=east,open=false] replace minecraft:spruce_trapdoor
+
+advancement grant @a[team=ft,tag=playing,gamemode=adventure] only advancements:scenario_theives

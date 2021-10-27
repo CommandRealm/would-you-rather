@@ -28,4 +28,12 @@ execute if entity @s[type=area_effect_cloud,name="Find thieves"] run setblock ~ 
 execute if entity @s[type=area_effect_cloud,name="Outrun lava"] run setblock ~ ~-1 ~5 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:-5,name:"minecraft:diorama_ol",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b}
 execute if entity @s[type=area_effect_cloud,name="Explore a deserted lab"] run setblock ~ ~-1 ~5 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:-5,name:"minecraft:diorama_eadl",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b}
 execute if entity @s[type=area_effect_cloud,name="Walk a tightrope"] run setblock ~ ~-1 ~5 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:-5,name:"minecraft:diorama_wat",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b}
+
+
+execute if entity @s[type=area_effect_cloud,name="Loot a labyrinth"] run setblock ~ ~-1 ~5 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:-5,name:"minecraft:diorama_labyrinth",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b}
+execute if entity @s[type=area_effect_cloud,name="Not push a button"] run setblock ~ ~-1 ~5 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:-5,name:"minecraft:diorama_napt",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b}
+execute if entity @s[type=area_effect_cloud,name="Go skydiving"] run setblock ~ ~-1 ~5 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:-5,name:"minecraft:diorama_skydive",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b}
+execute if entity @s[type=area_effect_cloud,name="Repel a nether invasion"] run setblock ~ ~-1 ~5 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:-5,name:"minecraft:diorama_rani",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b}
+execute if entity @s[type=area_effect_cloud,name="Feed a giant"] run setblock ~ ~-1 ~5 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:-5,name:"minecraft:diorama_giant",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b}
+
 setblock ~ ~ ~5 redstone_block

@@ -2,7 +2,7 @@ scoreboard players set $number cms_ingre_1 -1000
 
 
 tag @a[tag=playing,team=cms,gamemode=adventure,nbt={Inventory:[{tag:{cms_item:1}}]}] add cms_has_duplicate
-replaceitem entity @a[tag=playing,team=cms] hotbar.0 air
+item replace entity @a[tag=playing,team=cms] hotbar.0 with air
 clear @a[tag=playing,team=cms] #minecraft:soup_items{cms_item:1}
 execute if entity @s[nbt={Item:{id:"minecraft:red_mushroom"}}] as @a[tag=cms_has_duplicate,tag=playing,gamemode=adventure,team=cms,nbt={Inventory:[{id:"minecraft:white_stained_glass_pane"}]}] at @s run function scenario:cook_mushroom_soups/get_red_mushroom
 execute if entity @s[nbt={Item:{id:"minecraft:brown_mushroom"}}] as @a[tag=cms_has_duplicate,tag=playing,gamemode=adventure,team=cms,nbt={Inventory:[{id:"minecraft:brown_stained_glass_pane"}]}] at @s run function scenario:cook_mushroom_soups/get_brown_mushroom

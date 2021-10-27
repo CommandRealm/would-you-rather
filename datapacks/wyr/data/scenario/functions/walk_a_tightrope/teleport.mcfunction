@@ -17,6 +17,6 @@ effect give @a[team=wat,gamemode=adventure] slowness 10000 255 true
 effect give @a[team=wat,gamemode=adventure] jump_boost 10000 200 true
 effect give @a[team=wat,gamemode=adventure] levitation 1 255 true
 
-tp @a[team=wat,gamemode=adventure] 6969 89 -10 -22.5 10
-spawnpoint @a[team=wat,gamemode=adventure] 6969 89 -10
+tp @a[team=wat,gamemode=adventure] 6972 89 -15 -5 10
+spawnpoint @a[team=wat,gamemode=adventure] 6972 89 -15
 tellraw @a[team=wat,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Reach the end of the parkour course.","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]

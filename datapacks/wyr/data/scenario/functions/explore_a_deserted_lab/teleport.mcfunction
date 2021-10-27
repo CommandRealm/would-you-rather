@@ -17,7 +17,9 @@ effect give @a[team=eadl,gamemode=adventure] slowness 10000 255 true
 effect give @a[team=eadl,gamemode=adventure] jump_boost 10000 200 true
 effect give @a[team=eadl,gamemode=adventure] levitation 1 255 true
 
-tp @a[team=eadl,gamemode=adventure] 8011 56.0 1 -22.5 5
-spawnpoint @a[team=eadl,gamemode=adventure] 8011 56 1
+tp @a[team=eadl,gamemode=adventure] 8011 56 -5 -12.25 0
+spawnpoint @a[team=eadl,gamemode=adventure] 8011 56 -5
 
-tellraw @a[team=eadl,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Find and retrieve the three components inside the lab and then return to your ship.","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]
+
+
+tellraw @a[team=eadl,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Find and retrieve the three components inside the lab and then place them on your ship.","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]

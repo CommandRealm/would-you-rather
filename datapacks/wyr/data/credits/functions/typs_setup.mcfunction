@@ -6,6 +6,6 @@ scoreboard players add $direction typs_direction 0
 
 data merge entity @e[tag=typs,limit=1] {Pose:{RightArm:[153.0f,-34.0f,55.0f],LeftArm:[0.0f,0.0f,0.0f]}}
 
-replaceitem entity @e[tag=typs] armor.feet leather_boots{display:{color:5191726}}
-replaceitem entity @e[tag=typs] armor.chest leather_chestplate{display:{color:3782703}}
-replaceitem entity @e[tag=typs] armor.legs netherite_leggings
+item replace entity @e[tag=typs] armor.feet with leather_boots{display:{color:5191726}}
+item replace entity @e[tag=typs] armor.chest with leather_chestplate{display:{color:3782703}}
+item replace entity @e[tag=typs] armor.legs with netherite_leggings

@@ -7,4 +7,8 @@ scoreboard players reset @s awd_d_dealt
 scoreboard players reset @s awd_d_mob_kills 
 scoreboard players reset @s awd_d_walk 
 scoreboard players reset @s awd_d_s_dist 
-scoreboard players reset @s awd_d_companions
+# scoreboard players reset @s awd_d_companions
+
+scoreboard players reset @s awd_d_open_chest
+scoreboard players reset @s awd_d_open_shulk
+scoreboard players reset @s awd_d_open_barr

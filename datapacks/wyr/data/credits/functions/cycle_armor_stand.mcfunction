@@ -1,6 +1,6 @@
 scoreboard players add $number credits 1
 scoreboard players set $time credits 0
-execute if score $number credits matches 12.. run scoreboard players set $number credits 1
+execute if score $number credits matches 13.. run scoreboard players set $number credits 1
 kill @e[type=armor_stand,tag=credits_cycle]
 particle cloud -945 80 -111 0 0 0 0.15 5
 playsound minecraft:entity.arrow.hit_player master @a -945 80 -111 0.05 2
@@ -23,17 +23,7 @@ execute if score $number credits matches 8 run summon armor_stand -945 80 -111 {
 execute if score $number credits matches 9 run summon armor_stand -945 80 -111 {Rotation:[237.5f,0.0f],Tags:["credits_cycle","show_details","credits_focii"],Pose:{LeftLeg:[61f,0f,0f],RightLeg:[306f,0f,0f]},Marker:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:16774930}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:3352350}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16774930}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;-2106940670,1781089413,-1597554212,-546744942],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Q4NDZiZThkMzM1YjVlMzU1ZGRkNDdlMzFlNmFlNTJjNGNlNjA4NzNlZGVjYWVlNWVlOTBiYmRiZTc4M2FhMCJ9fX0="}]}}}}]}
 execute if score $number credits matches 10 run summon armor_stand -945 80 -111 {Rotation:[237.5f,0.0f],Tags:["credits_cycle","show_details","credits_mark"],Marker:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,ArmorItems:[{id:"minecraft:iron_boots",Count:1b},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:1977459}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:14735723}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;256901103,-1611775859,-1215702844,1554916088],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWUwNGUwOGJhZjkyNjVhOWRmNWVmYmI4ZGU3M2RjN2RmMzhiMDIyMzljODk1ZWJiMDkyOTNjMTJhNzQ0Y2I1ZCJ9fX0="}]}}}}],Pose:{Head:[56f,0f,0f],RightArm:[279f,343f,0f]}}
 execute if score $number credits matches 11 run summon armor_stand -945 80 -111 {Rotation:[236.5f,0.0f],Tags:["credits_cycle","show_details","credits_j70"],Marker:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,ArmorItems:[{id:"minecraft:iron_boots",Count:1b},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:15263976}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16774486}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;-1428309012,1535266370,-1074955961,984968634],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI4ZDFiOTM3MjU4MmE2NjcxODkwYzE1NDFjMDk3Nzc2ZTZhNDZkZTE3NDM0OTNkM2NmMzU1MzhhNWZmOGFiMiJ9fX0="}]}}}}],Pose:{Head:[348f,333f,0f],RightLeg:[15f,0f,0f],LeftArm:[146f,49f,0f],RightArm:[329f,68f,0f]}}
-
-
-
-
-
-
-
-
-
-
-
+execute if score $number credits matches 12 run summon armor_stand -945 80 -111 {Rotation:[236.5f,0.0f],Tags:["credits_cycle","show_details","credits_boba"],Marker:1b,Invulnerable:1b,ShowArms:1b,NoBasePlate:1b,ArmorItems:[{id:"minecraft:iron_boots",Count:1b},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:3166760}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:1748002}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:{Id:[I;873770638,168446371,-1136482366,-1953190570],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJiNzhmYTI3ZTQ2MDg0ODg2ZDE0N2QzZDY2ZjJkM2U3MmVjNmNhYWY3NWMyMDRhYjQ1YjAwOTc3YWYzMWZhIn19fQ=="}]}}}}],Pose:{Head:[348f,333f,0f],RightLeg:[15f,0f,0f],LeftArm:[146f,49f,0f],RightArm:[329f,68f,0f]}}
 
 
 
@@ -60,10 +50,10 @@ execute if score $number credits matches 11 run summon armor_stand -945 80 -111 
 ##SkullOwner:{Id:[I;-1504769993,-1382790965,-1376971678,1961088044],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWFjNzI0N2M1N2Q1ZjQxNGNkNzQxNTdhMjFiZmJiYjkwYWU1MzkxN2NmY2UyYjc5MTk2NTYwZjkxNzY3OWI5MSJ9fX0="}]}}
 
 ##0FalconReign[{"text":"{","color":"dark_purple","bold":true,"italic":false},{"text":"Project Lead","bold":false},{"text":"}","bold":true}]']},clickable:1,SkullOwner:{Id:[I;228091954,-323466738,-1442872035,-656207744],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWE0N2ZjYmFmODFiYTdkZTlkODAzMDNjNTE5MWI5NmNlOTNmZmE4NzZkOWQyZGI0ZWI3NWZmMzgxNzQyYTY0NSJ9fX0="}]}}}
-##1HippehWizard{"text":"{Sr. Builder}","color":"dark_blue","italic":false}']},clickable:1,SkullOwner:{Id:[I;1508923483,-548451571,-1134652024,2114694725],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGJiZWM2ZjZmYTJkOGJlZmM5YjlmYTI3YmIzMWFhNzU0MjAzYmE4NTRiYWY5ZGU5MzQzNGFiZGUyOGM0YzBlYyJ9fX0="}]}}}
+##1Connop{"text":"{Sr. Builder}","color":"dark_blue","italic":false}']},clickable:1,SkullOwner:{Id:[I;1508923483,-548451571,-1134652024,2114694725],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGJiZWM2ZjZmYTJkOGJlZmM5YjlmYTI3YmIzMWFhNzU0MjAzYmE4NTRiYWY5ZGU5MzQzNGFiZGUyOGM0YzBlYyJ9fX0="}]}}}
 ##2TheRegularMex{"text":"{Sr. Builder}","color":"dark_blue","italic":false}']},clickable:1,SkullOwner:{Id:[I;-88748071,-1657519056,-1539642835,-880500696],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODFmOTVhMjBhMTY3MTlkMzMwMmIxZDJmNmFlYmRkZWNkYTUzYjI0Nzg1NWQyMTkwYzNjOTNkZjcwMzA1YmEyNSJ9fX0="}]}}}
 ##
-##3Captain_Deadpool{"text":"{Builder}","color":"blue","italic":false}']},clickable:1,SkullOwner:{Id:[I;209955423,-1480768512,-1627586009,-242559102],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWViMTg5YWQ2MWUwYjFiZmI5YTlhMDkyYzg3ODk2NDgzYjM2ZmFlMjkzOTdhYTlmOTQxMjlmNTBlMzc1YWQ4ZiJ9fX0="}]}}}
+##3Captonium{"text":"{Builder}","color":"blue","italic":false}']},clickable:1,SkullOwner:{Id:[I;209955423,-1480768512,-1627586009,-242559102],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWViMTg5YWQ2MWUwYjFiZmI5YTlhMDkyYzg3ODk2NDgzYjM2ZmFlMjkzOTdhYTlmOTQxMjlmNTBlMzc1YWQ4ZiJ9fX0="}]}}}
 ##4Calverin{"text":"{Builder}","color":"blue","italic":false}']},clickable:1,SkullOwner:{Id:[I;-1133937096,1368540674,-1820699096,312346006],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTIwZGI5YzFiNDg1YjZhNDE0ZWU4MGFkY2RjNWFlYTkzMjhiMzYyZTJlNjExOWQ0MDVmYTQyNzQ1MGUxMzQ4ZCJ9fX0="}]}}}
 ##5TheTypicalMex{"text":"{Builder}","color":"blue","italic":false}']},clickable:1,SkullOwner:{Id:[I;150747248,1196048,-1991597228,-2037606705],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI3Njk1YWZlZDhiMzI0N2VjYTVhYzBkZTEyZjNkYTBiMmFmOWMxNjg4NTk5MThkODA0NDA5MzYwMTczMDJjNiJ9fX0="}]}}}
 ##6CheckMC{"text":"{Builder}","color":"blue","italic":false}']},clickable:1,SkullOwner:{Id:[I;1594558550,523125009,-1373244110,-1856762766],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmE4ZGZlMGU3ZmM0ODlhZjgwMmU0MWRhMjI0YjNkYzc5YzA5MTZkMjRmMWNjMWM4YzVkMzI4OTE0MTEyNzJkNCJ9fX0="}]}}}

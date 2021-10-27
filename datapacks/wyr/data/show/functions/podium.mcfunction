@@ -13,8 +13,11 @@ execute as @a[scores={id=3},tag=playing,tag=!selecting] at @s run tp @s @e[tag=p
 execute as @a[scores={id=2},tag=playing,tag=!selecting] at @s run tp @s @e[tag=podium_clone,scores={podium_id=2},limit=1]
 execute as @a[scores={id=1},tag=playing,tag=!selecting] at @s run tp @s @e[tag=podium_clone,scores={podium_id=1},limit=1]
 
+execute as @a[tag=playing,tag=!selecting,scores={id=12..}] at @s run function show:random_big_podium
+
 execute as @a[tag=playing,tag=!selecting] at @s run tp @s ~2 ~ ~2 ~ ~5
-execute as @a[tag=playing,scores={podium=..14},tag=!selecting] at @s run tp @s ~ 72 ~
-execute as @a[tag=playing,scores={podium=15..21},tag=!selecting] at @s run tp @s ~ 75 ~
-execute as @a[tag=playing,scores={podium=22..25},tag=!selecting] at @s run tp @s ~ 78 ~
+execute as @a[tag=playing,scores={podium=..26},tag=!selecting] at @s run tp @s ~ 72 ~
+execute as @a[tag=playing,scores={podium=27..41},tag=!selecting] at @s run tp @s ~ 75 ~
+execute as @a[tag=playing,scores={podium=41..},tag=!selecting] at @s run tp @s ~ 78 ~
 execute as @a[tag=playing,tag=!selecting] at @s run tp @s ~ ~ ~ facing entity @e[tag=infinite,sort=nearest,limit=1,tag=look_on_stage]
+

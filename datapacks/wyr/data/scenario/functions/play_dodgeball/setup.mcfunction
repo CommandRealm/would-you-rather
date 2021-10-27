@@ -5,6 +5,7 @@ execute unless entity @a[team=pd,tag=tutorial] run schedule function scenario:ch
 
 tp @e[tag=die,x=21000,y=66,z=0,distance=..200] 0 2 0
 kill @e[tag=die,x=21000,y=66,z=0,distance=..200] 
+kill @e[type=shulker,tag=pd_shulker] 
 
 
 scoreboard objectives add pd_random dummy

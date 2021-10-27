@@ -9,6 +9,18 @@ execute as @a[tag=playing] at @s run scoreboard players operation @s awd_walk +=
 execute as @a[tag=playing] at @s run scoreboard players operation @s awd_movement += @s awd_d_run
 execute as @a[tag=playing] at @s run scoreboard players operation @s awd_movement += @s awd_d_walk
 execute as @a[tag=playing] at @s run scoreboard players operation @s awd_movement += @s awd_d_s_dist
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_chest
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_shulk
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_barr
+
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_sel_time += @s awd_r_sel_time
+
+
+# advancements
+execute as @a[tag=playing] at @s run scoreboard players operation @s advance_jump += @s awd_d_jump
+execute as @a[tag=playing] at @s run scoreboard players operation @s advance_sneak += @s awd_d_sneak
+advancement grant @a[scores={advance_jump=100..}] only advancements:game_jump
+advancement grant @a[scores={advance_sneak=600..}] only advancements:game_sneak
 
 
 scoreboard objectives remove awd_d_run
@@ -21,6 +33,13 @@ scoreboard objectives remove awd_d_mob_kills
 scoreboard objectives remove awd_d_walk
 scoreboard objectives remove awd_d_s_dist 
 scoreboard objectives remove awd_d_companions
+
+scoreboard objectives remove awd_d_open_chest
+scoreboard objectives remove awd_d_open_shulk
+scoreboard objectives remove awd_d_open_barr
+
+scoreboard objectives remove awd_r_sel_time
+
 
 
 

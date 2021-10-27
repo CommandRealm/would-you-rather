@@ -10,6 +10,8 @@ tellraw @a [{"text":"Would ","color":"blue","bold":true},{"text":"You ","color":
 team join aqua @a[scores={fake_points=0},tag=playing]
 execute as @a[scores={fake_points=0},tag=playing] run tellraw @a [{"text":"Victor: ","color":"yellow"},{"selector":"@s"},{"text":" score: ","color":"aqua"},{"score":{"objective":"points","name":"@s"},"color":"green"}]
 scoreboard players add @a[scores={fake_points=0},tag=playing] stats_wins 1
+advancement grant @a[scores={fake_points=0},tag=playing] only advancements:wins_game
+
 team join dark_aqua @a[tag=playing]
 tag @a[scores={fake_points=0},tag=playing] add got_placement
 scoreboard players set $check_place fake_points -1000

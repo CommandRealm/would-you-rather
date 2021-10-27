@@ -28,3 +28,4 @@ execute if entity @s[scores={fans=15}] run playsound minecraft:entity.zombie.amb
 
 execute if entity @s[scores={fans=16}] run playsound minecraft:entity.sheep.ambient master @a[tag=playing] ~ ~ ~ 100000 1
 execute if entity @s[scores={fans=17}] run playsound minecraft:entity.fox.ambient master @a[tag=playing] ~ ~ ~ 100000 1
+execute if entity @s[scores={fans=18}] run playsound minecraft:entity.villager.celebrate player @a[tag=playing] ~ ~ ~ 100000 2

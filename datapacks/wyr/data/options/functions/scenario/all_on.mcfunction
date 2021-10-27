@@ -24,6 +24,11 @@ execute as @r run function options:scenario/toggle_ft
 execute as @r run function options:scenario/toggle_ol
 execute as @r run function options:scenario/toggle_eadl
 execute as @r run function options:scenario/toggle_wat
-
-function options:scenario/display_status
+# 1.17.1 Update
+execute as @r run function options:scenario/toggle_labyrinth
+execute as @r run function options:scenario/toggle_npab
+execute as @r run function options:scenario/toggle_skydive
+execute as @r run function options:scenario/toggle_rani
+execute as @r run function options:scenario/toggle_giant
+execute as @r run function options:scenario/display_status
 playsound minecraft:block.note_block.bit master @a -930 62 -132 1 2

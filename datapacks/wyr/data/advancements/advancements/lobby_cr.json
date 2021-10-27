@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:chain_command_block",
+            "nbt": "{CustomModelData:0}"
+        },
+        "title": {
+            "text": "CR Expert",
+            "color": "gray",
+            "bold": true
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": "false",
+        "description": {
+            "text": "Find the Command Realm \"CR\" in the lobby.",
+            "color": "#78a19a",
+            "bold": false
+        }
+    },
+    "parent": "advancements:lobby_socials",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
