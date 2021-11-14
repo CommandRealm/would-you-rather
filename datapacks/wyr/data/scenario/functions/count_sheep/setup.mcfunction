@@ -1,5 +1,5 @@
 clear @a[team=cs]
-gamemode adventure @a[team=cs]
+gamemode adventure @a[team=cs,gamemode=!adventure,tag=playing]
 
 #kills:
 tp @e[tag=cs_die] 0 0 0

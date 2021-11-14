@@ -1,5 +1,5 @@
 clear @a[team=wiaaf]
-gamemode adventure @a[team=wiaaf]
+gamemode adventure @a[team=wiaaf,gamemode=!adventure,tag=playing]
 execute if entity @a[team=wiaaf,tag=tutorial] run schedule function scenario:work_in_an_anvil_factory/tutorial_setup 40t
 execute unless entity @a[team=wiaaf,tag=tutorial] run schedule function scenario:check_countdown 40t
 clone 17992 63 -8 18008 63 8 17992 64 -8

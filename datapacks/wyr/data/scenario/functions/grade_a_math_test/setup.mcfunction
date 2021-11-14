@@ -1,5 +1,5 @@
 clear @a[team=gamt]
-gamemode adventure @a[team=gamt]
+gamemode adventure @a[team=gamt,gamemode=!adventure,tag=playing]
 effect give @a[team=gamt] invisibility 10000 255 true
 execute if entity @a[team=gamt,tag=tutorial] run schedule function scenario:grade_a_math_test/tutorial_setup 40t
 execute unless entity @a[team=gamt,tag=tutorial] run schedule function scenario:check_countdown 40t

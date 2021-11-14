@@ -1,6 +1,6 @@
 clear @a[team=sitw]
 effect give @a[team=sitw] invisibility 10000 255 true
-gamemode adventure @a[team=sitw]
+gamemode adventure @a[team=sitw,gamemode=!adventure,tag=playing]
 tag @a[team=sitw] add hungry
 effect give @a[team=sitw] regeneration 2 255 true
 effect give @a[team=sitw] saturation 1 255 true

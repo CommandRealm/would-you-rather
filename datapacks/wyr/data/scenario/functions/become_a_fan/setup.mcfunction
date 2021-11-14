@@ -1,5 +1,5 @@
 clear @a[team=bafe]
-gamemode adventure @a[team=bafe]
+gamemode adventure @a[team=bafe,gamemode=!adventure,tag=playing]
 
 
 

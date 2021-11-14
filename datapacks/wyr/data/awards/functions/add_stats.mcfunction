@@ -11,9 +11,9 @@ scoreboard players add @a[tag=playing,gamemode=!spectator,nbt={SelectedItem:{}}]
 
 execute as @a[tag=playing,gamemode=adventure] at @s if block ~ ~ ~ water run scoreboard players add @s awd_water 1
 execute as @a[tag=playing,gamemode=adventure] at @s unless data entity @s {Fire:-20s} run scoreboard players add @s awd_fire 1
-execute as @a[tag=playing,gamemode=adventure] at @s unless data entity @s Inventory[{Slot:100b}] run tag @s add temporary_tag
-execute as @a[tag=playing,gamemode=adventure] at @s unless data entity @s Inventory[{Slot:101b}] run tag @s add temporary_tag
-execute as @a[tag=playing,gamemode=adventure] at @s unless data entity @s Inventory[{Slot:102b}] run tag @s add temporary_tag
-execute as @a[tag=playing,gamemode=adventure] at @s unless data entity @s Inventory[{Slot:103b}] run tag @s add temporary_tag
+execute as @a[tag=playing,gamemode=adventure] at @s if data entity @s Inventory[{Slot:100b}] run tag @s add temporary_tag
+execute as @a[tag=playing,gamemode=adventure] at @s if data entity @s Inventory[{Slot:101b}] run tag @s add temporary_tag
+execute as @a[tag=playing,gamemode=adventure] at @s if data entity @s Inventory[{Slot:102b}] run tag @s add temporary_tag
+execute as @a[tag=playing,gamemode=adventure] at @s if data entity @s Inventory[{Slot:103b}] run tag @s add temporary_tag
 scoreboard players add @a[tag=playing,tag=temporary_tag] awd_armor 1
 tag @a remove temporary_tag

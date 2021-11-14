@@ -1,5 +1,5 @@
 clear @a[team=saga]
-gamemode adventure @a[team=saga]
+gamemode adventure @a[team=saga,gamemode=!adventure,tag=playing]
 execute if entity @a[team=saga,tag=tutorial] run schedule function scenario:survive_a_ghast_a/tutorial_setup 40t
 execute unless entity @a[team=saga,tag=tutorial] run schedule function scenario:check_countdown 40t
 gamerule naturalRegeneration false

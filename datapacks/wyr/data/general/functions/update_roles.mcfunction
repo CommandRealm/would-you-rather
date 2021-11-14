@@ -128,6 +128,7 @@ tag EdLePug add has_test
 tag BobaFate add has_test
 tag Pilllager add has_test
 tag Clyde2024 add has_test
+tag Pinkessi add has_test
 
 # helper
 tag FalconReign add has_help
@@ -173,6 +174,7 @@ tag TheRegularMex add has_srbld
 # prg
 tag Calverin add has_prg
 tag FalconReign add has_prg
+tag CheckMC add has_prg
 
 # srprg
 tag FalconReign add has_srprg

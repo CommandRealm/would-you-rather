@@ -1,5 +1,5 @@
 clear @a[team=bam]
-gamemode adventure @a[team=bam]
+gamemode adventure @a[team=bam,gamemode=!adventure,tag=playing]
 fill 8997 65 -2 8999 96 0 air
 clone 8991 45 -7 8993 53 -5 8997 88 -2
 

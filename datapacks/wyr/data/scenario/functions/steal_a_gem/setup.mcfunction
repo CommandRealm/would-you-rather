@@ -1,5 +1,5 @@
 clear @a[team=rab]
-gamemode adventure @a[team=rab]
+gamemode adventure @a[team=rab,gamemode=!adventure,tag=playing]
 
 execute if entity @a[team=rab,tag=tutorial] run schedule function scenario:steal_a_gem/tutorial_setup 40t
 execute unless entity @a[team=rab,tag=tutorial] run schedule function scenario:check_countdown 40t

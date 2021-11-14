@@ -1,5 +1,5 @@
 clear @a[team=giant]
-gamemode adventure @a[team=giant]
+gamemode adventure @a[team=giant,gamemode=!adventure,tag=playing]
 
 #kills:
 tp @e[tag=giant_die] 0 0 0
@@ -52,7 +52,7 @@ execute if entity @e[type=item,tag=giant_cooked_beef] run scoreboard players add
 execute if entity @e[type=item,tag=giant_berries] run scoreboard players add $time giant_timer 400
 
 # summoning giant
-summon giant 12999 76 24 {Health:1,Rotation:[180f,0f],NoAI:1b,Invulnerable:1b,Tags:["giant_die","giant"]}
+summon giant 12999 76 24 {Health:1,Rotation:[180f,0f],NoAI:1b,Invulnerable:1b,Tags:["giant_die","giant"],PersistenceRequired:1b}
 
 
 execute if entity @a[team=giant,tag=tutorial] run schedule function scenario:feed_a_giant/tutorial_setup 40t

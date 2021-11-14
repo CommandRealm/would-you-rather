@@ -24,3 +24,5 @@ execute unless score $button npab_timer matches 1.. if score $time npab_timer ma
 #activity:
 execute if score $npab active_scenario matches 1 if score $time npab_timer matches -100.. run schedule function scenario:not_push_a_button/active 1t
 execute if score $npab active_scenario matches 1 unless entity @a[team=npab] run function scenario:not_push_a_button/end
+
+effect give @a[team=npab] resistance 1 255 true

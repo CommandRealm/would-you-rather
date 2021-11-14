@@ -1,5 +1,5 @@
 clear @a[team=pd]
-gamemode adventure @a[team=pd]
+gamemode adventure @a[team=pd,gamemode=!adventure,tag=playing]
 execute if entity @a[team=pd,tag=tutorial] run schedule function scenario:play_dodgeball/tutorial_setup 40t
 execute unless entity @a[team=pd,tag=tutorial] run schedule function scenario:check_countdown 40t
 

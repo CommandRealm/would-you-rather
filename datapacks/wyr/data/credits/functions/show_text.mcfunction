@@ -9,12 +9,12 @@ execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity 
 
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=pl,distance=..0.5] run title @s subtitle {"text":"Project Lead, Programmer, and Builder","color":"white"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=hippeh,distance=..0.5] run title @s subtitle {"text":"Senior Builder and Co-Producer","color":"white"}
-execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=calverin,distance=..0.5] run title @s subtitle {"text":"Builder","color":"white"}
-execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=check,distance=..0.5] run title @s subtitle {"text":"Builder","color":"white"}
+execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=calverin,distance=..0.5] run title @s subtitle {"text":"Builder and Programmer","color":"white"}
+execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=check,distance=..0.5] run title @s subtitle {"text":"Builder and Programmer","color":"white"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=typs,distance=..0.5] run title @s subtitle {"text":"Builder","color":"white"}
 
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=regsbody,distance=..0.5] run title @s subtitle {"text":"Senior Builder and Renderer","color":"white"}
-execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=deadpool,distance=..0.5] run title @s subtitle {"text":"Builder","color":"white"}
+execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=deadpool,distance=..0.5] run title @s subtitle {"text":"Senior Builder","color":"white"}
 
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_chip,distance=..0.5] run title @s title {"text":"ChipChase","color":"aqua"}
 execute at @e[type=armor_stand,tag=show_details,sort=nearest,limit=1] if entity @e[type=armor_stand,tag=show_details,sort=nearest,limit=1,tag=credits_purple,distance=..0.5] run title @s title {"text":"Purple_Reign__","color":"aqua"}

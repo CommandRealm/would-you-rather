@@ -1,5 +1,5 @@
 clear @a[team=dab]
-gamemode adventure @a[team=dab]
+gamemode adventure @a[team=dab,gamemode=!adventure,tag=playing]
 execute if entity @a[team=dab,tag=tutorial] run schedule function scenario:defuse_tnt/tutorial_setup 40t
 execute unless entity @a[team=dab,tag=tutorial] run schedule function scenario:check_countdown 40t
 scoreboard objectives add dab_random dummy

@@ -7,7 +7,7 @@ execute if score $time poster_time matches ..0 run function lobby:posters/change
 
 kill @e[type=item,nbt={Item:{tag:{lobby_die:1}}}]
 kill @e[type=item,nbt={Age:0s,Item:{tag:{lobby_die:0}}}]
-item replace entity @a[tag=!playing,x=-1000,y=66,z=0,distance=..400,nbt={Inventory:[{Slot:103b,tag:{lobby_die:0}}]}] armor.head with air
+item replace entity @a[tag=!playing,x=-1000,y=66,z=0,distance=..400,nbt={Inventory:[{Slot:103b,tag:{Gumball:1b}}]}] armor.head with air
 
 execute as @a[tag=!playing,nbt={Inventory:[{tag:{vending_machine:1}}]}] at @s unless entity @s[scores={hunger=0}] run scoreboard players operation @s hunger = @s d_hunger
 scoreboard players add @a hunger 0

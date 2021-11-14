@@ -5,7 +5,7 @@ scoreboard players set 4 maze_random 4
 scoreboard players set 14002 maze_random 14002
 
 clear @a[team=labyrinth]
-gamemode adventure @a[team=labyrinth]
+gamemode adventure @a[team=labyrinth,gamemode=!adventure,tag=playing]
 scoreboard players set @a maze_treasure 0
 
 #kills:

@@ -1,5 +1,5 @@
-scoreboard players set $time cms_timer 2400
-execute as @a[tag=playing,team=cms,gamemode=adventure] at @s run scoreboard players remove $time cms_timer 100
+scoreboard players set $time cms_timer 3000
+execute as @a[tag=playing,team=cms,gamemode=adventure,limit=5] at @s run scoreboard players remove $time cms_timer 150
 execute if score $time cms_timer matches ..1400 run scoreboard players set $time cms_timer 1400
 scoreboard players set $cms active_scenario 1
 scoreboard players set $number cms_soups_left 3

@@ -1,5 +1,5 @@
 clear @a[team=placeholder]
-gamemode adventure @a[team=placeholder]
+gamemode adventure @a[team=placeholder,gamemode=!adventure,tag=playing]
 
 #kills:
 tp @e[tag=placeholder_die] 0 0 0

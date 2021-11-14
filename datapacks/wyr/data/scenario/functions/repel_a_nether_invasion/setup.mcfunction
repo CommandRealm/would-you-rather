@@ -1,5 +1,5 @@
 clear @a[team=rani]
-gamemode adventure @a[team=rani]
+gamemode adventure @a[team=rani,gamemode=!adventure,tag=playing]
 
 #kills:
 tp @e[tag=rani_die] 0 0 0
