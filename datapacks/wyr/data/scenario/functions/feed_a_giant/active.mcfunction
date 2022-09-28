@@ -27,7 +27,7 @@ execute if score $animation giant_timer matches 0 if entity @a[tag=playing,team=
 execute if score $animation giant_timer matches 1.. run function scenario:feed_a_giant/animation/main
 
 # failing the scenario
-execute if score $giant active_scenario matches 1 unless score $animation giant_timer matches 1.. if score $time giant_timer matches 0 as @a[tag=playing,gamemode=adventure,team=giant] at @s run function scenario:feed_a_giant/fail
+execute if score $giant active_scenario matches 1 unless score $animation giant_timer matches 1.. if score $time giant_timer matches ..0 as @a[tag=playing,gamemode=adventure,team=giant] at @s run function scenario:feed_a_giant/fail
 
 #activity:
 execute if score $giant active_scenario matches 1 if score $time giant_timer matches 1.. run schedule function scenario:feed_a_giant/active 1t

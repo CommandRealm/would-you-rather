@@ -14,10 +14,10 @@ execute as @e[tag=saga_ghast,scores={saga_fireball=85},type=ghast] at @s as @a[t
 
 execute as @e[tag=saga_ghast,scores={saga_fireball=100},type=ghast] at @s run function scenario:survive_a_ghast_a/shoot
 
-execute as @e[tag=saga_ghast,scores={saga_motion=1},type=ghast] at @s run data merge entity @s {Motion:[0.2d,0.0d,0.0d]}
-execute as @e[tag=saga_ghast,scores={saga_motion=2},type=ghast] at @s run data merge entity @s {Motion:[0.0d,0.0d,0.2d]}
-execute as @e[tag=saga_ghast,scores={saga_motion=3},type=ghast] at @s run data merge entity @s {Motion:[-0.2d,0.0d,0.0d]}
-execute as @e[tag=saga_ghast,scores={saga_motion=4},type=ghast] at @s run data merge entity @s {Motion:[0.0d,0.0d,-0.2d]}
+execute as @e[tag=saga_ghast,scores={saga_motion=1},type=ghast] at @s run tp @s ~.15 ~ ~
+execute as @e[tag=saga_ghast,scores={saga_motion=2},type=ghast] at @s run tp @s ~ ~ ~.15
+execute as @e[tag=saga_ghast,scores={saga_motion=3},type=ghast] at @s run tp @s ~-.15 ~ ~
+execute as @e[tag=saga_ghast,scores={saga_motion=4},type=ghast] at @s run tp @s ~ ~ ~-.15
 
 scoreboard players remove @e[tag=saga_ghast,type=ghast] saga_swap_d 1
 execute as @e[tag=saga_ghast,scores={saga_swap_d=0},type=ghast] at @s run scoreboard players remove @s saga_motion 2

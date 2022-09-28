@@ -11,10 +11,10 @@ scoreboard objectives add saga_seconds dummy {"text":"Time Remaining","color":"r
 
 tp @e[tag=saga_die,x=4000,y=66,z=0,distance=..200] 0 2 0
 kill @e[tag=saga_die]
-summon ghast 3962 85 0 {Tags:["saga_ghast","saga_die","saga_1"],NoAI:1,Attributes:[{Bases:0,Name:"generic.followRange"}],Rotation:[-90.0f,0.0f],Invulnerable:1b,PersistenceRequired:1b,Silent:1b}
-summon ghast 3981 85 -19 {Tags:["saga_ghast","saga_die","saga_2"],NoAI:1,Attributes:[{Bases:0,Name:"generic.followRange"}],Rotation:[0.0f,0.0f],Invulnerable:1b,PersistenceRequired:1b,Silent:1b}
-summon ghast 4000 85 0 {Tags:["saga_ghast","saga_die","saga_3"],NoAI:1,Attributes:[{Bases:0,Name:"generic.followRange"}],Rotation:[90.0f,0.0f],Invulnerable:1b,PersistenceRequired:1b,Silent:1b}
-summon ghast 3981 85 19 {Tags:["saga_ghast","saga_die","saga_4"],NoAI:1,Attributes:[{Bases:0,Name:"generic.followRange"}],Rotation:[180.0f,0.0f],Invulnerable:1b,PersistenceRequired:1b,Silent:1b}
+summon ghast 3962 85 0 {Tags:["saga_ghast","saga_die","saga_1"],NoAI:1,Rotation:[-90.0f,0.0f],Invulnerable:1b,PersistenceRequired:1b,Silent:1b}
+summon ghast 3981 85 -19 {Tags:["saga_ghast","saga_die","saga_2"],NoAI:1,Rotation:[0.0f,0.0f],Invulnerable:1b,PersistenceRequired:1b,Silent:1b}
+summon ghast 4000 85 0 {Tags:["saga_ghast","saga_die","saga_3"],NoAI:1,Rotation:[90.0f,0.0f],Invulnerable:1b,PersistenceRequired:1b,Silent:1b}
+summon ghast 3981 85 19 {Tags:["saga_ghast","saga_die","saga_4"],NoAI:1,Rotation:[180.0f,0.0f],Invulnerable:1b,PersistenceRequired:1b,Silent:1b}
 
 scoreboard objectives add saga_fireball dummy
 scoreboard players set @e[tag=saga_ghast] saga_fireball 0
