@@ -5,3 +5,5 @@ fill 14031 0 14031 14033 0 14033 iron_block
 function scenario:loot_a_labyrinth/active
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Loot a labyrinth",tag=blue_select] run scoreboard objectives setdisplay sidebar.team.blue laby_seconds
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Loot a labyrinth",tag=yellow_select] run scoreboard objectives setdisplay sidebar.team.yellow laby_seconds
+
+setblock 14032 1 14032 beacon

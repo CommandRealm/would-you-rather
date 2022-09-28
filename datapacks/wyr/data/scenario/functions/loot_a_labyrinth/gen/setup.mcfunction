@@ -72,5 +72,5 @@ summon area_effect_cloud 14000 0 14000 {Tags:["maze_texture","labyrinth_die"],Ag
 execute as @e[type=area_effect_cloud,tag=maze_texture,limit=1] at @s run function scenario:loot_a_labyrinth/tex/main
 
 setblock 14032 2 14032 air
-setblock 14032 1 14032 beacon
+
 setblock 14032 0 14032 iron_block
