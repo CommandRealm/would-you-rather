@@ -35,6 +35,8 @@ scoreboard players set $number check_gene 0
 scoreboard players set $time gene_timer 0
 scoreboard objectives setdisplay sidebar
 function show:open_gates
+execute as @a run attribute @s generic.max_health base set 20
+effect give @a instant_health 1 255 true
 
 execute as @e[type=armor_stand,tag=die_at_end] at @s run particle minecraft:cloud ~ ~ ~ 0 0.25 0 0.15 1
 execute as @e[type=armor_stand,tag=die_at_end] at @s run playsound minecraft:entity.enderman.teleport master @a ~ ~ ~ 1 2

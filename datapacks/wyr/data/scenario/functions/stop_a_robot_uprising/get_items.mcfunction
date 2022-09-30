@@ -3,3 +3,6 @@ item replace entity @s hotbar.0 with iron_sword{HideFlags:63,display:{Name:'[{"t
 item replace entity @s hotbar.1 with bow{HideFlags:63,display:{Name:'[{"text":"Bow","italic":false,"color":"gold"}]'},Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:10}]}
 item replace entity @s weapon.offhand with shield{HideFlags:63,display:{Name:'[{"text":"Shield","italic":false,"color":"yellow"}]'},Damage:335}
 item replace entity @s hotbar.8 with arrow 3
+
+# Visually one heart
+attribute @s generic.max_health base set 2

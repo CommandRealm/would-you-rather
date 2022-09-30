@@ -5,6 +5,8 @@ execute if entity @e[tag=chosen,type=area_effect_cloud,name="Survive in the wild
 
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Grade a math test"] run function scenario:grade_a_math_test/teleport
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Grade a math test"] run schedule function scenario:grade_a_math_test/setup 50t
+execute if entity @e[tag=chosen,type=area_effect_cloud,name="Become a miner [CLASSIC]"] run function scenario:become_a_miner_old/teleport
+execute if entity @e[tag=chosen,type=area_effect_cloud,name="Become a miner [CLASSIC]"] run schedule function scenario:become_a_miner_old/setup 50t
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Become a miner"] run function scenario:become_a_miner/teleport
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Become a miner"] run schedule function scenario:become_a_miner/setup 50t
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal a gem"] run function scenario:steal_a_gem/teleport

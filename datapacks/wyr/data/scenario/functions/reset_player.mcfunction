@@ -8,8 +8,10 @@ clear @a[tag=playing]
 gamerule showDeathMessages false
 gamerule doMobLoot true
 effect clear @a[tag=playing]
+execute as @a run attribute @s generic.max_health base set 20
+effect give @a instant_health 1 255 true
 gamerule fallDamage true
-bossbar set become_a_miner:diamonds visible false
+bossbar set become_a_miner_old:diamonds visible false
 bossbar set steal_a_gem:suspicion visible false
 bossbar set minecraft:play_gene_says/time visible false
 scoreboard players reset ; timer_seconds

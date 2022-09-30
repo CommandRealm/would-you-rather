@@ -32,6 +32,9 @@ execute if score $number scenario_screen matches 27 as @r run function options:s
 execute if score $number scenario_screen matches 28 as @r run function options:scenario/toggle_sitw
 execute if score $number scenario_screen matches 29 as @r run function options:scenario/toggle_wat
 execute if score $number scenario_screen matches 30 as @r run function options:scenario/toggle_wiaaf
+
+execute if score $number scenario_screen matches 31 as @r run function options:scenario/toggle_bam_old
+
 function options:scenario/display_status
 
 playsound minecraft:block.note_block.bit master @a -928 62 -132 1 1.15

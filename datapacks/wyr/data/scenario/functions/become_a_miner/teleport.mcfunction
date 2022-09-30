@@ -13,10 +13,10 @@ effect give @a[team=bam,gamemode=adventure] blindness 10000 255 true
 effect give @a[team=bam,gamemode=adventure] invisibility 10000 255 true
 effect give @a[team=bam,gamemode=adventure] slowness 10000 255 true
 effect give @a[team=bam,gamemode=adventure] jump_boost 10000 200 true
-effect give @a[team=bam,gamemode=adventure] levitation 1 255 true
+effect give @a[team=bam,gamemode=adventure] levitation 4 255 true
 
-tp @a[team=bam,gamemode=adventure] 8998 89 -1 -90 0
-spawnpoint @a[team=bam,gamemode=adventure] 9002 66 -1
+tp @a[team=bam,gamemode=adventure] 8832 155 -16 -90 20
+spawnpoint @a[team=bam,gamemode=adventure] 8836 134 -16 -90
 
 
-tellraw @a[team=bam,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Use a Fortune pickaxe to obtain seven diamonds.","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]
+tellraw @a[team=bam,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Use your pickaxe to break one diamond ore and hope for 3 diamonds. Choose carefully!","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]

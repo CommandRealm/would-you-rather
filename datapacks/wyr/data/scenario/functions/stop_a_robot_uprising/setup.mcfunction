@@ -27,7 +27,7 @@ kill @e[type=item,x=29000,y=66,z=0,distance=..500]
 
 
 fill 29016 71 1 29018 71 -1 oak_trapdoor[half=top]
-setblock 29017 67 1 
+#setblock 29017 67 1 
 setblock 29017 67 -1 minecraft:oak_trapdoor[open=true,facing=north]
 setblock 29018 67 0 oak_door[facing=east,half=lower,hinge=left]
 setblock 29018 68 0 oak_door[facing=east,half=upper,hinge=left]

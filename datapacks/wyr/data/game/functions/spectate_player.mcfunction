@@ -3,6 +3,7 @@ execute unless entity @a[tag=playing,gamemode=adventure,distance=..5] run scoreb
 tp @s @p[tag=playing,gamemode=adventure]
 execute at @s if entity @a[gamemode=adventure,distance=..2,team=sitw] run team join sitw
 execute at @s if entity @a[gamemode=adventure,distance=..2,team=gamt] run team join gamt
+execute at @s if entity @a[gamemode=adventure,distance=..2,team=bam_old] run team join bam_old
 execute at @s if entity @a[gamemode=adventure,distance=..2,team=bam] run team join bam
 execute at @s if entity @a[gamemode=adventure,distance=..2,team=wiaaf] run team join wiaaf
 execute at @s if entity @a[gamemode=adventure,distance=..2,team=dab] run team join dab

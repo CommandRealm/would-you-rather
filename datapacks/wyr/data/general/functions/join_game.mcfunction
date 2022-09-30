@@ -34,4 +34,5 @@ xp set @s 0 levels
 xp set @s 0 points
 tag @s remove mute_own_fan
 attribute @s minecraft:generic.max_health base set 20
+effect give @s instant_health 1 255 true
 bossbar set lobby players @a[tag=!playing,tag=!playing_soon]

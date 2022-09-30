@@ -170,6 +170,7 @@ tag Calverin add has_srbld
 tag Captonium add has_srbld
 tag Connop add has_srbld
 tag TheRegularMex add has_srbld
+tag FalconReign add has_srbld
 
 # prg
 tag Calverin add has_prg

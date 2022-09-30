@@ -1,5 +1,6 @@
 scoreboard players set $sitw active_scenario 0
 scoreboard players set $gamt active_scenario 0
+scoreboard players set $bam_old active_scenario 0
 scoreboard players set $bam active_scenario 0
 scoreboard players set $rab active_scenario 0
 scoreboard players set $dab active_scenario 0

@@ -1,6 +1,7 @@
 tag @s add no_toggle_scenario
 function options:scenario/toggle_arb
 function options:scenario/toggle_bafe
+function options:scenario/toggle_bam_old
 function options:scenario/toggle_bam
 function options:scenario/toggle_cms
 function options:scenario/toggle_cs

@@ -1,6 +1,7 @@
 kill @e[type=area_effect_cloud,tag=scenario]
 execute as @r run function options:scenario/toggle_arb
 execute as @r run function options:scenario/toggle_bafe
+execute as @r run function options:scenario/toggle_bam_old
 execute as @r run function options:scenario/toggle_bam
 execute as @r run function options:scenario/toggle_cms
 execute as @r run function options:scenario/toggle_cs

@@ -7,8 +7,8 @@ execute positioned -944 63 -140 run tp @e[tag=diorama_die,dx=13,dy=10,dz=5] 0 0 
 execute positioned -944 63 -140 run kill @e[tag=diorama_die,x=0,y=0,z=0,distance=..10]
 execute positioned -944 63 -140 run kill @e[type=item,dx=13,dy=10,dz=5]
 execute positioned -944 63 -140 run kill @e[type=falling_block,dx=13,dy=10,dz=5]
-execute if score $number scenario_screen matches ..0 run scoreboard players set $number scenario_screen 30
-execute if score $number scenario_screen matches 31.. run scoreboard players set $number scenario_screen 1
+execute if score $number scenario_screen matches ..0 run scoreboard players set $number scenario_screen 31
+execute if score $number scenario_screen matches 32.. run scoreboard players set $number scenario_screen 1
 scoreboard players add $color scenario_screen 1
 execute if score $color scenario_screen matches 3.. run scoreboard players set $color scenario_screen 1
 execute if score $color scenario_screen matches 1 run team modify scenario_option color blue
@@ -23,7 +23,7 @@ execute if score $number scenario_screen matches 2 run summon area_effect_cloud 
 execute if score $number scenario_screen matches 2 run setblock -931 62 -142 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:5,name:"minecraft:diorama_bafe",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b,rotation:"CLOCKWISE_180"}
 
 execute if score $number scenario_screen matches 3 run summon area_effect_cloud -927.0 65 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Become a miner"}]'}
-execute if score $number scenario_screen matches 3 run summon area_effect_cloud -927.0 64.75 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Gameplay: ","color":"aqua"},{"text":"Competitive","color":"red","bold":true}]'}
+execute if score $number scenario_screen matches 3 run summon area_effect_cloud -927.0 64.75 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Gameplay: ","color":"aqua"},{"text":"Neutral","color":"gray","bold":true}]'}
 execute if score $number scenario_screen matches 3 run setblock -931 62 -142 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:5,name:"minecraft:diorama_bam",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b,rotation:"CLOCKWISE_180"}
 
 execute if score $number scenario_screen matches 4 run summon area_effect_cloud -927.0 65 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Cook mushroom soups"}]'}
@@ -133,6 +133,12 @@ execute if score $number scenario_screen matches 29 run setblock -931 62 -142 mi
 execute if score $number scenario_screen matches 30 run summon area_effect_cloud -927.0 65 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Work in an anvil factory"}]'}
 execute if score $number scenario_screen matches 30 run summon area_effect_cloud -927.0 64.75 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Gameplay: ","color":"aqua"},{"text":"Neutral","color":"gray","bold":true}]'}
 execute if score $number scenario_screen matches 30 run setblock -931 62 -142 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:5,name:"minecraft:diorama_wiaaf",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b,rotation:"CLOCKWISE_180"}
+
+execute if score $number scenario_screen matches 31 run summon area_effect_cloud -927.0 65 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Become a miner [CLASSIC]"}]'}
+execute if score $number scenario_screen matches 31 run summon area_effect_cloud -927.0 64.75 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Gameplay: ","color":"aqua"},{"text":"Competitive","color":"red","bold":true}]'}
+execute if score $number scenario_screen matches 31 run setblock -931 62 -142 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:5,name:"minecraft:diorama_bam",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b,rotation:"CLOCKWISE_180"}
+
+
 team join scenario_option @e[type=area_effect_cloud,tag=scenario_options_title]
 
 

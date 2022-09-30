@@ -1,2 +1,0 @@
-execute at @e[tag=bam_diamond,sort=nearest,limit=1] run tp @e[tag=bam_diamond,sort=nearest,limit=1] ~ ~ ~ facing entity @s
-execute if score $time bam_timer matches ..5000 at @e[tag=bam_diamond,sort=nearest,limit=1] rotated as @e[tag=bam_diamond,sort=nearest,limit=1] unless entity @s[distance=..4] run function scenario:become_a_miner/tracker
