@@ -8,36 +8,28 @@ scoreboard objectives add dab_timer dummy
 scoreboard objectives add dab_second dummy
 scoreboard players set $time dab_second 0
 
-function scenario:defuse_tnt/random
-execute if score $rand dab_random matches 0 run setblock 25968 66 6 red_concrete
-execute if score $rand dab_random matches 1 run setblock 25968 66 6 orange_concrete
-execute if score $rand dab_random matches 2 run setblock 25968 66 6 yellow_concrete
-execute if score $rand dab_random matches 3 run setblock 25968 66 6 lime_concrete
-execute if score $rand dab_random matches 4 run setblock 25968 66 6 light_blue_concrete
-execute if score $rand dab_random matches 5 run setblock 25968 66 6 purple_concrete
-execute if score $rand dab_random matches 6 run setblock 25968 66 6 blue_concrete
-execute if score $rand dab_random matches 7 run setblock 25968 66 6 pink_concrete
-execute if score $rand dab_random matches 8 run setblock 25968 66 6 brown_concrete
-function scenario:defuse_tnt/random
-execute if score $rand dab_random matches 0 run setblock 25968 66 5 red_concrete
-execute if score $rand dab_random matches 1 run setblock 25968 66 5 orange_concrete
-execute if score $rand dab_random matches 2 run setblock 25968 66 5 yellow_concrete
-execute if score $rand dab_random matches 3 run setblock 25968 66 5 lime_concrete
-execute if score $rand dab_random matches 4 run setblock 25968 66 5 light_blue_concrete
-execute if score $rand dab_random matches 5 run setblock 25968 66 5 purple_concrete
-execute if score $rand dab_random matches 6 run setblock 25968 66 5 blue_concrete
-execute if score $rand dab_random matches 7 run setblock 25968 66 5 pink_concrete
-execute if score $rand dab_random matches 8 run setblock 25968 66 5 brown_concrete
-function scenario:defuse_tnt/random
-execute if score $rand dab_random matches 0 run setblock 25968 66 4 red_concrete
-execute if score $rand dab_random matches 1 run setblock 25968 66 4 orange_concrete
-execute if score $rand dab_random matches 2 run setblock 25968 66 4 yellow_concrete
-execute if score $rand dab_random matches 3 run setblock 25968 66 4 lime_concrete
-execute if score $rand dab_random matches 4 run setblock 25968 66 4 light_blue_concrete
-execute if score $rand dab_random matches 5 run setblock 25968 66 4 purple_concrete
-execute if score $rand dab_random matches 6 run setblock 25968 66 4 blue_concrete
-execute if score $rand dab_random matches 7 run setblock 25968 66 4 pink_concrete
-execute if score $rand dab_random matches 8 run setblock 25968 66 4 brown_concrete
+# Create code
+kill @e[type=item,tag=dab_concrete]
+fill 25968 66 6 25968 66 4 air
+
+summon item 25968 66 6 {Item:{id:"minecraft:red_concrete",Count:1b},Tags:["die","dab_concrete"]}
+summon item 25968 66 6 {Item:{id:"minecraft:orange_concrete",Count:1b},Tags:["die","dab_concrete"]}
+summon item 25968 66 6 {Item:{id:"minecraft:yellow_concrete",Count:1b},Tags:["die","dab_concrete"]}
+summon item 25968 66 6 {Item:{id:"minecraft:lime_concrete",Count:1b},Tags:["die","dab_concrete"]}
+summon item 25968 66 6 {Item:{id:"minecraft:light_blue_concrete",Count:1b},Tags:["die","dab_concrete"]}
+summon item 25968 66 6 {Item:{id:"minecraft:purple_concrete",Count:1b},Tags:["die","dab_concrete"]}
+summon item 25968 66 6 {Item:{id:"minecraft:blue_concrete",Count:1b},Tags:["die","dab_concrete"]}
+summon item 25968 66 6 {Item:{id:"minecraft:brown_concrete",Count:1b},Tags:["die","dab_concrete"]}
+summon item 25968 66 6 {Item:{id:"minecraft:pink_concrete",Count:1b},Tags:["die","dab_concrete"]}
+
+summon minecraft:falling_block 25968 66 6 {Tags:["dab_concrete"],BlockState:{Name:"minecraft:red_concrete"}}
+summon minecraft:falling_block 25968 66 5 {Tags:["dab_concrete"],BlockState:{Name:"minecraft:red_concrete"}}
+summon minecraft:falling_block 25968 66 4 {Tags:["dab_concrete"],BlockState:{Name:"minecraft:red_concrete"}}
+
+execute as @e[type=falling_block,tag=dab_concrete] at @s run function scenario:defuse_tnt/assign_color
+
+kill @e[type=item,tag=dab_concrete]
+
 fill 25974 89 -7 25989 72 -7 air
 fill 25990 77 6 25990 77 4 air
 scoreboard objectives add dab_animation dummy
@@ -47,7 +39,7 @@ scoreboard players set $1 dab_state -1
 scoreboard players set $2 dab_state -1
 scoreboard players set $3 dab_state -1
 scoreboard objectives add dab_sand dummy
-kill @e[tag=die,x=26000,y=66,z=0,distance=..300]
+kill @e[tag=die,x=26970,y=66,z=0,distance=..300]
 
 fill 25981 72 9 25975 72 9 air
 
@@ -68,10 +60,10 @@ scoreboard players set $number dab_result -1
 
 kill @e[type=area_effect_cloud,tag=dab_particle,tag=die]
 
-summon area_effect_cloud 25993 77.5 10 {Duration:100000,Tags:["infinite","die","dab_particle","dab_help1"]}
-summon area_effect_cloud 25993 78.5 10 {Duration:100000,Tags:["infinite","die","dab_particle","dab_help2"]}
-summon area_effect_cloud 25993 79.5 10 {Duration:100000,Tags:["infinite","die","dab_particle","dab_help3"]}
-summon area_effect_cloud 25993 76.5 10 {Duration:100000,Tags:["infinite","die","dab_particle","dab_help4"]}
+summon area_effect_cloud 25992 77.5 10 {Duration:100000,Tags:["infinite","die","dab_particle","dab_help1"]}
+summon area_effect_cloud 25992 78.5 10 {Duration:100000,Tags:["infinite","die","dab_particle","dab_help2"]}
+summon area_effect_cloud 25992 79.5 10 {Duration:100000,Tags:["infinite","die","dab_particle","dab_help3"]}
+#summon area_effect_cloud 25993 76.5 10 {Duration:100000,Tags:["infinite","die","dab_particle","dab_help4"]}
 
 scoreboard players set @e[tag=dab_help1] dab_particle 0
 scoreboard players set @e[tag=dab_help2] dab_particle 1
