@@ -1,0 +1,2 @@
+execute at @e[tag=rab_old_truck,sort=nearest,limit=1] run tp @e[tag=rab_old_truck,sort=nearest,limit=1] ~ ~ ~ facing entity @s
+execute at @e[tag=rab_old_truck,sort=nearest,limit=1] rotated as @e[tag=rab_old_truck,sort=nearest,limit=1] unless entity @s[distance=..5] run function scenario:steal_a_gem_old/tracker

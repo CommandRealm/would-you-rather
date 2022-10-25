@@ -5,6 +5,8 @@ scoreboard players operation : labyrinth_timer /= $20 number
 scoreboard players add : labyrinth_timer 1
 execute unless score : labyrinth_timer = : laby_seconds run scoreboard players operation : laby_seconds = : labyrinth_timer
 
+# (Parking Lot Patch) Give speed to make scenario faster
+effect give @a[team=labyrinth,gamemode=adventure] speed 3 1 true
 
 # Scenario Logic:
 execute as @a[team=labyrinth,gamemode=adventure] at @s if entity @e[type=item,tag=maze_treasure,distance=..30] run function scenario:loot_a_labyrinth/treasure/check_pickup

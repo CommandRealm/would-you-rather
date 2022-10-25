@@ -49,11 +49,11 @@ scoreboard players set $3 dab_state -1
 scoreboard objectives add dab_sand dummy
 kill @e[tag=die,x=26000,y=66,z=0,distance=..300]
 
-fill 25982 72 9 25975 72 9 air
+fill 25981 72 9 25975 72 9 air
 
-fill 25982 72 5 25975 72 5 air
+fill 25981 72 5 25975 72 5 air
 
-fill 25982 72 1 25975 72 1 air
+fill 25981 72 1 25975 72 1 air
 
 scoreboard objectives add dab_particle dummy
 

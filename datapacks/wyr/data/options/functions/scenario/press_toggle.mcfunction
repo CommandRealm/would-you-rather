@@ -34,6 +34,7 @@ execute if score $number scenario_screen matches 29 as @r run function options:s
 execute if score $number scenario_screen matches 30 as @r run function options:scenario/toggle_wiaaf
 
 execute if score $number scenario_screen matches 31 as @r run function options:scenario/toggle_bam_old
+execute if score $number scenario_screen matches 32 as @r run function options:scenario/toggle_rab_old
 
 function options:scenario/display_status
 

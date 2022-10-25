@@ -3,12 +3,12 @@ scoreboard players add @a[tag=in_tutorial,tag=playing,team=rab] tutorial 1
 execute as @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=5..}] at @s run spectate @e[type=armor_stand,tag=rab_tutorial,sort=nearest,limit=1] @s
 execute if entity @a[tag=in_tutorial,tag=playing,team=rab] run schedule function scenario:steal_a_gem/tutorial 1t
 
-execute if entity @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=5}] run title @a[team=rab,tag=playing,tag=!no_tutorial] subtitle [{"selector":"@e[type=area_effect_cloud,name=\"Steal a gem\"]"}]
+execute if entity @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=5}] run title @a[team=rab,tag=playing,tag=!no_tutorial] subtitle [{"selector":"@e[type=area_effect_cloud,name=\"Steal gems\"]"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=5}] run title @a[team=rab,tag=playing,tag=!no_tutorial] title [{"text":"| ","color":"dark_green"},{"text":"Tutorial","color":"green","bold":true},{"text":" |","color":"dark_green"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=5}] as @a[team=rab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1000 1.25
 execute if entity @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=5}] as @a[team=rab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.beacon.activate master @s ~ ~ ~ 1000 1
 
-execute if entity @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=75}] run tellraw @a[team=rab,tag=playing,tag=!no_tutorial] [{"selector":"@e[type=area_effect_cloud,name=\"Steal a gem\"]"}]
+execute if entity @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=75}] run tellraw @a[team=rab,tag=playing,tag=!no_tutorial] [{"selector":"@e[type=area_effect_cloud,name=\"Steal gems\"]"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=rab,scores={tutorial=75}] as @a[team=rab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 1
 
 ##

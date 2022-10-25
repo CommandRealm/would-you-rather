@@ -15,6 +15,7 @@ function options:scenario/toggle_pd
 function options:scenario/toggle_pgs
 function options:scenario/toggle_ptp
 function options:scenario/toggle_sas
+function options:scenario/toggle_rab_old
 function options:scenario/toggle_rab
 function options:scenario/toggle_saru
 function options:scenario/toggle_saga

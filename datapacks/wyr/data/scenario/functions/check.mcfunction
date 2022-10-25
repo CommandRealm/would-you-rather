@@ -9,8 +9,10 @@ execute if entity @e[tag=chosen,type=area_effect_cloud,name="Become a miner [CLA
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Become a miner [CLASSIC]"] run schedule function scenario:become_a_miner_old/setup 50t
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Become a miner"] run function scenario:become_a_miner/teleport
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Become a miner"] run schedule function scenario:become_a_miner/setup 50t
-execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal a gem"] run function scenario:steal_a_gem/teleport
-execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal a gem"] run schedule function scenario:steal_a_gem/setup 50t
+execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal a gem [CLASSIC]"] run function scenario:steal_a_gem_old/teleport
+execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal a gem [CLASSIC]"] run schedule function scenario:steal_a_gem_old/setup 50t
+execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal gems"] run function scenario:steal_a_gem/teleport
+execute if entity @e[tag=chosen,type=area_effect_cloud,name="Steal gems"] run schedule function scenario:steal_a_gem/setup 50t
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Work in an anvil factory"] run function scenario:work_in_an_anvil_factory/teleport
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Work in an anvil factory"] run schedule function scenario:work_in_an_anvil_factory/setup 50t
 execute if entity @e[tag=chosen,type=area_effect_cloud,name="Defuse TNT"] run function scenario:defuse_tnt/teleport

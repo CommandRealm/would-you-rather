@@ -8,7 +8,7 @@ execute positioned -944 63 -140 run kill @e[tag=diorama_die,x=0,y=0,z=0,distance
 execute positioned -944 63 -140 run kill @e[type=item,dx=13,dy=10,dz=5]
 execute positioned -944 63 -140 run kill @e[type=falling_block,dx=13,dy=10,dz=5]
 execute if score $number scenario_screen matches ..0 run scoreboard players set $number scenario_screen 31
-execute if score $number scenario_screen matches 32.. run scoreboard players set $number scenario_screen 1
+execute if score $number scenario_screen matches 33.. run scoreboard players set $number scenario_screen 1
 scoreboard players add $color scenario_screen 1
 execute if score $color scenario_screen matches 3.. run scoreboard players set $color scenario_screen 1
 execute if score $color scenario_screen matches 1 run team modify scenario_option color blue
@@ -110,7 +110,7 @@ execute if score $number scenario_screen matches 24 run summon area_effect_cloud
 execute if score $number scenario_screen matches 24 run summon area_effect_cloud -927.0 64.75 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Gameplay: ","color":"aqua"},{"text":"Neutral","color":"gray","bold":true}]'}
 execute if score $number scenario_screen matches 24 run setblock -931 62 -142 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:5,name:"minecraft:diorama_sas",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b,rotation:"CLOCKWISE_180"}
 
-execute if score $number scenario_screen matches 25 run summon area_effect_cloud -927.0 65 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Steal a gem"}]'}
+execute if score $number scenario_screen matches 25 run summon area_effect_cloud -927.0 65 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Steal gems"}]'}
 execute if score $number scenario_screen matches 25 run summon area_effect_cloud -927.0 64.75 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Gameplay: ","color":"aqua"},{"text":"Coordinated","color":"light_purple","bold":true}]'}
 execute if score $number scenario_screen matches 25 run setblock -931 62 -142 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:5,name:"minecraft:diorama_rab",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b,rotation:"CLOCKWISE_180"}
 
@@ -138,6 +138,9 @@ execute if score $number scenario_screen matches 31 run summon area_effect_cloud
 execute if score $number scenario_screen matches 31 run summon area_effect_cloud -927.0 64.75 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Gameplay: ","color":"aqua"},{"text":"Competitive","color":"red","bold":true}]'}
 execute if score $number scenario_screen matches 31 run setblock -931 62 -142 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:5,name:"minecraft:diorama_bam",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b,rotation:"CLOCKWISE_180"}
 
+execute if score $number scenario_screen matches 32 run summon area_effect_cloud -927.0 65 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Steal a gem [CLASSIC]"}]'}
+execute if score $number scenario_screen matches 32 run summon area_effect_cloud -927.0 64.75 -136 {Tags:["scenario_options_title"],Duration:10000000,CustomNameVisible:1b,CustomName:'[{"text":"Gameplay: ","color":"aqua"},{"text":"Coordinated","color":"light_purple","bold":true}]'}
+execute if score $number scenario_screen matches 32 run setblock -931 62 -142 minecraft:structure_block[mode=load]{mode:"LOAD",posY:1,posX:0,posZ:5,name:"minecraft:diorama_rab",id:"minecraft:structure_block",sizeX:14,sizeY:11,sizeZ:4,ignoredEntities:0b,showboundingbox:0b,rotation:"CLOCKWISE_180"}
 
 team join scenario_option @e[type=area_effect_cloud,tag=scenario_options_title]
 

@@ -42,7 +42,7 @@ execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"If you see the rare aqua particle, that means that one of the colors you guessed is in the code, in the correct position, but also appears in the code elsewhere.","color":"gray"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710}] as @a[team=dab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1000 1.25
 
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=870}] run tp @e[type=armor_stand,tag=dab_tutorial] 25982 79 12 180 0
+execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=870}] run tp @e[type=armor_stand,tag=dab_tutorial] 25981 79 12 180 0
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=870}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"You have seven guesses. Make sure to determine the code correctly before running out of guesses and before the timer reaches zero.","color":"#e2e2e2"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=870}] as @a[team=dab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1000 1.25
 

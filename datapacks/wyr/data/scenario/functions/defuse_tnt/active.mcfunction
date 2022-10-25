@@ -4,6 +4,8 @@ scoreboard players operation : dab_timer /= $20 number
 scoreboard players add : dab_timer 1
 execute unless score : dab_timer = : dab_seconds run scoreboard players operation : dab_seconds = : dab_timer
 
+effect give @a[gamemode=adventure,team=dab] resistance 5 255 true
+
 execute if score $dab active_scenario matches 1 if score $time dab_timer matches 1.. run schedule function scenario:defuse_tnt/active 1t
 execute if score $dab active_scenario matches 1 unless entity @a[team=dab] run function scenario:defuse_tnt/end
 
@@ -30,11 +32,11 @@ execute unless block 25990 77 6 air unless block 25990 77 5 air unless block 259
 
 execute if score $time dab_animation matches 1.. run function scenario:defuse_tnt/animation
 
-execute if entity @e[type=falling_block,distance=..1,x=25982,y=73,z=1] run schedule function scenario:defuse_tnt/conveyor 20t
+execute if entity @e[type=falling_block,distance=..1,x=25981,y=73,z=1] run schedule function scenario:defuse_tnt/conveyor 20t
 
-tp @e[type=falling_block,distance=..1,x=25982,y=73,z=1] 25982 72 1
-tp @e[type=falling_block,distance=..1,x=25982,y=73,z=5] 25982 72 5
-tp @e[type=falling_block,distance=..1,x=25982,y=73,z=9] 25982 72 9
+tp @e[type=falling_block,distance=..1,x=25981,y=73,z=1] 25981 72 1
+tp @e[type=falling_block,distance=..1,x=25981,y=73,z=5] 25981 72 5
+tp @e[type=falling_block,distance=..1,x=25981,y=73,z=9] 25981 72 9
 
 
 execute if score $1 dab_state matches 0 at @e[type=area_effect_cloud,tag=dab_particle_1] run particle dust 1 0 0 1 ~ ~ ~ 0 0 0 0 1 force @a

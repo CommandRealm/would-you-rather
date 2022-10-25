@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:redstone",
+      "minecraft:amethyst_shard",
+      "minecraft:heart_of_the_sea"
+    ]
+  }

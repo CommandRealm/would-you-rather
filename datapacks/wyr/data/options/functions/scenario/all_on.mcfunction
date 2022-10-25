@@ -15,6 +15,7 @@ execute as @r run function options:scenario/toggle_pd
 execute as @r run function options:scenario/toggle_pgs
 execute as @r run function options:scenario/toggle_ptp
 execute as @r run function options:scenario/toggle_sas
+execute as @r run function options:scenario/toggle_rab_old
 execute as @r run function options:scenario/toggle_rab
 execute as @r run function options:scenario/toggle_saru
 execute as @r run function options:scenario/toggle_saga
