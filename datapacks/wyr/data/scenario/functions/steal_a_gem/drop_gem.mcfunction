@@ -1,5 +1,8 @@
+setblock 0 2 0 chest destroy
+kill @e[type=item,x=0,y=2,z=0,distance=..2]
 data modify block 0 2 0 Items set from entity @s Inventory
-loot spawn ~ ~ ~ mine 0 2 0
+setblock 0 2 0 chest destroy
+tp @e[type=item,x=0,y=2,z=0,distance=..2,nbt={Item:{tag:{rab_gem:1b}}}] ~ ~ ~
 #summon item 0 10 0 {PickupDelay:0s,Tags:["rab_tp_to_map"],Item:{id:"minecraft:player_head",Count:1b,tag:{rab_gem:1b,HideFlags:63,display:{Name:'[{"text":"✧","color":"dark_aqua","italic":false},{"text":" Gem ","color":"aqua"},{"text":"✧","color":"dark_aqua"}]'},SkullOwner:{Id:[I;1779249861,-1945615709,-1110092384,68104524],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTY0ZjI1Y2ZmZjc1NGYyODdhOTgzOGQ4ZWZlMDM5OTgwNzNjMjJkZjdhOWQzMDI1YzQyNWUzZWQ3ZmY1MmMyMCJ9fX0="}]}}}}}
 #execute as @e[type=item,tag=rab_tp_to_map] at @s store result entity @s Pos[0] double 0.01 run scoreboard players get @p[team=rab,gamemode=adventure,nbt={Inventory:[{id:"minecraft:player_head",tag:{rab_gem:1b}}]}] rab_x
 #execute as @e[type=item,tag=rab_tp_to_map] at @s store result entity @s Pos[1] double 0.01 run scoreboard players get @p[team=rab,gamemode=adventure,nbt={Inventory:[{id:"minecraft:player_head",tag:{rab_gem:1b}}]}] rab_y

@@ -1,3 +1,5 @@
 execute unless entity @a[team=rab,gamemode=adventure,distance=..2] unless entity @s[distance=3.5..] positioned ~ ~1 ~ if block ~ ~ ~ air positioned ~ ~-1 ~ positioned ^ ^ ^1 run function scenario:steal_a_gem/guard_view
 execute if entity @a[team=rab,gamemode=adventure,distance=..2,nbt={SelectedItem:{tag:{rab_melee:1}}}] run scoreboard players add $number rab_bar 3
+execute as @a[team=rab,gamemode=adventure,distance=..2,nbt={SelectedItem:{tag:{rab_melee:1}}}] run playsound block.note_block.pling master @s ~ ~ ~ 10 2
 execute if entity @s[tag=rab_lookout] if entity @a[team=rab,distance=..2,gamemode=adventure] run scoreboard players add $number rab_bar 10
+execute if entity @s[tag=rab_lookout] as @a[team=rab,distance=..2,gamemode=adventure] run playsound block.note_block.pling master @s ~ ~ ~ 10 2

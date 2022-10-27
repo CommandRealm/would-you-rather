@@ -24,4 +24,4 @@ spawnpoint @a[team=rab,gamemode=adventure] 15998 68 -381
 
 forceload add 15950 -371 15901 -407
 
-tellraw @a[team=rab,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Sublty get to the vault or loot the offices, take the gems, and get back to your truck.","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]
+tellraw @a[team=rab,tag=!tutorial,gamemode=adventure] [{"text":"-----------------------------------------------------","color":"dark_gray"},{"text":"\nYour goal: ","color":"gray","bold":true},{"text":"Subtly get to the vault or loot the offices, take the gems, and get back to your truck.","bold":false,"color":"green"},{"text":"\n-----------------------------------------------------","color":"dark_gray"}]
