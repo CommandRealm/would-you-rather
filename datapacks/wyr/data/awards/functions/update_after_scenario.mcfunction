@@ -12,6 +12,14 @@ execute as @a[tag=playing] at @s run scoreboard players operation @s awd_movemen
 execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_chest
 execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_shulk
 execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_barr
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_dispenser
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_dropper
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_hopper
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_b_furnace
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_brew
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_furnace
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_loom
+execute as @a[tag=playing] at @s run scoreboard players operation @s awd_thievery += @s awd_d_open_smoker
 
 execute as @a[tag=playing] at @s run scoreboard players operation @s awd_sel_time += @s awd_r_sel_time
 

@@ -24,12 +24,12 @@ execute if entity @a[tag=playing,team=giant,gamemode=adventure,scores={check_pla
 scoreboard players set $animation giant_timer 0
 
 # determining which foods will be used
-summon item 13011 88 0 {Tags:["giant_die","giant_food_option","giant_melon"],Item:{id:"minecraft:melon_slice",Count:1b},CustomName:'[{"text":"MELON","bold":true,"color":"red"}]',PickupDelay:10000s}
-summon item 12973 77.6 13 {Tags:["giant_die","giant_food_option","giant_cake"],Item:{id:"minecraft:cake",Count:1b},CustomName:'[{"text":"CAKE","bold":true,"color":"light_purple"}]',PickupDelay:10000s}
-summon item 13020 78 -23 {Tags:["giant_die","giant_food_option","giant_kelp"],Item:{id:"minecraft:dried_kelp",Count:1b},CustomName:'[{"text":"KELP","bold":true,"color":"green"}]',PickupDelay:10000s}
-summon item 13024 68 33 {Tags:["giant_die","giant_food_option","giant_honey"],Item:{id:"minecraft:honey_bottle",Count:1b},CustomName:'[{"text":"HONEY","bold":true,"color":"#ff871c"}]',PickupDelay:10000s}
-summon item 13000 79 -14 {Tags:["giant_die","giant_food_option","giant_cooked_beef"],Item:{id:"minecraft:cooked_beef",Count:1b},CustomName:'[{"text":"BEEF","bold":true,"color":"#7d4105"}]',PickupDelay:10000s}
-summon item 12978 87 14 {Tags:["giant_die","giant_food_option","giant_berries"],Item:{id:"minecraft:glow_berries",Count:1b},CustomName:'[{"text":"BERRIES","bold":true,"color":"yellow"}]',PickupDelay:10000s}
+summon item 13011 88 0 {Tags:["giant_die","giant_food_option","giant_melon"],Item:{id:"minecraft:melon_slice",Count:1b},CustomName:'[{"text":"MELON","bold":true,"color":"red"}]',PickupDelay:10000s,Glowing:1b}
+summon item 12973 77.6 13 {Tags:["giant_die","giant_food_option","giant_cake"],Item:{id:"minecraft:cake",Count:1b},CustomName:'[{"text":"CAKE","bold":true,"color":"light_purple"}]',PickupDelay:10000s,Glowing:1b}
+summon item 13020 78 -23 {Tags:["giant_die","giant_food_option","giant_kelp"],Item:{id:"minecraft:dried_kelp",Count:1b},CustomName:'[{"text":"KELP","bold":true,"color":"green"}]',PickupDelay:10000s,Glowing:1b}
+summon item 13024 68 33 {Tags:["giant_die","giant_food_option","giant_honey"],Item:{id:"minecraft:honey_bottle",Count:1b},CustomName:'[{"text":"HONEY","bold":true,"color":"#ff871c"}]',PickupDelay:10000s,Glowing:1b}
+summon item 13000 79 -14 {Tags:["giant_die","giant_food_option","giant_cooked_beef"],Item:{id:"minecraft:cooked_beef",Count:1b},CustomName:'[{"text":"BEEF","bold":true,"color":"#7d4105"}]',PickupDelay:10000s,Glowing:1b}
+summon item 12978 87 14 {Tags:["giant_die","giant_food_option","giant_berries"],Item:{id:"minecraft:glow_berries",Count:1b},CustomName:'[{"text":"BERRIES","bold":true,"color":"yellow"}]',PickupDelay:10000s,Glowing:1b}
 
 
 scoreboard players set @e[type=item,tag=giant_melon] giant_item 1
@@ -60,9 +60,9 @@ execute unless entity @a[team=giant,tag=tutorial] run schedule function scenario
 
 
 # summoning items showing the path
-summon area_effect_cloud 13018 72.5 -6 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:melon_slice",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}]}
-summon area_effect_cloud 13015 72.5 -12 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:dried_kelp",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}]}
-summon area_effect_cloud 12992 72.5 -8 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:cooked_beef",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}]}
-summon area_effect_cloud 12994 70.5 1 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:glow_berries",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}]}
-summon area_effect_cloud 12981 72.5 12 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:cake",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}]}
-summon area_effect_cloud 13018 72.5 18 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:honey_bottle",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}]}
+summon area_effect_cloud 13018 72.75 -6 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:melon_slice",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}],Glowing:1b}
+summon area_effect_cloud 13015 72.75 -12 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:dried_kelp",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}],Glowing:1b}
+summon area_effect_cloud 12992 72.75 -8 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:cooked_beef",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}],Glowing:1b}
+summon area_effect_cloud 12994 70.75 1 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:glow_berries",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}],Glowing:1b}
+summon area_effect_cloud 12981 72.75 12 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:cake",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}],Glowing:1b}
+summon area_effect_cloud 13018 72.75 18 {Duration:1000000,Tags:["giant_die"],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:honey_bottle",Count:1b},PickupDelay:10000s,Tags:["giant_die"]}],Glowing:1b}

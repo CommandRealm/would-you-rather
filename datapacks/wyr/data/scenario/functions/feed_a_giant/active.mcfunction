@@ -16,6 +16,8 @@ execute as @a[team=giant,tag=playing,gamemode=adventure,scores={giant_item=4}] a
 execute as @a[team=giant,tag=playing,gamemode=adventure,scores={giant_item=5}] at @s unless data entity @s Inventory[{Slot:4b,id:"minecraft:cooked_beef"}] run function scenario:feed_a_giant/get_item_5
 execute as @a[team=giant,tag=playing,gamemode=adventure,scores={giant_item=6}] at @s unless data entity @s Inventory[{Slot:4b,id:"minecraft:glow_berries"}] run function scenario:feed_a_giant/get_item_6
 
+# Show needed food in actionbar (Parking Lot Patch)
+title @a[tag=playing,team=giant,gamemode=adventure] actionbar ["",{"text":"The ","color":"gray"},{"text":"GIANT","bold":true,"color":"dark_green"},{"text":" wants: ","color":"gray"},{"selector":"@e[type=item,tag=giant_food_option]"}]
 
 # making the giant follow the player
 execute as @e[type=giant,tag=giant,sort=nearest,limit=1] at @s run tp @s ~ ~ ~ facing entity @p[gamemode=adventure,team=giant]

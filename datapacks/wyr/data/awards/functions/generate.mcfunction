@@ -36,7 +36,14 @@ scoreboard objectives remove awd_armor
 scoreboard objectives remove awd_d_open_chest
 scoreboard objectives remove awd_d_open_shulk
 scoreboard objectives remove awd_d_open_barr
-
+scoreboard objectives remove awd_d_open_dispenser
+scoreboard objectives remove awd_d_open_dropper
+scoreboard objectives remove awd_d_open_hopper
+scoreboard objectives remove awd_d_open_b_furnace
+scoreboard objectives remove awd_d_open_brew
+scoreboard objectives remove awd_d_open_furnace
+scoreboard objectives remove awd_d_open_loom
+scoreboard objectives remove awd_d_open_smoker
 
 scoreboard objectives add awd_sel_time dummy
 scoreboard objectives add awd_r_sel_time dummy

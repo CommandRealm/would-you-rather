@@ -29,7 +29,14 @@ scoreboard players reset @s awd_d_companions
 scoreboard players reset @s awd_d_open_chest
 scoreboard players reset @s awd_d_open_barr
 scoreboard players reset @s awd_d_open_shulk
-
+scoreboard players reset @s awd_d_open_dispenser
+scoreboard players reset @s awd_d_open_dropper
+scoreboard players reset @s awd_d_open_hopper
+scoreboard players reset @s awd_d_open_b_furnace
+scoreboard players reset @s awd_d_open_brew
+scoreboard players reset @s awd_d_open_furnace
+scoreboard players reset @s awd_d_open_loom
+scoreboard players reset @s awd_d_open_smoker
 
 execute if score $number tutorial matches 1 run tag @s add tutorial
 

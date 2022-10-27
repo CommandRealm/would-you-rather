@@ -11,5 +11,14 @@ scoreboard objectives add awd_d_companions dummy
 scoreboard objectives add awd_d_open_chest minecraft.custom:minecraft.open_chest
 scoreboard objectives add awd_d_open_shulk minecraft.custom:minecraft.open_shulker_box
 scoreboard objectives add awd_d_open_barr minecraft.custom:minecraft.open_barrel
+# Parking lot patch
+scoreboard objectives add awd_d_open_dispenser minecraft.custom:minecraft.inspect_dispenser
+scoreboard objectives add awd_d_open_dropper minecraft.custom:minecraft.inspect_dropper
+scoreboard objectives add awd_d_open_hopper minecraft.custom:minecraft.inspect_hopper
+scoreboard objectives add awd_d_open_b_furnace minecraft.custom:minecraft.interact_with_blast_furnace
+scoreboard objectives add awd_d_open_brew minecraft.custom:minecraft.interact_with_brewingstand
+scoreboard objectives add awd_d_open_furnace minecraft.custom:minecraft.interact_with_furnace
+scoreboard objectives add awd_d_open_loom minecraft.custom:minecraft.interact_with_loom
+scoreboard objectives add awd_d_open_smoker minecraft.custom:minecraft.interact_with_smoker
 
 scoreboard objectives add awd_r_sel_time dummy
