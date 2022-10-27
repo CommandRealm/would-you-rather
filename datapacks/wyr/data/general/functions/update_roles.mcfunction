@@ -50,7 +50,7 @@ tag @a remove has_tournament
 # tag PrimePenguins add test
 # tag LegoBro add test
 # tag thinkrocks12 add test
-# tag ImAHumanISwear add help
+# tag NotInteligent add help
 # tag Arrgs add test
 # tag Loefars add test
 # tag FatalVortex add test
@@ -106,7 +106,7 @@ tag Warrior0120 add has_test
 tag PrimePenguins add has_test
 tag LegoBro add has_test
 tag thinkrocks12 add has_test
-tag ImAHumanISwear add has_test
+tag NotInteligent add has_test
 tag Arrgs add has_test
 tag Loefars add has_test
 tag FatalVortex add has_test
@@ -147,7 +147,7 @@ tag Purple_Reign__ add has_help
 tag Focii_ add has_help
 tag GlytchIsYes add has_help
 tag sac1 add has_help
-tag ImAHumanISwear add has_help
+tag NotInteligent add has_help
 tag J70 add has_help
 tag EdLePug add has_help
 tag Pilllager add has_help
@@ -211,7 +211,7 @@ tag EdLePug add has_cr
 tag Bagee add has_cr
 tag That_Man add has_cr
 tag BobaFate add has_cr
-tag knad add has_cr
+tag admius add has_cr
 tag OwenEquinox add has_cr
 tag taalaingg add has_cr
 tag Urgle add has_cr
