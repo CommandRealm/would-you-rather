@@ -1,7 +1,8 @@
 #called from general:main
 #purpose is running commands whenever someone is in the lobby
 kill @e[type=item,nbt={Item:{tag:{die:1}}}]
-execute as @a[tag=recently_joined] at @s if entity @s[x=-935,y=79,z=-155,distance=1.1..5] run function lobby:intro/start_intro
+execute as @a[tag=recently_joined] at @s if entity @s[x=-935,y=79,z=-155,distance=1..5] run function lobby:intro/start_intro
+execute as @a[tag=recently_joined] at @s unless entity @s[x=-935,y=79,z=-155,distance=..5] run tag @s remove recently_joined
 scoreboard players remove $time poster_time 1
 execute if score $time poster_time matches ..0 run function lobby:posters/change_poster
 
