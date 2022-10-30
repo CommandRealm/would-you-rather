@@ -45,7 +45,7 @@ clear @a[tag=playing,team=rab] glass_bottle
 execute positioned 15945 64 -381 if block ~ ~ ~ minecraft:chiseled_stone_bricks if entity @a[tag=playing,team=rab,y=61,dy=6,x=15937,dx=8,z=-388,dz=15,gamemode=adventure] run function scenario:steal_a_gem/open_vault
 
 execute unless block 15945 64 -381 chiseled_stone_bricks if entity @e[type=armor_stand,tag=rab_gem] run title @a[x=15953,y=59,z=-381,distance=..6,tag=playing,team=rab,gamemode=adventure] title [{"text":" "}]
-execute unless block 15945 64 -381 chiseled_stone_bricks if entity @e[type=armor_stand,tag=rab_gem] run title @a[x=15953,y=59,z=-381,distance=..6,tag=playing,team=rab,gamemode=adventure] subtitle [{"text":"Right-click the gem!","color":"aqua"}]
+execute unless block 15945 64 -381 chiseled_stone_bricks if entity @e[type=armor_stand,tag=rab_gem] run title @a[x=15953,y=59,z=-381,distance=..6,tag=playing,team=rab,gamemode=adventure] subtitle [{"text":"Right-click the gem with an empty hand!","color":"aqua"}]
 
 execute as @a[tag=playing,team=rab,nbt={Inventory:[{id:"minecraft:player_head",tag:{rab_gem:1b}}]},tag=!rab_hold_gem,gamemode=adventure] at @s if entity @e[tag=rab_gem] run title @a[tag=playing,team=rab,gamemode=adventure] title [{"text":"Get to the truck!","color":"gold"}]
 execute as @a[tag=playing,team=rab,nbt={Inventory:[{id:"minecraft:player_head",tag:{rab_gem:1b}}]},tag=!rab_hold_gem,gamemode=adventure] at @s if entity @e[tag=rab_gem] run title @a[tag=playing,team=rab,gamemode=adventure] subtitle [{"text":" "}]

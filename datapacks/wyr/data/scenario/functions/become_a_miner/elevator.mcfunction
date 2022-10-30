@@ -15,4 +15,7 @@ execute if score $time bam_timer matches 1140 as @a[tag=playing,team=bam] at @s 
 #kill @e[type=falling_block,tag=bam_elevator]
 execute as @e[tag=bam_elevator,type=armor_stand] at @s run tp @s ~ ~-0.1 ~
 
-execute as @e[type=armor_stand,tag=bam_center] at @s run fill ~ ~3.5 ~ 8832 168 -16 iron_bars replace air
+execute as @e[type=armor_stand,tag=bam_center] at @s run clone 8827 118 -22 8827 122 -22 ~1 ~4 ~1
+execute as @e[type=armor_stand,tag=bam_center] at @s run clone 8827 118 -22 8827 122 -22 ~-1 ~4 ~1
+execute as @e[type=armor_stand,tag=bam_center] at @s run clone 8827 118 -22 8827 122 -22 ~1 ~4 ~-1
+execute as @e[type=armor_stand,tag=bam_center] at @s run clone 8827 118 -22 8827 122 -22 ~-1 ~4 ~-1

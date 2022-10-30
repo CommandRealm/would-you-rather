@@ -151,6 +151,9 @@ tag NotInteligent add has_help
 tag J70 add has_help
 tag EdLePug add has_help
 tag Pilllager add has_help
+tag joelzoboyo add has_help
+tag Quackleb add has_help
+tag TheTurtleDan add has_help
 
 # bld
 tag FalconReign add has_bld
@@ -165,6 +168,10 @@ tag Calverin add has_bld
 tag Purple_Reign__ add has_bld
 tag Focii_ add has_bld
 tag BobaFate add has_bld
+tag joelzoboyo add has_bld
+tag Quackleb add has_bld
+tag TheTurtleDan add has_bld
+
 # srbld
 tag Calverin add has_srbld
 tag Captonium add has_srbld

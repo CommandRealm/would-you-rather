@@ -17,7 +17,7 @@ execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=75}] 
 ##Messages and teleports
 
 
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=90}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"A predetermined three-color code generates at the start of this scenario.","color":"gray"}]
+execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=90}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"A predetermined three-color code with no duplicates generates at the start of this scenario.","color":"gray"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=90}] as @a[team=dab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1000 1.25
 
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=150}] run tp @e[type=armor_stand,tag=dab_tutorial] 25991 79 5 90 68
@@ -25,7 +25,7 @@ execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=150}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=150}] as @a[team=dab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1000 1.25
 
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=250}] run tp @e[type=armor_stand,tag=dab_tutorial] 25994 78 5 90 0
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=250}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"After your guess, three colored particles will appear that give you clues to the code.","color":"gray"}]
+execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=250}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"After your guess, three (randomly ordered) colored particles will appear that give you clues to the code. These are explained in chat.","color":"gray"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=250}] as @a[team=dab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1000 1.25
 
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=330}] run tp @e[type=armor_stand,tag=dab_tutorial] 25987 79 5 -90 20
@@ -38,13 +38,9 @@ execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=470}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=610}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"A red particle symbolizes that one of the colors you guessed is not in the code at all.","color":"#e2e2e2"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=610}] as @a[team=dab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1000 1.25
 
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710}] run tp @e[type=armor_stand,tag=dab_tutorial] 25993 78 2 47.5 0
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"If you see the rare aqua particle, that means that one of the colors you guessed is in the code, in the correct position, but also appears in the code elsewhere.","color":"gray"}]
+execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710}] run tp @e[type=armor_stand,tag=dab_tutorial] 25981 79 12 180 0
+execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"You have seven guesses. Make sure to determine the code correctly before running out of guesses and before the timer reaches zero.","color":"#e2e2e2"}]
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710}] as @a[team=dab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1000 1.25
-
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=870}] run tp @e[type=armor_stand,tag=dab_tutorial] 25981 79 12 180 0
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=870}] run tellraw @a[team=dab,tag=playing,tag=!no_tutorial] [{"text":"- ","color":"dark_gray"},{"text":"You have seven guesses. Make sure to determine the code correctly before running out of guesses and before the timer reaches zero.","color":"#e2e2e2"}]
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=870}] as @a[team=dab,tag=playing,tag=!no_tutorial] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1000 1.25
 
 
 ##Remember to alternate message colors between gray and #e2e2e2
@@ -52,7 +48,7 @@ execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=870}]
 
 
 #
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=990}] run function scenario:defuse_tnt/tutorial_end
+execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=830}] run function scenario:defuse_tnt/tutorial_end
 
 
 ##Effects:
@@ -72,9 +68,7 @@ execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=250..
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=250..709}] run particle dust 0.25 0.25 1 1 25989 79.0 5.5 0 0 0 0 1 force @a
 #red
 execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=250..709}] run particle dust 1 0 0 1 25989 78.5 5.5 0 0 0 0 1 force @a
-#aqua
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710..869}] run particle dust 0 1 0.75 1 25989 78.5 5.5 0 0 0 0 1 force @a
 
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710..869}] run particle dust 1 0 0 1 25989 79.5 5.5 0 0 0 0 1 force @a
+execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710..831}] run particle dust 1 0 0 1 25989 79.5 5.5 0 0 0 0 1 force @a
 
-execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710..869}] run particle dust 1 0 0 1 25989 79.0 5.5 0 0 0 0 1 force @a
+execute if entity @a[tag=in_tutorial,tag=playing,team=dab,scores={tutorial=710..831}] run particle dust 1 0 0 1 25989 79.0 5.5 0 0 0 0 1 force @a

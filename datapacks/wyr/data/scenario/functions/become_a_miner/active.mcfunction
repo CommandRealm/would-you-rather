@@ -11,7 +11,7 @@ execute if score $bam active_scenario matches 1 unless entity @a[team=bam] run f
 execute as @e[tag=bam_diamond] at @s if block ~ ~ ~ air run function scenario:become_a_miner/break_diamond
 #execute as @a[team=bam,gamemode=adventure] at @s run function scenario:become_a_miner/call_tracker
 execute if entity @e[type=armor_stand,tag=bam_elevator] run function scenario:become_a_miner/elevator
-execute as @e[tag=bam_elevator] at @s unless block ~ ~ ~ air run tag @e[tag=bam_elevator] add bam_ele_die
+execute as @e[tag=bam_elevator] at @s unless block ~ ~1 ~ air unless block ~ ~1 ~ iron_bars run tag @e[tag=bam_elevator] add bam_ele_die
 tp @e[tag=bam_ele_die] 0 -10000 0
 kill @e[tag=bam_ele_die]
 execute unless entity @e[tag=bam_elevator] run clone 8825 113 -22 8827 121 -20 8831 133 -17

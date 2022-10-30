@@ -8,7 +8,7 @@
                     "name": "minecraft:quartz",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Quartz (5)","color":"green","italic":false}
+                        {"text":"Quartz ($5)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -16,7 +16,7 @@
                     "name": "minecraft:lapis_lazuli",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Lapis (5)","color":"green","italic":false}
+                        {"text":"Lapis ($5)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -24,7 +24,7 @@
                     "name": "minecraft:heart_of_the_sea",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Opal (10)","color":"green","italic":false}
+                        {"text":"Opal ($10)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -32,7 +32,7 @@
                     "name": "minecraft:amethyst_shard",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Amethyst (10)","color":"green","italic":false}
+                        {"text":"Amethyst ($10)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -40,7 +40,7 @@
                     "name": "minecraft:redstone",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Ruby (10)","color":"green","italic":false}
+                        {"text":"Ruby ($10)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -48,7 +48,7 @@
                     "name": "minecraft:emerald",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Emerald (15)","color":"green","italic":false}
+                        {"text":"Emerald ($15)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -56,7 +56,7 @@
                     "name": "minecraft:conduit",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Onyx (15)","color":"green","italic":false}
+                        {"text":"Onyx ($15)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -64,7 +64,7 @@
                     "name": "minecraft:diamond",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Diamond (20)","color":"green","italic":false}
+                        {"text":"Diamond ($20)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -72,7 +72,7 @@
                     "name": "minecraft:echo_shard",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Turquoise (20)","color":"green","italic":false}
+                        {"text":"Turquoise ($20)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 },
                 {
@@ -80,7 +80,7 @@
                     "name": "minecraft:ghast_tear",
                     "weight": 1,
 	                "functions": [{"function": "minecraft:set_name", "entity": "this", "name": [
-                        {"text":"Moonstone (20)","color":"green","italic":false}
+                        {"text":"Moonstone ($20)","color":"green","italic":false}
                     ]}, {"function": "minecraft:set_nbt", "tag": "{Enchantments:[{}],rab_gem:1b}" }]
                 }
             ]
