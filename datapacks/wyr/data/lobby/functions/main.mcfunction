@@ -26,7 +26,11 @@ execute if entity @e[tag=lobby_text,type=area_effect_cloud] unless entity @a[x=-
 
 execute as @e[type=armor_stand,tag=model] at @s run tp @s ~ ~ ~ ~2 ~
 
-
+# Tunnel warps
+execute as @a[tag=!playing,gamemode=adventure,x=-1077,y=77,z=-242,distance=..10] at @s if entity @s[x=-1077,dx=-10] run effect give @s blindness 3 1 true
+execute as @a[tag=!playing,gamemode=adventure,x=-788,y=77,z=-242,distance=..10] at @s if entity @s[x=-788,dx=10] run effect give @s blindness 3 1 true
+execute as @a[tag=!playing,gamemode=adventure,x=-1077,y=77,z=-242,distance=..10] at @s if entity @s[x=-1077,dx=-10] run tp @s ~287 ~ ~ facing ~-10 ~ ~
+execute as @a[tag=!playing,gamemode=adventure,x=-788,y=77,z=-242,distance=..10] at @s if entity @s[x=-788,dx=10] run tp @s ~-287 ~ ~ facing ~10 ~ ~
 
 execute as @a[scores={open_echest=1..}] at @s run function chest_menu:open_echest
 execute as @a[x=-1000,y=66,z=0,distance=..1000] at @s store result score @s chest_clear run clear @s #minecraft:chest_menu{clickable:1}

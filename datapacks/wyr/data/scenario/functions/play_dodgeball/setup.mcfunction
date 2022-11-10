@@ -10,19 +10,20 @@ kill @e[type=shulker,tag=pd_shulker]
 
 scoreboard objectives add pd_random dummy
 scoreboard players set $mod pd_random 2
-execute as @r at @s run function scenario:play_dodgeball/random
+function scenario:play_dodgeball/random
 
 
 execute as @a[tag=playing,team=pd,gamemode=adventure] store result score @s check_players if entity @a[tag=playing,team=pd,gamemode=adventure]
-execute if score $rand pd_random matches 0 run summon minecraft:shulker 20985 80 17 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:14,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.followRange"}]}
-execute if entity @a[tag=playing,team=pd,scores={check_players=2..}] if score $rand pd_random matches 0 run summon minecraft:shulker 20985 79 22 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:14,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.followRange"}]}
+execute store result score $pd_shulkers check_players if entity @e[type=shulker,tag=pd_shulker]
+execute if score $rand pd_random matches 0 unless score $pd_shulkers check_players matches 3.. run summon minecraft:shulker 20985 80 17 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:14,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.follow_range"}]}
+execute if entity @a[tag=playing,team=pd,scores={check_players=2..}] if score $rand pd_random matches 0 unless score $pd_shulkers check_players matches 3.. run summon minecraft:shulker 20985 79 22 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:14,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.follow_range"}]}
 
-execute if score $rand pd_random matches 0 run summon minecraft:shulker 20985 79 12 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:14,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.followRange"}]}
+execute if score $rand pd_random matches 0 unless score $pd_shulkers check_players matches 3.. run summon minecraft:shulker 20985 79 12 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:14,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.follow_range"}]}
 
 
-execute if score $rand pd_random matches 1 run summon minecraft:shulker 20985 80 17 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:11,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.followRange"}]}
-execute if entity @a[tag=playing,team=pd,scores={check_players=2..}] if score $rand pd_random matches 1 run summon minecraft:shulker 20985 79 22 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:11,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.followRange"}]}
-execute if score $rand pd_random matches 1 run summon minecraft:shulker 20985 79 12 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:11,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.followRange"}]}
+execute if score $rand pd_random matches 1 unless score $pd_shulkers check_players matches 3.. run summon minecraft:shulker 20985 80 17 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:11,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.follow_range"}]}
+execute if entity @a[tag=playing,team=pd,scores={check_players=2..}] if score $rand pd_random matches 1 unless score $pd_shulkers check_players matches 3.. run summon minecraft:shulker 20985 79 22 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:11,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.follow_range"}]}
+execute if score $rand pd_random matches 1 unless score $pd_shulkers check_players matches 3.. run summon minecraft:shulker 20985 79 12 {DeathLootTable:"minecraft:scenario/empty",NoAI:1,Tags:["die","pd_ai_on_start","pd_shulker"],Color:11,PersistenceRequired:1b,Silent:1b,Attributes:[{Base:2048,Name:"generic.follow_range"}]}
 
 
 

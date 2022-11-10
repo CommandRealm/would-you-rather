@@ -22,10 +22,10 @@ summon minecraft:villager 38996 66 7 {Invulnerable:1b,Rotation:[180f,0f],Tags:["
 summon minecraft:villager 38996 66 8 {Invulnerable:1b,Rotation:[180f,0f],Tags:["cms_die","cms_customer"]}
 effect give @e[type=villager,tag=cms_customer] slowness 100000 255 true
 
-summon item 39027 67 -12 {Age:-18510,PickupDelay:100000,Item:{id:"minecraft:red_mushroom",Count:1b},Tags:["cms_die","cms_mushroom_item"]}
-summon item 39030 70 25 {Age:-18510,PickupDelay:100000,Item:{id:"minecraft:brown_mushroom",Count:1b},Tags:["cms_die","cms_mushroom_item"]}
-summon item 38975 68 22 {Age:-18510,PickupDelay:100000,Item:{id:"minecraft:crimson_fungus",Count:1b},Tags:["cms_die","cms_mushroom_item"]}
-summon item 38984 67 -26 {Age:-18510,PickupDelay:100000,Item:{id:"minecraft:warped_fungus",Count:1b},Tags:["cms_die","cms_mushroom_item"]}
+summon item 39027 67 -12 {Age:-32768,PickupDelay:32767,Item:{id:"minecraft:red_mushroom",Count:1b},Tags:["cms_die","cms_mushroom_item"]}
+summon item 39030 70 25 {Age:-32768,PickupDelay:32767,Item:{id:"minecraft:brown_mushroom",Count:1b},Tags:["cms_die","cms_mushroom_item"]}
+summon item 38975 68 22 {Age:-32768,PickupDelay:32767,Item:{id:"minecraft:crimson_fungus",Count:1b},Tags:["cms_die","cms_mushroom_item"]}
+summon item 38984 67 -26 {Age:-32768,PickupDelay:32767,Item:{id:"minecraft:warped_fungus",Count:1b},Tags:["cms_die","cms_mushroom_item"]}
 ##
 
 
