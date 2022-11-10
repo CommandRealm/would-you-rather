@@ -127,7 +127,7 @@ tag Shullker add has_test
 tag EdLePug add has_test
 tag BobaFate add has_test
 tag Pilllager add has_test
-tag Clyde2024 add has_test
+tag GameGenMC add has_test
 tag Pinkessi add has_test
 
 # helper
@@ -188,18 +188,18 @@ tag CheckMC add has_prg
 tag FalconReign add has_srprg
 
 # lead
-tag FalconReign add has_srprg
+tag FalconReign add has_lead
 
 # manager
 tag FalconReign add has_manager
 tag Connop add has_manager
+tag Calverin add has_manager
 
 # art
 tag TheRegularMex add has_art
 
-tag FalconReign add has_lead
 
-# cr
+# CR
 tag FalconReign add has_cr
 tag Connop add has_cr
 tag TheRegularMex add has_cr
@@ -209,16 +209,25 @@ tag TheTypicalMex add has_cr
 tag Calverin add has_cr
 tag ChipChase add has_cr
 tag CheckMC add has_cr
-tag sac11221 add has_cr
 tag SmallDeemo add has_cr
 tag Focii_ add has_cr
 tag pcgus add has_cr
 tag Bodi25 add has_cr
 tag EdLePug add has_cr
 tag Bagee add has_cr
-tag That_Man add has_cr
 tag BobaFate add has_cr
 tag admius add has_cr
-tag OwenEquinox add has_cr
-tag taalaingg add has_cr
 tag Urgle add has_cr
+tag joelzoboyo add has_cr
+tag Quackleb add has_cr
+tag TheTurtleDan add has_cr
+tag Beybwug add has_cr
+tag vixy_11 add has_cr
+tag Shullker add has_cr
+tag bluepower add has_cr
+tag Coraze add has_cr
+tag Mezimo add has_cr
+tag oPando add has_cr
+tag pogglin add has_cr
+tag Pinkessi add has_cr
+tag Icy_Craby add has_cr
