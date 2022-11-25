@@ -129,6 +129,7 @@ tag BobaFate add has_test
 tag Pilllager add has_test
 tag GameGenMC add has_test
 tag Pinkessi add has_test
+tag 4953makcim add has_test
 
 # helper
 tag FalconReign add has_help

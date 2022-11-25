@@ -7,7 +7,7 @@ execute positioned -944 63 -140 run tp @e[tag=diorama_die,dx=13,dy=10,dz=5] 0 0 
 execute positioned -944 63 -140 run kill @e[tag=diorama_die,x=0,y=0,z=0,distance=..10]
 execute positioned -944 63 -140 run kill @e[type=item,dx=13,dy=10,dz=5]
 execute positioned -944 63 -140 run kill @e[type=falling_block,dx=13,dy=10,dz=5]
-execute if score $number scenario_screen matches ..0 run scoreboard players set $number scenario_screen 31
+execute if score $number scenario_screen matches ..0 run scoreboard players set $number scenario_screen 32
 execute if score $number scenario_screen matches 33.. run scoreboard players set $number scenario_screen 1
 scoreboard players add $color scenario_screen 1
 execute if score $color scenario_screen matches 3.. run scoreboard players set $color scenario_screen 1
