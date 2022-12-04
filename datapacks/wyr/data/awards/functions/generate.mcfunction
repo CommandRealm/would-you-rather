@@ -96,10 +96,10 @@ summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_hold_item",
 # new 1.17 awards
 summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_water","award_second"],CustomName:'[{"text":"Fish","color":"dark_aqua","bold":true}]'}
 summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_fire","award_second"],CustomName:'[{"text":"Flammable","color":"dark_aqua","bold":true}]'}
-summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_thievery","award_second"],CustomName:'[{"text":"Thievery","color":"dark_aqua","bold":true}]'}
-summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_lawful","award_second","awd_least"],CustomName:'[{"text":"Lawful Citizen","color":"dark_aqua","bold":true}]'}
+summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_thievery"],CustomName:'[{"text":"Thievery","color":"dark_aqua","bold":true}]'}
+summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_lawful","awd_least"],CustomName:'[{"text":"Lawful Citizen","color":"dark_aqua","bold":true}]'}
 summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_armor","award_second"],CustomName:'[{"text":"Fashionista","color":"dark_aqua","bold":true}]'}
-summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_gene_l","award_second"],CustomName:'[{"text":"Gene\'s Least Favorite","color":"dark_aqua","bold":true}]'}
+summon area_effect_cloud 0 66 0 {Duration:1000000,Tags:["award","awd_gene_l"],CustomName:'[{"text":"Gene\'s Least Favorite","color":"dark_aqua","bold":true}]'}
 
 
 ##the "limit" on this command should be amount of cloud summons total minus 3
