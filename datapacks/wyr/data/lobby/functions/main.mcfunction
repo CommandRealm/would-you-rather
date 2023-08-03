@@ -79,7 +79,7 @@ advancement grant @a[x=-941,y=74,z=-82,dx=11,dy=4,dz=11] only advancements:lobby
 advancement grant @a[x=-941,y=95,z=-152,dx=12,dy=5,dz=1.5] only advancements:lobby_cr
 
 
-advancement grant @a[advancements={advancements:lobby_all=false,advancements:lobby_tutorial=true,advancements:lobby_gumball=true,advancements:lobby_plushie=true,advancements:lobby_cosmetic=true,advancements:lobby_socials=true,advancements:lobby_cr=true,}] only advancements:lobby_all
+advancement grant @a[advancements={advancements:lobby_all=false,advancements:lobby_tutorial=true,advancements:lobby_gumball=true,advancements:lobby_plushie=true,advancements:lobby_cosmetic=true,advancements:lobby_socials=true,advancements:lobby_cr=true}] only advancements:lobby_all
 
 advancement grant @a[advancements={advancements:lobby_all=true,advancements:game_all=true,advancements:wins_all=true,advancements:scenario_all=true,minecraft:completionist/completionist=false}] only minecraft:completionist/completionist
 
