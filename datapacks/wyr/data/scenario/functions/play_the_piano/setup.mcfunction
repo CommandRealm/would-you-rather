@@ -57,14 +57,14 @@ execute as @e[type=armor_stand,tag=ptp_sharp_key] at @s run summon minecraft:arm
 scoreboard objectives remove ptp_drop
 scoreboard objectives add ptp_drop minecraft.custom:minecraft.drop
 
-##summon minecraft:villager 33014 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Duration:10000000,Amplifier:1,ShowParticles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_c"]}
-##summon minecraft:villager 33015 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Duration:10000000,Amplifier:1,ShowParticles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_d"]}
-##summon minecraft:villager 33016 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Duration:10000000,Amplifier:1,ShowParticles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_e"]}
-##summon minecraft:villager 33017 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Duration:10000000,Amplifier:1,ShowParticles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_f"]}
-##summon minecraft:villager 33018 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Duration:10000000,Amplifier:1,ShowParticles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_g"]}
-##summon minecraft:villager 33019 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Duration:10000000,Amplifier:1,ShowParticles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_a"]}
-##summon minecraft:villager 33020 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Duration:10000000,Amplifier:1,ShowParticles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_b"]}
-##summon minecraft:villager 33021 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Duration:10000000,Amplifier:1,ShowParticles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_high_c"]}
+##summon minecraft:villager 33014 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:10000000,amplifier:1,show_particles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_c"]}
+##summon minecraft:villager 33015 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:10000000,amplifier:1,show_particles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_d"]}
+##summon minecraft:villager 33016 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:10000000,amplifier:1,show_particles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_e"]}
+##summon minecraft:villager 33017 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:10000000,amplifier:1,show_particles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_f"]}
+##summon minecraft:villager 33018 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:10000000,amplifier:1,show_particles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_g"]}
+##summon minecraft:villager 33019 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:10000000,amplifier:1,show_particles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_a"]}
+##summon minecraft:villager 33020 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:10000000,amplifier:1,show_particles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_b"]}
+##summon minecraft:villager 33021 67.0 2.75 {NoGravity:1b,NoAI:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",duration:10000000,amplifier:1,show_particles:false}],Rotation:[180f,0f],Silent:1b,Tags:["ptp_die","ptp_high_c"]}
 
 
 

@@ -17,9 +17,9 @@ scoreboard objectives add rap_kill minecraft.custom:minecraft.mob_kills
 give @a[tag=playing,team=rap,gamemode=adventure] iron_sword{Unbreakable:1b,HideFlags:63,display:{Name:'[{"text":"Iron Sword","color":"gray","italic":false}]'},AttributeModifiers:[{AttributeName:"generic.attack_speed",Amount:1024,UUID:[I; 1, 1, 1, 1]},{AttributeName:"generic.attack_damage",Amount:7,UUID:[I; 2, 2, 2, 2]}]}
 give @a[tag=playing,team=rap,gamemode=adventure] bow{Unbreakable:1b,HideFlags:63,display:{Name:'[{"text":"Bow","color":"gold","italic":false}]'}}
 
-item replace entity @a[tag=playing,team=rap,gamemode=adventure] hotbar.4 with minecraft:splash_potion{CustomPotionEffects:[{Id:12,Duration:200,Amplifier:3}],CustomPotionColor:14981690,display:{Name:'{"text":"Quick Fire Resistance Potion","color":"#e49a3a","italic":false}'}}
-item replace entity @a[tag=playing,team=rap,gamemode=adventure] hotbar.5 with minecraft:splash_potion{CustomPotionEffects:[{Id:12,Duration:200,Amplifier:3}],CustomPotionColor:14981690,display:{Name:'{"text":"Quick Fire Resistance Potion","color":"#e49a3a","italic":false}'}}
-item replace entity @a[tag=playing,team=rap,gamemode=adventure] hotbar.6 with minecraft:splash_potion{CustomPotionEffects:[{Id:12,Duration:200,Amplifier:3}],CustomPotionColor:14981690,display:{Name:'{"text":"Quick Fire Resistance Potion","color":"#e49a3a","italic":false}'}}
+item replace entity @a[tag=playing,team=rap,gamemode=adventure] hotbar.4 with minecraft:splash_potion{custom_potion_effects:[{id:"minecraft:fire_resistance",duration:200,amplifier:3}],CustomPotionColor:14981690,display:{Name:'{"text":"Quick Fire Resistance Potion","color":"#e49a3a","italic":false}'}}
+item replace entity @a[tag=playing,team=rap,gamemode=adventure] hotbar.5 with minecraft:splash_potion{custom_potion_effects:[{id:"minecraft:fire_resistance",duration:200,amplifier:3}],CustomPotionColor:14981690,display:{Name:'{"text":"Quick Fire Resistance Potion","color":"#e49a3a","italic":false}'}}
+item replace entity @a[tag=playing,team=rap,gamemode=adventure] hotbar.6 with minecraft:splash_potion{custom_potion_effects:[{id:"minecraft:fire_resistance",duration:200,amplifier:3}],CustomPotionColor:14981690,display:{Name:'{"text":"Quick Fire Resistance Potion","color":"#e49a3a","italic":false}'}}
 item replace entity @a[tag=playing,team=rap,gamemode=adventure] hotbar.8 with arrow 32
 
 

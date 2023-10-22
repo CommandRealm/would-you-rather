@@ -135,7 +135,7 @@ execute as @a[tag=playing,team=rab,gamemode=adventure] at @s[x=15991,y=67,z=-379
 
 # Winning the scenario
 execute if score $current rab_money >= $goal rab_money unless entity @e[type=shulker,tag=rab_glowbox] run tellraw @a[team=rab] [{"text":"<","color":"blue"},{"text":"Miles","color":"green"},{"text":"> ","color":"blue"},{"text":"Alright that's enough gems, get in the van and let's go!","color":"aqua"}]
-execute if score $current rab_money >= $goal rab_money unless entity @e[type=shulker,tag=rab_glowbox] run summon shulker 15991 67 -376 {DeathLootTable:"minecraft:scenario/empty",Tags:["rab_die","rab_glowbox"],Glowing:1b,Invulnerable:1b,ActiveEffects:[{Id:14,Amplifier:1b,Duration:20000000,ShowParticles:0b}],NoAI:1b,Silent:1b}
+execute if score $current rab_money >= $goal rab_money unless entity @e[type=shulker,tag=rab_glowbox] run summon shulker 15991 67 -376 {DeathLootTable:"minecraft:scenario/empty",Tags:["rab_die","rab_glowbox"],Glowing:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:20000000,show_particles:0b}],NoAI:1b,Silent:1b}
 execute if score $current rab_money >= $goal rab_money as @a[tag=playing,team=rab,gamemode=adventure] at @s[x=15991,y=67,z=-379,dx=1,dy=2,dz=3] run function scenario:steal_a_gem/success
 
 
