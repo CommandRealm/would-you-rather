@@ -23,7 +23,7 @@ execute if block ~ ~1 ~ air unless block ~ ~ ~ dirt_path run scoreboard players 
 kill @e[type=area_effect_cloud,tag=tex_random]
 
 # Decorate
-execute if block ~ ~1 ~ air if score $rand maze_random matches 3 unless block ~ ~ ~ dirt_path run setblock ~ ~1 ~ grass
+execute if block ~ ~1 ~ air if score $rand maze_random matches 3 unless block ~ ~ ~ dirt_path run setblock ~ ~1 ~ minecraft:short_grass
 execute if block ~ ~1 ~ air if score $rand maze_random matches 4 unless block ~ ~ ~ dirt_path run setblock ~ ~1 ~ tall_grass[half=lower]
 execute if block ~ ~1 ~ tall_grass if score $rand maze_random matches 4 unless block ~ ~ ~ dirt_path run setblock ~ ~2 ~ tall_grass[half=upper]
 execute if block ~ ~1 ~ air if score $rand maze_random matches 5 unless block ~ ~ ~ dirt_path run setblock ~ ~1 ~ moss_carpet
