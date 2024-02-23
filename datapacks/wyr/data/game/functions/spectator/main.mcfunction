@@ -9,8 +9,8 @@ execute as @a[gamemode=spectator,tag=!building,tag=!in_tutorial,scores={spectato
 scoreboard players add @a[gamemode=spectator,tag=!building,tag=!in_tutorial,team=!wyr] spectator 1
 
 
-execute as @a[tag=playing,gamemode=adventure,advancements={minecraft:invisible/inventory_change=true}] at @s as @a[gamemode=spectator,distance=..1.5] at @s run function game:copy_inventory
-advancement revoke @a[tag=playing,gamemode=adventure,advancements={minecraft:invisible/inventory_change=true}] only minecraft:invisible/inventory_change
+execute as @a[tag=playing,gamemode=adventure,advancements={game:invisible/inventory_change=true}] at @s as @a[gamemode=spectator,distance=..1.5] at @s run function game:copy_inventory
+advancement revoke @a[tag=playing,gamemode=adventure,advancements={game:invisible/inventory_change=true}] only game:invisible/inventory_change
 
 
 execute if entity @a[tag=!playing,gamemode=spectator] run function game:spectator/possible_trigger

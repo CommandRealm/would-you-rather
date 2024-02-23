@@ -1,5 +1,5 @@
 {
-  "minecraft:invisible/inventory_change": {
+  "game:invisible/inventory_change": {
     "criteria": {
       "criteria": "2023-06-20 21:18:30 -0700"
     },

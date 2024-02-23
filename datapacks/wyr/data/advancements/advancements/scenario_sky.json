@@ -10,7 +10,7 @@
         },
         "frame": "task",
         "show_toast": true,
-        "announce_to_chat": "false",
+        "announce_to_chat": false,
         "description": {
             "text": "Play \"Parkour through a sky village.\"",
             "color": "#78a19a",

@@ -10,7 +10,7 @@
         },
         "frame": "task",
         "show_toast": true,
-        "announce_to_chat": "false",
+        "announce_to_chat": false,
         "description": {
             "text": "Get a plushie from the claw machine in the lobby.",
             "color": "#78a19a",

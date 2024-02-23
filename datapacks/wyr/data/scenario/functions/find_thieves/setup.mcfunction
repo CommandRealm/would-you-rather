@@ -21,9 +21,9 @@ scoreboard objectives add ft_thief dummy
 scoreboard objectives add ft_damage minecraft.custom:minecraft.damage_dealt_resisted
 
 
-advancement grant @a[team=ft] only minecraft:invisible/find_thieves/punch_thief_1
-advancement grant @a[team=ft] only minecraft:invisible/find_thieves/punch_thief_2
-advancement grant @a[team=ft] only minecraft:invisible/find_thieves/punch_thief_3
-advancement revoke @a[team=ft] only minecraft:invisible/find_thieves/punch_thief_1
-advancement revoke @a[team=ft] only minecraft:invisible/find_thieves/punch_thief_2
-advancement revoke @a[team=ft] only minecraft:invisible/find_thieves/punch_thief_3
+advancement grant @a[team=ft] only game:invisible/find_thieves/punch_thief_1
+advancement grant @a[team=ft] only game:invisible/find_thieves/punch_thief_2
+advancement grant @a[team=ft] only game:invisible/find_thieves/punch_thief_3
+advancement revoke @a[team=ft] only game:invisible/find_thieves/punch_thief_1
+advancement revoke @a[team=ft] only game:invisible/find_thieves/punch_thief_2
+advancement revoke @a[team=ft] only game:invisible/find_thieves/punch_thief_3

@@ -11,7 +11,7 @@
         },
         "frame": "task",
         "show_toast": true,
-        "announce_to_chat": "false",
+        "announce_to_chat": false,
         "description": {
             "text": "Find the Command Realm \"CR\" in the lobby.",
             "color": "#78a19a",

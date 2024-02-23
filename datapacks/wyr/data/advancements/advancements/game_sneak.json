@@ -10,7 +10,7 @@
         },
         "frame": "task",
         "show_toast": true,
-        "announce_to_chat": "false",
+        "announce_to_chat": false,
         "description": {
             "text": "Sneak for over 30 seconds in scenarios.",
             "color": "#78a19a",
