@@ -199,7 +199,7 @@ execute if score @s screen matches 18 if entity @s[advancements={advancements:lo
 execute if score @s screen matches 18 if entity @s[advancements={advancements:wins_all=true}] unless data entity @s EnderItems[{Slot:12b,id:"minecraft:globe_banner_pattern"}] run scoreboard players set @s banners 16
 execute if score @s screen matches 18 if entity @s[advancements={advancements:scenario_all=true}] unless data entity @s EnderItems[{Slot:13b,id:"minecraft:note_block"}] run scoreboard players set @s podium 51
 execute if score @s screen matches 18 if entity @s[advancements={advancements:game_all=true}] unless data entity @s EnderItems[{Slot:14b,id:"minecraft:pink_wool"}] run scoreboard players set @s fans 18
-execute if score @s screen matches 18 if entity @s[advancements={minecraft:completionist/completionist=true}] unless data entity @s EnderItems[{Slot:15b,id:"minecraft:gold_ingot"}] run function chest_menu:toggle_completionist_particles
+execute if score @s screen matches 18 if entity @s[advancements={advancements:completionist/completionist=true}] unless data entity @s EnderItems[{Slot:15b,id:"minecraft:gold_ingot"}] run function chest_menu:toggle_completionist_particles
 
 execute if score @s screen matches 18 if data entity @s EnderItems[{id:"minecraft:barrier"}] run function chest_menu:start_unlocks
 execute if score @s screen matches 18 unless data entity @s EnderItems[{id:"minecraft:barrier"}] run function chest_menu:start_cosmetics
